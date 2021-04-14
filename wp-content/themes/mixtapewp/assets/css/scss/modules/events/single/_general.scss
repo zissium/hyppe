@@ -1,0 +1,160 @@
+.qodef-event-single-holder {
+
+    .qodef-event-image-buy-tickets-holder{
+        margin-bottom: 90px;
+
+        .qodef-event-image {
+            margin-bottom: 47px;
+
+            img {
+                display: block;
+                position: relative;
+            }
+        }
+
+        .qodef-event-details-holder{
+            margin-bottom: 32px;
+
+            .qodef-event-section-title{
+                margin-bottom: 20px;
+            }
+
+            div{
+                margin-bottom: 2px;
+
+                span:first-child {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #000;
+                }
+
+                span:nth-child(2) {
+                    font-size: 15px;
+                }
+
+                span:nth-child(2) a {
+                    color: $default-text-color;
+
+                    &:hover {
+                        color: $first-main-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .qodef-event-info-holder {
+
+        .qodef-event-item.qodef-event-info {
+            margin-bottom: 47px;
+
+            &:last-child {
+                margin-top: -10px;
+                 margin-bottom: 90px; 
+            }
+        }
+
+        .qodef-event-section-title {
+            margin-bottom: 20px;
+        }
+    }
+
+    .qodef-social-share-holder.qodef-list {
+        .qodef-social-share-title {
+            display: none;
+        }
+
+        ul li {
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+.qodef-event-nav {
+    $nav-height :40px;
+    height: $nav-height;
+    line-height: $nav-height;
+    text-align: center;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 70px;
+
+    .qodef-event-nav-inner{
+        position:relative;
+    }
+
+    .qodef-event-next,
+    .qodef-event-prev,
+    .qodef-event-back-btn {
+        height: $nav-height;
+    }
+
+    .qodef-event-back-btn {
+        display: inline-block;
+
+        a{
+            color: $first-main-color;
+
+            &:before{
+                content: "\e08c";
+                font-size: 30px;
+                font-family: 'ElegantIcons';
+                position: relative;
+                float: left;
+                width: 30px;
+            }
+
+            &:hover{
+                color: $default-text-color;
+            }
+        }
+    }
+
+    .qodef-event-next a,
+    .qodef-event-prev a{
+        color: #8a8a8a;
+        line-height: $nav-height;
+        font-size: 20px;
+        font-weight: 400;
+        @include qodefTransition(color 0.15s ease-in-out);
+
+        &:hover {
+            color: $first-main-color;
+            @include qodefTransition(color 0.15s ease-in-out);
+        }
+    }
+
+    .qodef-event-next,
+    .qodef-event-prev {
+        position: absolute;
+        top: 0;
+
+        & a:before{
+            font-size: 20px;
+            font-family: 'Linearicons-Free';
+            position: relative;
+            float: left;
+            width: 20px;
+        }
+    }
+
+    .qodef-event-prev {
+        left: 0;
+
+        & a:before{
+            content: "\e875";
+        }
+    }
+
+    .qodef-event-next {
+        right: 0;
+
+        & a:before{
+            content: "\e876";
+        }
+    }
+}

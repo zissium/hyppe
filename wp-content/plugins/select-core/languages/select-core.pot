@@ -1,0 +1,1635 @@
+# Copyright (C) 2019 Select Themes
+# This file is distributed under the same license as the Select Core plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Select Core 1.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/select-core\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-12-26T09:44:42+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.3.0\n"
+"X-Domain: qodef-cpt\n"
+
+#. Plugin Name of the plugin
+msgid "Select Core"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin that adds all post types needed by our theme"
+msgstr ""
+
+#. Author of the plugin
+msgid "Select Themes"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:46
+#: core-dashboard/core-dashboard.php:47
+msgid "Mixtape Dashboard"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:134
+msgid "All fields are empty"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:157
+msgid "Purchase Code and Email are empty"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:162
+msgid "Purchase Code is empty"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:164
+msgid "Email is empty"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:284
+msgid "Bad request"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:290
+msgid "Invalid Response"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:303
+msgid "Failed to validate code due to an error"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:306
+msgid "Parameter or argument in the request was invalid"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:309
+msgid "The authorization header is missing. Verify that your code is correct."
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:312
+msgid "Personal token is incorrect or does not have the required permission(s)"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:315
+msgid "The purchase code is invalid"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:318
+msgid "You successfully activated theme"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:321
+msgid "Code is valid"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:324
+msgid "You successfully added demo"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:327
+msgid "You successfully deregister theme"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:330
+msgid "Code is already registered for other domain"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:333
+msgid "Error occurred during activation"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:336
+msgid "Code is invalid"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:339
+msgid "Error occurred during adding"
+msgstr ""
+
+#: core-dashboard/core-dashboard.php:342
+msgid "Error occurred during deactivation"
+msgstr ""
+
+#: core-dashboard/registration-rest.php:38
+msgid "Options data is array with parameters"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import-page.php:21
+#: core-dashboard/sub-pages/import/templates/import.php:2
+#: core-dashboard/sub-pages/import/templates/import.php:51
+msgid "Import"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:113
+msgid "Revolution Slider isn't installed"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:125
+msgid "Please don't try to hack me. Purchase code registered is not valid"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:170
+msgid "Please contact support"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:194
+msgid "Widgets are set for proper sidebar"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:245
+msgid "Options imported successfully"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:251
+msgid "Problem occurred during options import"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:256
+msgid "Options are already imported"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:299
+msgid "Problem occurred during settings pages import"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:303
+msgid "Settings pages imported successfully"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:307
+msgid "File doesn't exist"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:337
+msgid "Menus set for proper locations"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:340
+msgid "Problem during menus location set"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:388
+msgid "An error occurred during content import"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:393
+msgid "File imported successfully"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:473
+msgid "Error while importing rev sliders"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:479
+msgid "Rev sliders imported successfully"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:483
+msgid "Files don't exist"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/import.php:625
+msgid "Pages don't exist"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/parsers.php:42
+#: core-dashboard/sub-pages/import/parsers.php:77
+#: core-dashboard/sub-pages/import/parsers.php:85
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/parsers.php:43
+msgid "Details are shown above. The importer will now try again with a different parser..."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/parsers.php:89
+#: core-dashboard/sub-pages/import/parsers.php:94
+#: core-dashboard/sub-pages/import/parsers.php:311
+#: core-dashboard/sub-pages/import/parsers.php:507
+msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:3
+msgid "You can import the theme demo content here."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:10
+#: core-dashboard/sub-pages/import/templates/import.php:58
+msgid "Import demo content"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:11
+msgid "Start the demo import process by choosing which content you wish to import. "
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:14
+msgid "Are you sure, you want to import Demo Data now?"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:17
+msgid "Select Demo to import"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:19
+msgid "Mixtape"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:24
+msgid "Select Import Option"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:26
+msgid "Please Select"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:27
+#: post-types/events/shortcodes/events-list.php:106
+msgid "All"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:28
+msgid "Content"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:29
+msgid "Widgets"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:30
+msgid "Options"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:35
+#: core-dashboard/sub-pages/import/wordpress-importer.php:271
+msgid "Import Attachments"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:37
+#: post-types/albums/shortcodes/album-player.php:71
+#: post-types/albums/shortcodes/albums-list.php:152
+#: post-types/albums/shortcodes/albums-list.php:162
+#: post-types/carousels/shortcodes/carousel.php:105
+#: post-types/carousels/shortcodes/carousel.php:116
+#: post-types/events/shortcodes/events-list.php:118
+#: post-types/slider/tax-custom-fields.php:32
+#: post-types/slider/tax-custom-fields.php:43
+#: post-types/slider/tax-custom-fields.php:55
+#: post-types/slider/tax-custom-fields.php:67
+#: post-types/slider/tax-custom-fields.php:78
+#: post-types/slider/tax-custom-fields.php:89
+#: post-types/slider/tax-custom-fields.php:131
+#: post-types/slider/tax-custom-fields.php:142
+#: post-types/slider/tax-custom-fields.php:153
+#: post-types/testimonials/shortcodes/testimonials.php:68
+#: post-types/testimonials/shortcodes/testimonials.php:80
+#: post-types/testimonials/shortcodes/testimonials.php:92
+#: post-types/testimonials/shortcodes/testimonials.php:113
+#: post-types/testimonials/shortcodes/testimonials.php:124
+msgid "Yes"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:38
+#: post-types/albums/shortcodes/album-player.php:72
+#: post-types/albums/shortcodes/albums-list.php:151
+#: post-types/albums/shortcodes/albums-list.php:163
+#: post-types/carousels/shortcodes/carousel.php:106
+#: post-types/carousels/shortcodes/carousel.php:117
+#: post-types/events/shortcodes/events-list.php:117
+#: post-types/slider/tax-custom-fields.php:31
+#: post-types/slider/tax-custom-fields.php:42
+#: post-types/slider/tax-custom-fields.php:54
+#: post-types/slider/tax-custom-fields.php:66
+#: post-types/slider/tax-custom-fields.php:79
+#: post-types/slider/tax-custom-fields.php:90
+#: post-types/slider/tax-custom-fields.php:132
+#: post-types/slider/tax-custom-fields.php:143
+#: post-types/slider/tax-custom-fields.php:154
+#: post-types/testimonials/shortcodes/testimonials.php:69
+#: post-types/testimonials/shortcodes/testimonials.php:81
+#: post-types/testimonials/shortcodes/testimonials.php:93
+#: post-types/testimonials/shortcodes/testimonials.php:114
+#: post-types/testimonials/shortcodes/testimonials.php:125
+msgid "No"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:45
+msgid "The import process may take some time. Please be patient."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:47
+msgid "0%"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:50
+msgid "Import is completed"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:59
+msgid "Please activate your copy of the theme by registering the theme so you could proceed with the demo import process. "
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/import.php:64
+msgid "Activate your theme copy"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/notice.php:3
+msgid "Please note that your server resources are not configured properly so you might run into an issue during the demo import process. Please adjust your server configuration values. "
+msgstr ""
+
+#: core-dashboard/sub-pages/import/templates/pages-list.php:1
+msgid "Select Page To Import"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:135
+#: core-dashboard/sub-pages/import/wordpress-importer.php:186
+#: core-dashboard/sub-pages/import/wordpress-importer.php:190
+#: core-dashboard/sub-pages/import/wordpress-importer.php:199
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:170
+msgid "All done."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:170
+msgid "Have fun!"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:171
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:191
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:207
+msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:232
+msgid "Failed to import author %s. Their posts will be attributed to the current user."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:258
+msgid "Assign Authors"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:259
+msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:261
+msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:274
+msgid "Download and import file attachments"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:278
+msgid "Submit"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:291
+msgid "Import author:"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:302
+msgid "or create new user with login name:"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:305
+msgid "as a new user:"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:313
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:315
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:316
+msgid "- Select -"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:366
+msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:418
+msgid "Failed to import category %s"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:462
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:512
+#: core-dashboard/sub-pages/import/wordpress-importer.php:736
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:603
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:639
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:701
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:869
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:876
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:954
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:967
+msgid "Invalid file type"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:1011
+msgid "Remote server did not respond"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:1017
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:1024
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:1029
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:1035
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:1136
+msgid "Import WordPress"
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:1143
+msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:1158
+msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+msgstr ""
+
+#: core-dashboard/sub-pages/import/wordpress-importer.php:1159
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:33
+msgid "System Info"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:53
+msgid "PHP Memory Limit"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:57
+#: core-dashboard/sub-pages/system-info/system-info.php:91
+msgid "The current value is insufficient to properly support the theme. Please adjust this value to 128 in order to meet the theme requirements. "
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:60
+msgid "PHP Version"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:66
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:70
+msgid "The current value is insufficient to properly support the theme. Please adjust this value to 256 in order to meet the theme requirements. "
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:73
+msgid "PHP Time Limit"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:77
+msgid "The current value is insufficient to properly support the theme. Please adjust this value to 300 in order to meet the theme requirements. "
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:80
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:84
+msgid "The current value is insufficient to properly support the theme. Please adjust this value to 5000 in order to meet the theme requirements. "
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:87
+msgid "Max Upload Size"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:94
+msgid "SUHOSIN Installed"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:109
+msgid "Home URL"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:113
+msgid "Site URL"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:117
+msgid "WP Version"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:121
+msgid "WP Debug Mode"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:125
+msgid "Language"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:139
+msgid "Theme Name"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:143
+msgid "Theme Version"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/system-info.php:147
+msgid "Theme Author"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/templates/system-info.php:2
+msgid "System Status"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/templates/system-info.php:3
+msgid "Here is a general overview of your system status"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/templates/system-info.php:8
+msgid "WordPress Environment"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/templates/system-info.php:21
+#: core-dashboard/templates/core-dashboard.php:55
+msgid "System Information"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/templates/system-info.php:43
+msgid "Theme Information"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/templates/system-info.php:57
+msgid "Active Plugins"
+msgstr ""
+
+#: core-dashboard/sub-pages/system-info/templates/system-info.php:63
+msgid "by"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:3
+msgid "Qode"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:4
+msgid "Welcome to "
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:6
+msgid "Thank you for choosing %s. Now it's time to create something awesome."
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:11
+msgid "Registration"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:13
+msgid "Please input the purchase code you received with the theme as well as your email address in order to activate your copy of the theme."
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:15
+msgid "You have successfully registered your copy of the theme! "
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:22
+msgid "Register your theme"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:23
+#: core-dashboard/templates/core-dashboard.php:27
+msgid "Field is empty"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:24
+#: core-dashboard/templates/core-dashboard.php:40
+msgid "Purchase Code"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:27
+msgid "Email is not valid"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:28
+msgid "Email"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:32
+msgid "Register Theme"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:33
+#: core-dashboard/templates/core-dashboard.php:45
+msgid "Please Wait..."
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:38
+msgid "Deregister your theme"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:44
+msgid "Deregister Theme"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:56
+msgid "Here is an overview of your current server configuration info."
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:77
+msgid "Useful links"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:82
+msgid "Theme Documentation"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:83
+msgid "Support center"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:84
+msgid "Video tutorials"
+msgstr ""
+
+#: core-dashboard/templates/core-dashboard.php:85
+msgid "Qode Interactive themes"
+msgstr ""
+
+#: export/functions.php:93
+msgid "Import field is empty"
+msgstr ""
+
+#: export/functions.php:100
+msgid "Options are imported successfully"
+msgstr ""
+
+#: export/functions.php:102
+msgid "Non valid authorization"
+msgstr ""
+
+#: export/functions.php:107
+msgid "You don't have privileges for this operation"
+msgstr ""
+
+#: lib/helpers/helpers.php:378
+#: post-types/slider/shortcodes/slider.php:807
+#: post-types/testimonials/shortcodes/testimonials.php:187
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: lib/helpers/helpers.php:513
+msgid "No tracks Founded."
+msgstr ""
+
+#: main.php:57
+#: main.php:58
+msgid "Select Options"
+msgstr ""
+
+#: main.php:78
+msgid "Select Options - "
+msgstr ""
+
+#: main.php:110
+msgid "Select Options - Backup Options"
+msgstr ""
+
+#: main.php:111
+msgid "Backup Options"
+msgstr ""
+
+#: post-types/albums/albums-register.php:77
+msgid "Albums"
+msgstr ""
+
+#: post-types/albums/albums-register.php:78
+#: post-types/albums/shortcodes/album-player.php:60
+#: post-types/albums/shortcodes/album.php:41
+#: post-types/albums/shortcodes/album.php:49
+msgid "Album"
+msgstr ""
+
+#: post-types/albums/albums-register.php:79
+msgid "New Album"
+msgstr ""
+
+#: post-types/albums/albums-register.php:80
+msgid "Add New Album"
+msgstr ""
+
+#: post-types/albums/albums-register.php:81
+msgid "Edit Album"
+msgstr ""
+
+#: post-types/albums/albums-register.php:99
+#: post-types/albums/albums-register.php:109
+msgid "Labels"
+msgstr ""
+
+#: post-types/albums/albums-register.php:100
+msgid "Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:101
+msgid "Search Labels"
+msgstr ""
+
+#: post-types/albums/albums-register.php:102
+msgid "All Labels"
+msgstr ""
+
+#: post-types/albums/albums-register.php:103
+msgid "Parent Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:104
+msgid "Parent Label:"
+msgstr ""
+
+#: post-types/albums/albums-register.php:105
+msgid "Edit Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:106
+msgid "Update Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:107
+msgid "Add New Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:108
+msgid "New Label Name"
+msgstr ""
+
+#: post-types/albums/albums-register.php:121
+#: post-types/albums/albums-register.php:123
+#: post-types/albums/albums-register.php:124
+#: post-types/albums/albums-register.php:131
+msgid "Genres"
+msgstr ""
+
+#: post-types/albums/albums-register.php:122
+msgid "Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:125
+msgid "Parent Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:126
+msgid "Parent Genres:"
+msgstr ""
+
+#: post-types/albums/albums-register.php:127
+msgid "Edit Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:128
+msgid "Update Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:129
+msgid "Add New Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:130
+msgid "New Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:143
+#: post-types/albums/albums-register.php:145
+#: post-types/albums/albums-register.php:146
+#: post-types/albums/albums-register.php:153
+msgid "Artists"
+msgstr ""
+
+#: post-types/albums/albums-register.php:144
+msgid "Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:147
+msgid "Parent Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:148
+msgid "Parent Artists:"
+msgstr ""
+
+#: post-types/albums/albums-register.php:149
+msgid "Edit Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:150
+msgid "Update Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:151
+msgid "Add New Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:152
+msgid "New Artist Name"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:41
+msgid "Album Player"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:43
+#: post-types/albums/shortcodes/album.php:43
+#: post-types/albums/shortcodes/albums-list.php:43
+#: post-types/albums/shortcodes/artists-list.php:43
+#: post-types/carousels/shortcodes/carousel.php:40
+#: post-types/events/shortcodes/events-list.php:43
+#: post-types/testimonials/shortcodes/testimonials.php:42
+msgid "by SELECT"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:49
+msgid "Type"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:52
+msgid "Standard"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:53
+msgid "Compact"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:54
+msgid "Simple"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:68
+msgid "Content In Grid"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:79
+msgid "Player Background Color"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:85
+msgid "Play Button Background Color"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:91
+msgid "Navigation Buttons Background Color"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:97
+msgid "Skin"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:100
+#: post-types/albums/shortcodes/album.php:62
+msgid "Light"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:101
+#: post-types/albums/shortcodes/album.php:61
+msgid "Dark"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:102
+msgid "Transparent"
+msgstr ""
+
+#: post-types/albums/shortcodes/album.php:57
+msgid "Album Skin"
+msgstr ""
+
+#: post-types/albums/shortcodes/album.php:60
+msgid "Default"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:41
+msgid "Albums List"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:49
+msgid "Albums List Template"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:52
+msgid "Standard With Space"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:54
+msgid "Gallery With Space"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:55
+msgid "Gallery No Space"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:62
+#: post-types/albums/shortcodes/artists-list.php:49
+#: post-types/carousels/shortcodes/carousel.php:54
+#: post-types/events/shortcodes/events-list.php:75
+msgid "Order By"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:65
+#: post-types/carousels/shortcodes/carousel.php:59
+#: post-types/events/shortcodes/events-list.php:81
+msgid "Date"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:66
+#: post-types/carousels/shortcodes/carousel.php:58
+#: post-types/events/shortcodes/events-list.php:80
+msgid "Title"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:67
+#: post-types/events/shortcodes/events-list.php:79
+msgid "Menu Order"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:72
+#: post-types/albums/shortcodes/albums-list.php:85
+#: post-types/albums/shortcodes/albums-list.php:94
+#: post-types/albums/shortcodes/albums-list.php:103
+#: post-types/albums/shortcodes/albums-list.php:112
+#: post-types/albums/shortcodes/albums-list.php:121
+#: post-types/albums/shortcodes/albums-list.php:135
+#: post-types/albums/shortcodes/albums-list.php:144
+#: post-types/albums/shortcodes/albums-list.php:155
+#: post-types/albums/shortcodes/artists-list.php:58
+#: post-types/albums/shortcodes/artists-list.php:71
+#: post-types/albums/shortcodes/artists-list.php:80
+#: post-types/events/shortcodes/events-list.php:71
+#: post-types/events/shortcodes/events-list.php:86
+#: post-types/events/shortcodes/events-list.php:99
+#: post-types/events/shortcodes/events-list.php:110
+#: post-types/events/shortcodes/events-list.php:121
+msgid "Query and Layout Options"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:76
+#: post-types/albums/shortcodes/artists-list.php:62
+#: post-types/carousels/shortcodes/carousel.php:65
+#: post-types/events/shortcodes/events-list.php:90
+msgid "Order"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:89
+msgid "One-Label Albums List"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:93
+msgid "Enter one label slug (leave empty for showing all labels)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:98
+msgid "One-Genre Albums List"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:102
+msgid "Enter one genre slug (leave empty for showing all genres)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:107
+msgid "One-Artist Albums List"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:111
+msgid "Enter one artist slug (leave empty for showing all artists)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:116
+msgid "Number of Albums Per Page"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:120
+#: post-types/events/shortcodes/events-list.php:70
+msgid "(enter -1 to show all)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:125
+msgid "Number of Columns"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:129
+msgid "Two"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:130
+msgid "Three"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:131
+msgid "Four"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:134
+msgid "Default value is Three"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:139
+msgid "Show Only Albums with Listed IDs"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:143
+#: post-types/albums/shortcodes/artists-list.php:79
+msgid "Delimit ID numbers by comma (leave empty for all)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:148
+#: post-types/events/shortcodes/events-list.php:114
+msgid "Show Load More"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:159
+msgid "Show Stores"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:172
+msgid "Choose Stores To Be Shown"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:175
+msgid "iTunes"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:176
+msgid "Google Play"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:177
+msgid "Bandcamp"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:178
+msgid "Spotify"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:179
+msgid "AmazonMP3"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:180
+msgid "Deezer"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:249
+msgid "Sorry, no albums matched your criteria."
+msgstr ""
+
+#: post-types/albums/shortcodes/artists-list.php:41
+msgid "Artists List"
+msgstr ""
+
+#: post-types/albums/shortcodes/artists-list.php:52
+#: post-types/slider/tax-custom-fields.php:185
+msgid "Name"
+msgstr ""
+
+#: post-types/albums/shortcodes/artists-list.php:53
+msgid "Order Number"
+msgstr ""
+
+#: post-types/albums/shortcodes/artists-list.php:75
+msgid "Show Only Artists with Listed IDs"
+msgstr ""
+
+#: post-types/albums/shortcodes/artists-list.php:119
+msgid "Sorry, no artists matched your criteria."
+msgstr ""
+
+#: post-types/albums/shortcodes/templates/load-more-template.php:7
+msgid "Show more"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:56
+#: post-types/carousels/carousel-register.php:57
+msgid "Select Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:58
+msgid "Carousel Items"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:59
+#: post-types/carousels/carousel-register.php:62
+msgid "Add New Carousel Item"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:60
+msgid "Carousel Item"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:61
+msgid "New Carousel Item"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:63
+msgid "Edit Carousel Item"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:83
+#: post-types/carousels/carousel-register.php:93
+msgid "Carousels"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:84
+#: post-types/carousels/shortcodes/carousel.php:38
+msgid "Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:85
+msgid "Search Carousels"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:86
+msgid "All Carousels"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:87
+msgid "Parent Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:88
+msgid "Parent Carousel:"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:89
+msgid "Edit Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:90
+msgid "Update Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:91
+msgid "Add New Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:92
+msgid "New Carousel Name"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:46
+msgid "Carousel Slider"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:76
+msgid "Number of items showing"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:90
+msgid "Image Animation"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:93
+msgid "Image Change"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:94
+msgid "Image Zoom"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:98
+msgid "Note: Only on \"Image Change\" zoom image will be used"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:102
+msgid "Show Arrows navigation?"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:113
+msgid "Show Dots navigation?"
+msgstr ""
+
+#: post-types/events/events-register.php:81
+msgid "Events"
+msgstr ""
+
+#: post-types/events/events-register.php:82
+msgid "Event"
+msgstr ""
+
+#: post-types/events/events-register.php:83
+msgid "New Event"
+msgstr ""
+
+#: post-types/events/events-register.php:84
+msgid "Add New Event"
+msgstr ""
+
+#: post-types/events/events-register.php:85
+msgid "Edit Event"
+msgstr ""
+
+#: post-types/events/events-register.php:103
+#: post-types/events/events-register.php:113
+msgid "Event Types"
+msgstr ""
+
+#: post-types/events/events-register.php:104
+msgid "Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:105
+msgid "Search Event Types"
+msgstr ""
+
+#: post-types/events/events-register.php:106
+msgid "All Event Types"
+msgstr ""
+
+#: post-types/events/events-register.php:107
+msgid "Parent Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:108
+msgid "Parent Event Type:"
+msgstr ""
+
+#: post-types/events/events-register.php:109
+msgid "Edit Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:110
+msgid "Update Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:111
+msgid "Add New Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:112
+msgid "New Event Type Name"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:41
+msgid "Events List"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:49
+msgid "Title Tag"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:62
+#: post-types/events/shortcodes/events-list.php:128
+#: post-types/events/shortcodes/events-list.php:135
+msgid "Design Options"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:66
+msgid "Number of Events Per Page"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:78
+msgid "Start Date"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:103
+msgid "Show Event by Status"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:107
+msgid "Current and Upcoming"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:108
+msgid "Past"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:125
+msgid "Text Color"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:132
+msgid "Border Color"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:200
+msgid "Sorry, no events matched your criteria."
+msgstr ""
+
+#: post-types/events/shortcodes/templates/events-list-template.php:33
+msgid "buy tickets"
+msgstr ""
+
+#: post-types/events/shortcodes/templates/events-list-template.php:41
+msgid "sold out!"
+msgstr ""
+
+#: post-types/events/shortcodes/templates/events-list-template.php:48
+msgid "free!"
+msgstr ""
+
+#: post-types/events/shortcodes/templates/load-more-template.php:7
+msgid "view all"
+msgstr ""
+
+#: post-types/slider/slider-register.php:53
+#: post-types/slider/slider-register.php:54
+msgid "Select Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:55
+msgid "Slides"
+msgstr ""
+
+#: post-types/slider/slider-register.php:56
+#: post-types/slider/slider-register.php:59
+msgid "Add New Slide"
+msgstr ""
+
+#: post-types/slider/slider-register.php:57
+msgid "Slide"
+msgstr ""
+
+#: post-types/slider/slider-register.php:58
+msgid "New Slide"
+msgstr ""
+
+#: post-types/slider/slider-register.php:60
+msgid "Edit Slide"
+msgstr ""
+
+#: post-types/slider/slider-register.php:80
+#: post-types/slider/slider-register.php:90
+msgid "Sliders"
+msgstr ""
+
+#: post-types/slider/slider-register.php:81
+msgid "Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:82
+msgid "Search Sliders"
+msgstr ""
+
+#: post-types/slider/slider-register.php:83
+msgid "All Sliders"
+msgstr ""
+
+#: post-types/slider/slider-register.php:84
+msgid "Parent Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:85
+msgid "Parent Slider:"
+msgstr ""
+
+#: post-types/slider/slider-register.php:86
+msgid "Edit Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:87
+msgid "Update Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:88
+msgid "Add New Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:89
+msgid "New Slider Name"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:10
+msgid "Slider shortcode"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:14
+msgid "Use this shortcode to insert it on page"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:19
+msgid "Anchor"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:27
+msgid "Effect on header (dark/light style)"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:38
+msgid "Show prev/next thumbs (except for side menu or passepartout)"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:50
+msgid "Show navigation thumbs"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:62
+msgid "Show slide number"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:74
+msgid "Parallax effect"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:85
+msgid "Auto start"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:96
+msgid "Slides Animation"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:100
+msgid "Slide Horizontally"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:101
+msgid "Slide Vertically - Up"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:102
+msgid "Slide Vertically - Down"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:103
+msgid "Slide - Cover Previous Slide"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:104
+msgid "Slide - Peek Into Next Slide"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:105
+msgid "Fade"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:111
+msgid "Time between slide transitions in milliseconds"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:119
+msgid "Slider height in px"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:127
+msgid "Responsive height"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:138
+msgid "Show Navigation Arrows"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:149
+msgid "Show Navigation Bullets"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:186
+msgid "Shortcode"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:187
+msgid "Slug"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:188
+msgid "Posts"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:40
+#: post-types/testimonials/testimonials-register.php:54
+msgid "Testimonials"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:49
+msgid "Category"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:52
+msgid "Category Slug (leave empty for all)"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:57
+msgid "Number"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:60
+msgid "Number of Testimonials"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:65
+msgid "Show Title"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:77
+msgid "Show Author"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:89
+msgid "Show Author Job Position"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:102
+msgid "Animation speed"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:105
+msgid "Speed of slide animation in miliseconds"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:110
+msgid "Show Arrows navigation"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:121
+msgid "Show Dots navigation"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:55
+msgid "Testimonial"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:56
+msgid "New Testimonial"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:57
+msgid "Add New Testimonial"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:58
+msgid "Edit Testimonial"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:78
+#: post-types/testimonials/testimonials-register.php:88
+msgid "Testimonials Categories"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:79
+msgid "Testimonial Category"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:80
+msgid "Search Testimonials Categories"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:81
+msgid "All Testimonials Categories"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:82
+msgid "Parent Testimonial Category"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:83
+msgid "Parent Testimonial Category:"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:84
+msgid "Edit Testimonials Category"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:85
+msgid "Update Testimonials Category"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:86
+msgid "Add New Testimonials Category"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:87
+msgid "New Testimonials Category Name"
+msgstr ""

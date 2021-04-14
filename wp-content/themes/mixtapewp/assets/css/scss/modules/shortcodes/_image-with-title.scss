@@ -1,0 +1,79 @@
+.qodef-image-with-title {
+	@include qodefRelativeHolderLayout();
+	width: auto;
+
+	&.qodef-image-with-title-shadow {
+
+		&::after {
+			position: absolute;
+			display: block;
+			content: " ";
+			width: 75%;
+			height: 1px;
+			margin-top: -1px;
+			left: 0;
+			border-radius: 50%;
+			box-shadow: -1px 10px 50px 30px rgba($default-heading-color,.2);
+			@include qodefTransform(translateX(15%));
+			z-index: -1;
+		}
+	}
+
+	img {
+		display: block;
+	}
+
+	.qodef-iwt-text {
+		position: absolute;
+		display: inline-block;
+		width: auto;
+		left: 0;
+		top: 16%;
+		@include qodefTransform(translateX(-32%));
+	}
+
+	/* Right Horizontal Alignment */
+	&.qodef-iwt-right {
+
+		.qodef-iwt-text {
+			left: auto;
+			right: 0;
+			@include qodefTransform(translateX(32%));
+		}
+	}
+
+	/* Middle Vertical Alignment */
+	&.qodef-iwt-vertical-middle {
+
+		.qodef-iwt-text {
+			top: 50%;
+			@include qodefTransform(translateX(-32%) translateY(-50%));
+		}
+
+		/* Right Horizontal Alignment */
+		&.qodef-iwt-right {
+
+			.qodef-iwt-text {
+				@include qodefTransform(translateX(32%) translateY(-50%));
+			}
+		}
+	}
+
+	/* Bottom Vertical Alignment */
+	&.qodef-iwt-vertical-bottom {
+
+		.qodef-iwt-text {
+			top: auto;
+			bottom: 16%;
+			@include qodefTransform(translateX(-32%));
+		}
+
+		/* Right Horizontal Alignment */
+		&.qodef-iwt-right {
+
+			.qodef-iwt-text {
+				@include qodefTransform(translateX(32%));
+			}
+		}
+	}
+}	

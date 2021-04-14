@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Item Showcase start styles
+	========================================================================== */
+@media only screen and (max-width: $laptop-landscape) {
+	 
+	.qodef-item-showcase {
+
+		.qodef-item-image {
+			margin-top: 0 !important; //override inline margin if set by user
+		}
+
+	  	.qodef-item:not(.qodef-appeared) {
+			@include qodefTransform(translateX(-40px));
+	  	}
+
+	}
+
+}
+
+@media only screen and (max-width: $laptop-landscape) and (min-width: $ipad-landscape) {
+
+	.qodef-item-showcase {
+
+		  	.qodef-item-showcase-holder.qodef-holder-left,
+		 	.qodef-item-showcase-holder.qodef-holder-right {
+		  	    width:30%;
+		  	}
+	}
+}
+
+@media only screen and (max-width: $ipad-landscape) {
+
+	.qodef-item-showcase {
+
+		.qodef-item-image {
+			width: 100%;
+			float: none;
+		}
+
+	 	.qodef-item-showcase-holder.qodef-holder-left,
+		.qodef-item-showcase-holder.qodef-holder-right {
+	 	    float: left;    
+	 	    width: 50%;
+			padding:0 15px;
+			@include qodefBoxSizing(border-box);
+	 	}
+	}
+ }
+
+ @media only screen and (max-width: $phone-landscape) {
+
+ 	.qodef-item-showcase {
+
+	 	.qodef-item-showcase-holder.qodef-holder-left,
+		.qodef-item-showcase-holder.qodef-holder-right {
+	 	    float: none;    
+	 	    width: 100%;
+			padding: 0 15px;
+			@include qodefBoxSizing(border-box);
+	 	}
+
+		.qodef-item {
+
+			&.qodef-item-left,
+			&.qodef-item-right {
+				text-align: center;
+			}
+		}
+	}
+ }
+/* ==========================================================================
+  Item Showcase end styles
+  ========================================================================== */

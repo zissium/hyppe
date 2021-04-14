@@ -1,0 +1,62 @@
+@include laptop-wide-landscape {
+	.qodef-event-content {
+	.qodef-event-date-holder {
+    	width: 15%;
+	}
+	.qodef-event-title-holder {
+		width: 70%;
+	}
+	.qodef-event-buy-tickets-holder {
+		width: 15%;
+	}
+}
+}
+
+@include  ipad-landscape {
+	.qodef-event-content {
+	.qodef-event-date-holder {
+    	width: 20%;
+	}
+	.qodef-event-title-holder {
+		width: 60%;
+	}
+	.qodef-event-buy-tickets-holder {
+		width: 20%;
+	}
+}
+}
+
+@media only screen and (min-width: $ipad-portrait) and (max-width: $laptop-wide-landscape) {
+	.qodef-event-content {
+		.qodef-event-buy-tickets-holder {
+   			width: 30%;
+   		}
+   		 .qodef-event-title-holder {
+		   width: 55%;
+		}
+   	}
+}
+
+@include ipad-portrait {
+	.qodef-event-content {
+	.qodef-event-date-holder {
+    	width: 100%;
+    	border-right: none;
+    	display: block;
+    	text-align: center;
+	}
+	.qodef-event-title-holder {
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+	}
+	.qodef-event-buy-tickets-holder {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+}
+}

@@ -1,0 +1,270 @@
+/******************* 移动端样式 *******************/
+
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/iconfont.woff') format('woff'),
+        url('../font/iconfont.ttf') format('truetype'),
+        url('../font/iconfont.svg#iconfont') format('svg');
+}  
+
+.iconfont {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "iconfont" !important;
+    font-size: 0.3rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .footer {
+        display: none;
+    }
+
+    /*****  底部 CSS 开始 *****/
+    /* 底部菜单 CSS 开始 */
+    .site-menu-m li>a {
+        margin: 0 0.3rem;
+        display: block;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .site-menu-m li>div:first-child {
+        font-weight: bold;
+        margin: 0 0.3rem;
+    }
+
+    .site-menu-m li>div:first-child i {
+        font-weight: normal;
+    }
+
+    .site-menu-m .sub-menu {
+        display: none;
+        padding: 0.03rem 0;
+    }
+
+    .site-menu-m .sub-menu a {
+        font-size: 12px;
+        line-height: 0.98rem;
+        padding: 0 0.3rem;
+        display: block;
+        color: #999;
+        background-color: #555;
+    }
+
+    .site-menu-m .open-submenu {
+        float: right;
+        font-size: 12px;
+    }
+
+    .site-menu-m .close-submenu {
+        float: right;
+        font-size: 0.3rem;
+        display: none;
+    }
+
+    .site-menu-m li.active {
+        border-bottom: none;
+    }
+
+    .site-menu-m li {
+        line-height: 0.9rem;
+        font-size: 0.24rem;
+        color: #fff;
+        border-bottom: 0.01rem solid #555;
+    }
+
+    /*底部的菜单结束*/
+
+    .site-footer {
+        font-size: 0;
+        padding-bottom: 0.72rem;
+        background-color: #3b3b3b;
+        display: block;
+    }
+
+    .site-footer .follow-us .title {
+        font-weight: bold;
+        padding-left: 0.3rem;
+        text-align: left;
+        line-height: 0.40rem;
+        color: #fff;
+        font-size: 0.24rem;
+        margin-top: 0.32rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .site-footer .follow-us .social-media {
+        text-align: center;
+        position: relative;
+    }
+
+    .site-footer .follow-us .social-media .iconfont {
+        color: #9a9a9a;
+        font-size: .4rem;
+    }
+
+
+    /*回到顶部按钮开始*/
+  
+    #back-to-top {
+        color: #fff;
+        display: block;
+        width: 7.5rem;
+        height: 0.9rem;
+        line-height: 0.9rem;
+        text-align: center;
+        border-bottom: solid 1px #555555;
+
+        font-size: 0.24rem;
+    }
+
+    #back-to-top i {
+        display: inline-block;
+        transform: rotate(-90deg);
+        margin-left: 0.15rem;
+    }
+
+    /*回到顶部按钮结束*/
+
+
+
+    .site-footer .follow-us .social-media a {
+        display: inline-block;
+        margin-right: 0.2rem;
+    }
+
+    .site-footer .follow-us .social-media a:nth-child(1) {
+        width: 0.8rem;
+        height: 0.8rem;
+        background: url('../../images/mobile/css_sprites.png') -0.1rem -0.1rem;
+        background-size: 3rem 2rem;
+    }
+
+    .site-footer .follow-us .social-media a:nth-child(2) {
+        width: 0.8rem;
+        height: 0.8rem;
+        background: url('../../images/mobile/css_sprites.png') -1.1rem -0.1rem;
+        background-size: 3rem 2rem;
+    }
+
+    .site-footer .follow-us .social-media a:nth-child(3) {
+        width: 0.8rem;
+        height: 0.8rem;
+        background: url('../../images/mobile/css_sprites.png') -0.1rem -1.1rem;
+        background-size: 3rem 2rem;
+    }
+
+    .site-footer .follow-us .social-media a:nth-child(4) {
+        width: 0.8rem;
+        height: 0.8rem;
+        background: url('../../images/mobile/css_sprites.png') -1.1rem -1.1rem;
+        background-size: 3rem 2rem;
+    }
+
+    .site-footer .follow-us .social-media a:nth-child(5) {
+        width: 0.8rem;
+        height: 0.8rem;
+        background: url('../../images/mobile/css_sprites.png') -2.1rem -0.1rem;
+        background-size: 3rem 2rem;
+    }
+
+    body .site-footer{
+        background-color:#000;
+        padding-bottom:.47rem;
+    }
+    body #back-to-top {
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+    }
+
+    body #back-to-top i {
+        font-size: 15px;
+        margin-left: 0;
+    }
+    body .site-menu-m li{
+        height: auto;
+        line-height: 30px;
+        list-style-type: none;
+        font-size: 12px;
+    }
+    body .site-menu-m li>div:first-child{
+        margin:0 .56rem;
+        font-weight: normal;
+    }
+    body .site-menu-m .sub-menu a {
+        color: #f9f9f9;
+        background-color: #1a1a1a;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 20px;
+    }
+    body .site-footer .site-menu-m + .follow-us .social-media a{
+        width:.45rem;
+        height:.45rem;
+        background:url(../../images/mobile/new/bottom_ico_03.png) 0 0/2.89rem auto no-repeat;
+    }
+    body .site-footer .follow-us .social-media a:nth-child(2){
+        background-position:-.61rem 0;
+    }
+    body .site-footer .follow-us .social-media a:nth-child(3){
+        background-position:-1.22rem 0;
+    }
+    body .site-footer .follow-us .social-media a:nth-child(4){
+        background-position:-1.83rem 0;
+    }
+    body .site-footer .follow-us .social-media a:nth-child(5){
+        background-position:right 0;
+    }
+    body .site-footer .newsletter {
+        padding: 0 10px;
+        margin-top: .3rem;
+        margin-bottom: .3rem;
+        text-align: center;
+    }
+    body .site-footer .newsletter input {
+        width: 50%;
+        font-size: 0.18rem;
+        height: 25px;
+        text-indent: 2em;
+        background-color: #1a1a1a;
+        border: none;
+    }
+
+    body .site-footer .newsletter button {
+        width: 20%;
+        font-size: 10px;
+        color: #fff;
+        border: none;
+        height: 25px;
+        background-color: #2daab5;
+        vertical-align: top;
+    }
+
+    body .site-footer .tips{
+        font-size: 10px;
+        color: #fff;
+        padding: .05rem .56rem 0;
+        text-align: center;
+    }
+    body .site-footer .tips .red{
+        color:#ee2c47;
+    }
+
+    /*****  底部 CSS 结束 *****/
+}    
+
+/******************* 移动端样式结束 *******************/
+

@@ -1,0 +1,53 @@
+.qodef-image-with-text-over{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+
+	.qodef-imto-image-holder{
+		img{
+			display: block;
+			vertical-align: middle;
+		}
+	}
+
+	.qodef-imto-text-holder{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(12,12,12,0.9);
+		padding: 0 20%;
+		box-sizing: border-box;
+		opacity: 0;
+		@include qodefTransition(opacity 0.3s ease);
+
+		.qodef-imto-text-holder-inner{
+			@include qodefTableLayout();
+		}
+
+		.qodef-imto-text-holder-inner2{
+			@include qodefTableCellLayout();
+			text-align: left;
+		}
+
+		.qodef-imto-subtitle{
+			font-size: 21px;
+			font-weight: 500;
+			margin-bottom: 15px;
+			position: relative;
+			display: block;
+		}
+
+		.qodef-imto-title{
+			margin-bottom: 30px;
+			color: #fefefe;
+		}
+	}
+
+	&:hover{
+		.qodef-imto-text-holder{
+			opacity: 1;
+		}
+	}
+}	

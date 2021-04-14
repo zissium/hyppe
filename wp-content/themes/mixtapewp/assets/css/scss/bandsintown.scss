@@ -1,0 +1,248 @@
+@import 'variables';
+@import 'mixins';
+
+.bit-widget-container {
+
+	font-family: $first-main-font!important;
+
+	.bit-share-text {
+		font-size: 15px;
+		color: #353535;
+	}
+
+	.bit-share-links a {
+	    font-family: 'icomoon' !important;
+	    background: none!important;
+	    color: #aaa;
+	    font-size: 15px;
+	    padding: 0 0 0 10px;
+	    @include qodefTransition(color 0.15s ease-out);
+
+	    &:hover {
+	    	color: $first-main-color;
+	    }
+
+	    &.bit-fb-share:after {
+		    content: "\ea90";
+		}
+
+		&.bit-twitter-share:after {
+		    content: "\ea96";
+		}
+	}
+
+	table tbody tr, table thead tr {
+		border: 2px solid $default-border-color;
+	}
+	
+	table tbody th {
+		border-right: none;
+	}
+
+	table tbody tr {
+		border-left: none;
+		border-right: none;
+	}
+
+	table {
+		border-collapse: collapse;
+	}
+
+	table tbody tr td,
+	table tbody tr th {
+		padding: 25px 0;
+	}
+
+	.bit-venue {
+		font-size: 25px;
+		color: #353535;
+    	font-weight: 600;
+	}
+
+	.bit-date,
+	.bit-location {
+		font-size: 20px;
+    	font-weight: 400;
+    	color: #353535;
+    	min-width: 100px;
+    	a {
+    		font-weight: 400!important;
+    	}
+	}
+
+	.bit-tickets a,
+	.bit-notify {
+		color: #858585;
+		font-weight: 600;
+		&:hover {
+			color: $first-main-color;
+		}
+	}
+	.bit-notify {
+		margin-bottom: 21px;
+	}
+
+	.bit-bottom {
+		border-bottom: none!important;
+		td {
+			padding-top: 65px;
+			padding-bottom: 0;
+		a {
+
+			display: block;
+		    left: 50%;
+   			position: relative;
+    		outline: none;
+    		font-style: normal;
+    		font-weight: 500;
+    		font-family: inherit;
+    		padding: 17px 38px;
+    		font-size: 15px;
+    		line-height: 1.2em;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+	    	border: 2px solid #353535 !important;
+	    	color: #353535;
+	    	background-color: transparent;
+	    	@include qodefTransform(translateX(-50%));
+	    	@include qodefTransition(color .15s ease-out,background-color .15s ease-out,border-color .15s ease-out);
+	    	@include qodefBoxSizing(border-box);
+	    	&:hover {
+	    		border: 2px solid $first-main-color !important;
+	    		color: #fff !important;
+	    		background-color: $first-main-color;
+	    	}
+	    }
+		}
+	}
+
+	.bit-invert,
+	th.bit-date,
+	th.bit-location,
+	th.bit-venue,
+	th.bit-tickets {
+		background: transparent!important;
+		margin-bottom: 5px!important;
+   		color: #353535!important;
+    	font-style: normal;
+    	font-weight: 600;
+	    letter-spacing: 2px;
+    	font-size: 16px;
+    	line-height: 1.7em;
+    	text-transform: uppercase;
+    	@include qodefTransition(color .15s ease-out,background-color .15s ease-out,border-color .15s ease-out);
+	}
+
+
+	table a:hover,
+	.bit-invert:hover {
+	    color: $first-main-color!important;
+	}
+
+	td .bit-uiButton {
+		background: none!important;
+		border: none!important;
+		@include qodefBoxShadow(none!important);
+		a {
+			margin-top: -5px;
+			display: inline-block;
+   			position: relative;
+    		outline: none;
+    		font-style: normal;
+    		font-weight: 500;
+    		font-family: inherit;
+    		font-size: 11px;
+        	padding: 9px 19px;
+    		line-height: 1em;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		    border: 2px solid #353535!important;
+    		color: #353535;
+    		background-color: transparent;
+		    @include qodefTransition(color .15s ease-out,background-color .15s ease-out,border-color .15s ease-out);
+    		@include qodefBoxSizing(border-box);
+    		&:hover {
+	    		border: 2px solid $first-main-color!important;
+	    		color: #fff!important;
+	    		background-color: $first-main-color;
+	    	}
+		}
+	}
+
+	&#bit-events a.bit-track-artist-header {
+		border-top: none!important;
+		border-bottom: none!important;
+	}
+
+	&#bit-events .bit-events td {
+		border-top: none!important;
+	}
+
+	.bit-header {
+	    border-top: none!important;
+	}
+
+	.bit-header th,
+	tr:nth-child(2) th {
+	    padding: 10px 0px!important;
+	}
+
+	.bit-header-links {
+		color: #353535;
+	}
+
+	.bit-events-nav {
+	    color: #aaa;
+	    font-weight: 600!important;
+	}
+
+	table {
+		border-bottom: none!important;
+	}
+}
+
+.qodef-bandsintown-light {
+	.bit-widget-container {
+		.bit-invert, 
+		th.bit-date,
+		th.bit-location,
+		th.bit-tickets,
+		th.bit-venue,
+		td a,
+		.bit-header-links,
+		.bit-share-text,
+		.bit-notify,
+		.bit-share-links a,
+		.bit-events-nav {
+		    color: #fff!important;
+		}
+
+		td a:hover,
+		.bit-invert:hover,
+		.bit-notify:hover,
+		.bit-events-nav:hover {
+		     color: $first-main-color!important; 
+		}
+
+		.bit-share-links a:hover {
+		    color: $first-main-color!important;
+		}
+
+
+		table tbody tr,
+		table thead tr {
+		    border-color: rgba(210,210,210,0.16)!important;
+		}
+
+		.bit-bottom a,
+		td .bit-uiButton a {
+		    border-color: #fff!important;
+		}
+
+		.bit-bottom td a:hover,
+		td .bit-uiButton a:hover {
+		  color: #fff !important;
+		  border-color: $first-main-color!important;
+		}
+	}
+}

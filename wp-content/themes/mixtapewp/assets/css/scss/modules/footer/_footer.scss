@@ -1,0 +1,346 @@
+/* ==========================================================================
+# Footer style - begin
+========================================================================== */
+
+footer {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 100;
+	position: relative;
+	@include qodefBoxSizing(border-box);
+	background-color: #000;
+	background-position: center 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.qodef-footer-inner {
+		position: relative; /* for triangle back to top and ajax transitions */
+	}
+
+	.qodef-container {
+		background-color: inherit;
+	}
+
+	.qodef-container-inner {
+		position: relative;
+	}
+
+	.qodef-container-inner > .widget{
+		text-align: center;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.qodef-footer-top-holder {
+		display: block;
+		position:relative;
+		background-position:center center;
+		background-size: cover;
+	}
+
+	.qodef-footer-top {
+
+		.qodef-footer-top-full {
+			padding: 75px 25px 62px;
+		}
+
+		&:not(.qodef-footer-top-full) .qodef-container-inner {
+			padding: 132px 0 122px;
+		}
+
+		&.qodef-footer-top-aligment-center {
+			text-align: center;
+		}
+
+		&.qodef-footer-top-aligment-left {
+			text-align: left;
+		}
+
+		&.qodef-footer-top-aligment-right {
+			text-align: right;
+		}
+
+	}
+
+	
+	.qodef-footer-bottom-holder {
+		width: 100%;
+		vertical-align: middle;
+		text-align: center;
+		padding: 33px 0;
+		color: #cdcdcd;
+
+		.qodef-column-inner {
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.qodef-three-columns .qodef-column:first-child .qodef-column-inner {
+			text-align: left;
+		}
+
+		.qodef-three-columns .qodef-column:last-child .qodef-column-inner {
+			text-align: right;
+		}
+
+		.qodef-two-columns-50-50 .qodef-column:first-child .qodef-column-inner {
+			text-align: left;
+		}
+
+		.qodef-two-columns-50-50 .qodef-column:last-child .qodef-column-inner {
+			text-align: right;
+		}
+
+		.widget .textwidget {
+			color: #d2d2d2;
+		}
+
+	}
+
+	.qodef-search-wrapper {
+	    position: relative;
+
+	    input[type=text] {
+		    background-color: transparent!important;
+		    border-top: none!important;
+		    border-left: none!important;
+		    border-right: none!important;
+		}
+
+		input[type=submit] {
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		    width: 35px;
+		    height: 35px;
+		    line-height: 35px;
+		    text-align: center;
+		    cursor: pointer;
+		    font-size: 20px;
+		    color: #9a9a9a;
+		    background-color: transparent;
+		    font-family: 'FontAwesome' !important;
+		    speak: none;
+		    font-style: normal;
+		    font-weight: 400;
+		    font-variant: normal;
+		    text-transform: none;
+		    -webkit-font-smoothing: antialiased;
+		    border: none;
+		    padding: 0;
+		    letter-spacing: normal;
+		    @include qodefTransition(color .15s ease-out,background-color .15s ease-out,border-color .15s ease-out);
+
+		}
+	}
+
+	}
+
+/* Footer uncover - begin
+========================================================================== */
+
+footer.qodef-footer-uncover {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+	@include qodefTransition(left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1));
+
+	.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-text,
+	.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-number,
+	.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-date,
+	.cf7_custom_style_2 textarea.wpcf7-form-control.wpcf7-textarea,
+	.cf7_custom_style_2 select.wpcf7-form-control.wpcf7-select,
+	.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-quiz {
+		transform: none;
+	}
+
+}
+
+.qodef-right-side-menu-opened footer.qodef-footer-uncover {
+	left: -270px;
+}
+
+/* Footer uncover - end
+========================================================================== */
+
+/* Footer boxed - begin
+========================================================================== */
+
+.boxed footer {
+	width: 100% !important;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+}
+
+/* Footer boxed - end
+========================================================================== */
+
+/* Footer disabled - begin
+========================================================================== */
+
+footer.qodef-disable-footer {
+	display: none;
+}
+
+/* Footer disabled - end
+========================================================================== */
+
+
+/* ==========================================================================
+# Footer style - end
+========================================================================== */
+
+/* ==========================================================================
+# Footer widgets - begin
+========================================================================== */
+
+footer .widget {
+	margin-bottom: 20px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.textwidget{
+		color: #d2d2d2;
+	}
+
+	a {
+		color: #d2d2d2;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.qodef-icon-shortcode {
+		color: #fff;
+	}
+
+	ul {
+		list-style: none;
+
+		&.qodef-blog-list {
+			 .qodef-item-image > a {
+			    display:block;
+			    position:relative;
+
+			    &:after {
+				    content:'';
+				    position:absolute;
+				    top:0;
+				    left:0;
+				    height:100%;
+				    width:100%;
+				    z-index:100%;
+				    background: rgba(0,0,0,.15);
+				    opacity:0;
+				    @include qodefTransition(opacity .2s);
+				}
+
+				&:hover {
+					&:after {
+						opacity:1;
+					}
+				}
+			}
+		}
+
+		&:not(.qodef-blog-list) {
+			li {
+				padding-bottom: 12px;
+			}
+		}
+	}
+
+	&.widget_recent_entries .post-date {
+		font-size: 12px;
+	}
+
+	select,
+	input[type="text"] {
+		width: 100%;
+		overflow: hidden;
+		border: 1px solid #e9e9e9;
+		background-color: #f6f6f5;
+		padding: 0 10px;
+		height: 35px;
+		outline: none;
+		color: #7f8385;
+		font-family: inherit;
+		@include qodefBoxSizing(border-box);
+	}
+
+	&.widget_recent_entries {
+
+		ul {
+			li {
+				margin-bottom: 12px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+
+		.post-date {
+			display: block;
+		}
+	}
+
+	.qodef_twitter_widget {
+		.qodef_tweet_text {
+		    color: #d2d2d2;
+		}
+
+		.qodef_tweet_time a {
+		    color: #585757!important;
+		    font-size: 12px;
+		    &:hover {
+		    	color: #fff!important;
+		    }
+		}
+	}
+
+	.qodef-blog-list-holder.qodef-image-in-box {
+
+		> ul {
+			opacity: 1;
+		}
+		
+		.qodef-item-text-holder {
+			border-bottom: none;
+			.qodef-item-info-section .qodef-post-info-date{
+				color: #868686;
+				font-weight: 500;
+			}
+
+			.qodef-item-title {
+				margin-bottom: 7px;
+			}
+		}
+
+		.qodef-item-image {
+			width: 70px;
+			padding-right: 19px;
+		}
+
+		ul > li:not(:first-child) {
+			padding: 20px 0 0 0 ;
+		}
+	}
+}
+footer .qodef-footer-widget-title {
+	color: #ffffff;
+	margin-bottom: 27px;
+}
+
+/* ==========================================================================
+# Footer widgets - end
+========================================================================== */
+

@@ -1,0 +1,83 @@
+/* ==========================================================================
+# Banner style - begin
+========================================================================== */
+.qodef-banner {
+	position: relative;
+
+	&.qodef-bih-zoom {
+
+		.qodef-banner-image {
+
+			position: relative;
+			overflow: hidden;
+
+			img {
+				@include qodefTransition(all .2s);
+				will-change: transform;
+			}
+		}
+
+		&:hover {
+
+			.qodef-banner-image img {
+				@include qodefTransform(scale(1.18));
+				@include qodefTransition(all .8s $aux-easing-1);
+			}
+
+			.qodef-banner-info {
+				background-color: rgba(0,0,0,0.2);
+				@include qodefTransition( background-color 0.15s ease-out);
+			}
+		}
+	}
+
+	.qodef-banner-image img {
+		vertical-align: middle;
+	}
+
+	.qodef-banner-info {
+      	position: absolute;
+	    top: 0;
+	    left: 0;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+
+		.qodef-banner-info-table{
+			display: table;
+			width: 100%;
+			height: 100%;
+		}
+		
+		.qodef-banner-info-table-cell{
+			display: table-cell;
+			vertical-align: middle;
+
+			.qodef-banner-title {
+				color: #fff;
+				font-size: 56px;
+				font-weight: 400;
+				text-transform: uppercase;
+				line-height: 1em;
+			}
+		}
+	}
+
+	/* Dark text skin */
+	&.qodef-bih-dark-text {
+
+		.qodef-banner-info {
+
+			.qodef-banner-info-table-cell{
+
+				.qodef-banner-title {
+					color: $default-heading-color;
+				}
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+# Banner style - end
+========================================================================== */

@@ -1,0 +1,82 @@
+
+@media only screen and (max-width: $ipad-portrait){
+
+	.qodef-404-page .qodef-page-not-found {
+		width: 100%;
+		padding: 100px 0;
+
+	}
+
+	.qodef-404-page .qodef-page-not-found{
+		.qodef-number-holder{
+			font-size: 100px;
+		}
+
+		h1 {
+			font-size: 25px;
+		}
+	}
+
+	.qodef-image-404 {
+		display: none;
+	}
+
+	.qodef-comment-list	li {
+
+		@for $i from 2 through 10 {
+			&.depth-#{$i} .qodef-comment {
+				padding-left: 30px * ($i - 1);
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width: $phone-landscape) {
+
+	.qodef-comment-list	li {
+
+		@for $i from 2 through 10 {
+			&.depth-#{$i} .qodef-comment {
+				padding-left: 20px * ($i - 1);;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $phone-portrait) {
+	.qodef-comment-list	li {
+
+		@for $i from 2 through 10 {
+			&.depth-#{$i} .qodef-comment {
+				padding-left: 5px * ($i - 1);;
+			}
+		}
+	}
+
+	.wpb_text_column .alignleft {
+	    margin: 0 20px 20px 0!important;
+	}
+
+	.qodef-comment-holder .qodef-comment-text{
+
+		.qodef-comment-name{
+			float: none;
+		}
+
+		.qodef-reply-edit-holder{
+			float: none;
+			display: inline-block;
+			margin-bottom: 12px;
+
+			a{
+				line-height: 25px;
+			}
+
+			a:first-child{
+				margin-left: 0;
+			}
+		}
+
+	}
+}

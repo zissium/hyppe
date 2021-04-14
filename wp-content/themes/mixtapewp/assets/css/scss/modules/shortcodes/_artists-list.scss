@@ -1,0 +1,238 @@
+/* ==========================================================================
+   Artists styles - begin
+   ========================================================================== */
+
+.qodef-artists-list-holder {
+	margin: 0 -5%;
+
+	.qodef-artists-grid-sizer{
+		width: 33%;
+	}
+
+	.qodef-artists-grid-gutter{
+		width: 0px;
+	}
+
+	.qodef-artist{
+		box-sizing: border-box;
+		display: inline-block;
+		padding: 3.5% 5%;
+		width: 33%;
+		margin: 0 0 20px;
+		float: left;
+		cursor: pointer;
+
+
+		&:nth-child(1){
+			margin-top: 70px;
+		}
+
+		&:nth-child(2){
+			margin-top: 185px;
+		}
+
+		&:nth-child(3){
+			margin-top: 0px;
+		}
+
+		&:nth-child(3n+1){
+			clear: both;
+		}
+
+		.qodef-album-disc {
+			margin-bottom: 4px;
+
+			.qodef-album-disc-image{
+				background-image: url("img/disc-image.png") !important;
+			}
+
+			.qodef-album-disc-element{
+				@include qodefTransform(translate3d(10%, 0px, 0px));
+			}
+		}
+
+		.qodef-artist-text-holder{
+			.qodef-artist-stage{
+				color: $default-text-color;
+				margin: 4px 0;
+				color: #a5a5a5;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+.qodef-artist-single-expander {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: calc(100vmax * 1.4142);
+	height: calc(100vmax * 1.4142);
+	margin: calc(-100vmax * 1.4142 / 2) 0 0 calc(-100vmax * 1.4142 / 2);
+	opacity: 0;
+	border-radius: 50%;
+	background: #f4f4f4;
+	@include qodefTransform(scale(0.001));
+	z-index: 100;
+	pointer-events: none;
+
+	&.active{
+		pointer-events: auto;
+	}
+}
+
+.qodef-artist-view-single {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 80vmin;
+	height: 80vmin;
+	margin: -40vmin 0 0 -40vmin;
+	z-index: 100;
+	pointer-events: none;
+
+	&.qodef-view-current {
+		pointer-events: auto;
+	}
+
+	.qodef-atrist-single{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		min-height: 0;
+		opacity: 0;
+
+		&.qodef-single-current {
+			opacity: 1;
+		}
+
+		.qodef-atrist-image-holder {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+
+			.qodef-atrist-image {
+				max-width: 100%;
+				height: 100%;
+				box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.3);
+			}
+		}
+
+		.qodef-number,
+		.qodef-name,
+		.qodef-stage {
+			z-index: 2;
+			position: absolute;
+		}
+
+		.qodef-number {
+			font-size: 14vmin;
+			line-height: 1em;
+			top: -3vmin;
+			left: -7vmin;
+			white-space: nowrap;
+			color: $first-main-color;
+			font-weight: 600;
+
+			.qodef-number-total {
+				font-size: 7.4vmin;
+				display: inline-block;
+				@include qodefTransform(translate(10%,-40%));
+
+				&:before {
+					content: '/';
+					vertical-align: top;
+				}
+			}
+		}
+
+		.qodef-name {
+			font-size: 7vmin;
+			bottom: -5%;
+			left: -5vmin;
+			white-space: nowrap;
+		}
+
+		.qodef-stage {
+			font-size: 3.2vmin;
+			font-weight: normal;
+			top: 90%;
+			left: -5vmin;
+		}
+	}
+
+	.qodef-controls {
+		width: 100%;
+		height: 100%;
+
+		.qodef-controls-navigate {
+			position: absolute;
+			bottom: 0;
+			left: calc(100% + 1vmin);
+		}
+
+		.qodef-control-button-next,
+		.qodef-control-button-prev {
+			font-size: 5.5vmin;
+			color: $first-main-color;
+		}
+	}
+
+	.qodef-control-button {
+		padding: 0;
+		border: 0;
+		background: none;
+		position: relative;
+		z-index: 10;
+		cursor: pointer;
+	}
+
+	.qodef-control-button-back {
+		font-size: 5.5vmin;
+		position: fixed;
+		top: 3vmin;
+		left: 3vmin;
+		color: $first-main-color;
+		-webkit-transition: opacity 0.3s;
+		transition: opacity 0.3s;
+	}
+}
+
+//
+///* Initial hidden state of single view elements */
+//
+.qodef-atrist-image-holder,
+.qodef-number,
+.qodef-name,
+.qodef-stage,
+.qodef-control-button-back,
+.qodef-controls .qodef-control-button {
+	opacity: 0;
+}
+
+.qodef-control-button-back,
+.qodef-controls .qodef-control-button-next,
+.qodef-controls .qodef-control-button-prev {
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.qodef-view-current .qodef-control-button-back,
+.qodef-view-current .qodef-controls .qodef-control-button-next,
+.qodef-view-current .qodef-controls .qodef-control-button-prev {
+	opacity: 1;
+}
+
+.qodef-records-slideshow-active{
+	.qodef-content,
+	#qodef-back-to-top,
+	.qodef-container,
+	.qodef-full-width{
+		z-index: 1000; //for records slideshow to be on top of everything
+	}
+}
+
+/* ==========================================================================
+   Artists styles - end
+   ========================================================================== */

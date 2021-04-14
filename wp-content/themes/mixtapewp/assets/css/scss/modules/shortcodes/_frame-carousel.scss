@@ -1,0 +1,172 @@
+/* ==========================================================================
+# Frame Carousel - begin
+========================================================================== */
+
+.qodef-frame-carousel {
+
+	position: relative;
+
+	.qodef-frame-carousel-carousel {
+		opacity: 0;
+   		position: absolute;
+    	top: 140px;
+    	left: 50%;
+    	@include qodefTransform(translateX(-50%));
+	}
+	
+	.qodef-frame-carousel-monitor-holder {
+		display: inline-block;
+    	position: relative;
+    	z-index: 21;
+    	top: 0;
+    	left: 50%;
+    	transform: translateX(-50%);
+	}
+
+	.qodef-frame-carousel-active-image-holder {
+		display: none;
+	}
+
+	.qodef-frame-carousel-monitor-image-holder {
+		display: block;
+		position: absolute;
+    	top: 0;
+    	left: 0;
+    	z-index: 23;
+    	padding: 29px 97px 54px;
+
+    	img {
+    		vertical-align: middle;
+    	}
+	}
+
+	.owl-stage-outer {
+	    overflow: hidden;
+	}
+
+	.qodef-frame-carousel-images-holder {
+	    position: relative;
+	}
+	.qodef-frame-carousel-active-image-holder {
+	    position: absolute;
+	    top: 0;
+	    opacity: 0;
+	}
+	.owl-item.center .qodef-frame-carousel-active-image-holder {
+	    opacity: 1;
+	}
+
+	.owl-controls {
+
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		@include qodefTransform(translateY(-50%));
+
+		.owl-nav {
+			padding: 0 100px;
+		}
+
+		.owl-prev,
+		.owl-next {
+			width: 24px;
+    		height: 62px;
+    		display: inline-block;
+		}
+
+		.owl-prev {
+			float: left;
+		}
+
+		.owl-next {
+			float: right;
+		}
+
+	    .qodef-owl-prev,
+		.qodef-owl-next {
+			position: relative;
+			z-index: 100;
+			display: block;
+			padding: 0;
+			cursor: pointer;
+			border: none;
+			outline: none;
+			color: #353535;
+			width: 24px;
+   			height: 62px;
+   			line-height: 1;
+			@include qodefTransition(color .2s ease-out);
+		}
+
+		.qodef-owl-prev .qodef-top-part,
+		.qodef-owl-prev .qodef-bottom-part,
+		.qodef-owl-next .qodef-top-part,
+		.qodef-owl-next .qodef-bottom-part {
+		    display: block;
+		    position: absolute;
+		    left: 50%;
+		    width: 1px;
+		    height: 34px;
+		    background-color: #353535;
+		    outline: 1px solid transparent;
+		}
+
+		.qodef-bottom-part {
+			top: 28px;
+		}
+
+		.qodef-owl-prev {
+			.qodef-top-part {
+				@include qodefTransform(rotate(36deg));
+			}
+
+			.qodef-bottom-part {
+				@include qodefTransform(rotate(-36deg));
+			}
+		}
+
+		.qodef-owl-next {
+			.qodef-top-part {
+				@include qodefTransform(rotate(-36deg));
+			}
+
+			.qodef-bottom-part {
+				@include qodefTransform(rotate(36deg));
+			}
+		}
+
+		.qodef-top-part:after {
+			content: '';
+		    position: absolute;
+		    top: -12px;
+		    left: 0;
+		    height: 12px;
+		    width: 1px;
+		    background-color: inherit;
+		    @include qodefTransform(scaleY(0));
+		    -webkit-transform-origin: 50% 100%;
+		    transform-origin: 50% 100%;
+		  	@include qodefTransition(transform .2s);
+		}
+
+		.qodef-bottom-part:after {
+		    content: '';
+		    position: absolute;
+		    bottom: -12px;
+		    left: 0;
+		    height: 12px;
+		    width: 1px;
+		    background-color: inherit;
+		    @include qodefTransform(scaleY(0));
+		    -webkit-transform-origin: 50% 0%;
+		    transform-origin: 50% 0%;
+		    @include qodefTransition(transform .2s);
+		}
+	}
+}
+
+
+
+/* ==========================================================================
+# Frame Carousel - end
+========================================================================== */

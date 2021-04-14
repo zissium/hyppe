@@ -1,0 +1,80 @@
+@media only screen and (max-width: $ipad-landscape){
+	.qodef-albums-list-holder-outer {
+		&.qodef-alb-four-columns {
+			.qodef-album{
+				width: 50%;
+				padding: 4%;
+			}
+			.qodef-album:nth-child(2n+1) {
+				clear: both;
+			}
+			.qodef-album:nth-child(3n+1) {
+				clear: none;
+			}
+			.qodef-albums-list-holder {
+				margin: 0 -16px;
+			}
+		}
+
+		&.qodef-alb-four-columns.qodef-album-wide {
+			.qodef-album {
+				width: 50%;
+			}
+			.qodef-album:nth-child(2n+1) {
+				clear: both;
+			}
+			.qodef-album:nth-child(3n+1) {
+				clear: none;
+			}
+		}
+
+	}
+
+}
+
+
+@media only screen and (max-width:$ipad-portrait){
+	.qodef-albums-list-holder-outer{
+
+		&.qodef-alb-three-columns,
+		&.qodef-alb-three-columns.qodef-album-wide  {
+			.qodef-album {
+				width: 100% ;
+				padding-left: 0;
+				padding-right: 0;
+				float: none;
+				margin-bottom: 30px;
+		    }
+		    .qodef-album:nth-child(3n+1) {
+	    		clear: none;
+	    	}
+	    	.qodef-albums-list-holder {
+		    	margin: 0;
+		    }
+		}
+		
+	}
+}
+
+@media only screen and (max-width: $phone-portrait){
+	.qodef-albums-list-holder-outer {
+		&.qodef-alb-four-columns {
+			.qodef-album{
+				padding: 6%;
+			}
+		}
+
+		.qodef-album {
+			width: 100% !important; // !important is set to override all other stronger selectors
+			padding-left: 0!important;
+			padding-right: 0!important;
+			float: none;
+	    }
+	    .qodef-album:nth-child(2n+1) {
+    		clear: none;
+    	}
+	    .qodef-albums-list-holder {
+	    	margin: 0;
+	    }
+	}
+}

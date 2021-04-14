@@ -1,0 +1,62 @@
+@include laptop-landscape {
+
+    .qodef-audio-player-holder {
+        .qodef-audio-player-image-holder,
+        .qodef-audio-player-current-time-holder,
+        .qodef-audio-player-album {
+            display: none!important;
+        }
+
+        .qodef-audio-player-time-holder {
+            width: 20%!important;
+            padding-left: 0!important;
+            text-align: center;
+        }
+
+        .qodef-audio-player-progress-holder {
+            width: 80%!important;
+        }
+
+        .jp-mute,
+        .jp-volume-max {
+            margin-left: 20px;
+            margin-right: 8px;
+        }
+    }
+}
+
+@include ipad-portrait {
+    .qodef-audio-player-wrapper .qodef-grid-section .qodef-section-inner {
+        width: 100%!important;
+    }
+    .qodef-audio-player-holder {
+        .jp-mute,
+        .jp-volume-max {
+            margin-left: 10px;
+            margin-right: 0px;
+        }
+    }
+}
+
+@include phone-landscape {
+    .qodef-audio-player-holder {
+        .qodef-audio-player-time-holder,
+        .qodef-audio-player-volume-holder {
+            display: none!important;
+        }
+         
+        .qodef-audio-player-text-holder span:first-child  {
+            font-size: 15px!important;
+        }
+
+        .qodef-audio-player-info-holder {
+            width: 17%!important;
+        }
+
+        .qodef-audio-player-text-holder {
+            padding: 0 7px!important;
+            text-align: center!important; 
+        }     
+    }
+}
+

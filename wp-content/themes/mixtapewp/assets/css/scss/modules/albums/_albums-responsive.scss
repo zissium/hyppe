@@ -1,0 +1,44 @@
+@include laptop-mid-landscape{
+	.single-album .qodef-album-minimal {
+		.qodef-single-album-stores-holder{
+			padding: 20px 0 0 0;
+		}
+	}
+}
+
+@include ipad-landscape {
+	.qodef-single-album-stores-holder .qodef-single-album-store:nth-child(3n+1) {
+	    clear: none!important;
+	}
+}
+
+@include ipad-portrait {
+	.single-album .qodef-album-comprehensive {
+		.qodef-about-album-holder {
+			margin-top: 55px;
+		}
+
+		.qodef-album-details-holder{
+			margin-bottom: 71px;
+		}
+	}
+
+	.single-album .qodef-album-compact .qodef-album-tracks-holder{
+		margin-top: 55px;
+	}
+
+	.single-album .qodef-album-minimal {
+		.qodef-album-tracks-holder {
+			margin-top: 55px;
+			margin-bottom: 55px;
+		}
+	}
+}
+
+@include phone-portrait {
+	.single-album .qodef-album-comprehensive {
+		.qodef-single-album-reviews-holder{
+			padding: 25px;
+		}
+	}
+}

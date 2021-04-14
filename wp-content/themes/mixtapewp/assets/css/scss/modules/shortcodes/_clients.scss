@@ -1,0 +1,126 @@
+/* ==========================================================================
+# Clients style - begin
+========================================================================== */
+.qodef-clients {
+	
+	.qodef-client-holder {
+		float: left;
+		text-align: center;
+		margin-bottom: 0;
+
+		.qodef-client-holder-inner {
+			position: relative;
+			margin: 0;
+		}
+		.qodef-client-image-holder {
+			position: relative;
+			overflow: hidden;
+			display: inline-block;
+			vertical-align: middle;
+			max-width: 100%;
+			line-height: 0;
+			padding: 0;
+			@include qodefTransition(opacity 0.15s ease-out);
+		}
+
+		&.qodef-hover-opacity .qodef-client-image-holder:hover {
+			opacity: 0.4;
+		}
+
+		.qodef-client-image{
+			position: relative;
+			display: block;
+		}
+		.qodef-client-hover-image{
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+		}
+
+		&.qodef-clients-roll-over {
+			.qodef-client-hover-image,
+			.qodef-client-image {
+				-webkit-transition: -webkit-transform .35s ease;
+				transition: transform .35s ease;
+			}
+			.qodef-client-hover-image{
+				@include qodefTransform(translateY(-100%));
+			}
+			.qodef-client-image-holder:hover .qodef-client-hover-image{
+				@include qodefTransform(translateY(0%));
+				-webkit-transition: -webkit-transform .7s $aux-easing-1;
+				transition: transform .7s $aux-easing-1;
+			}
+			.qodef-client-image-holder:hover .qodef-client-image{
+				@include qodefTransform(translateY(100%));
+				-webkit-transition: -webkit-transform .7s $aux-easing-1;
+				transition: transform .7s $aux-easing-1;
+			}
+		}
+
+		&.qodef-clients-fade {
+			.qodef-client-hover-image,
+			.qodef-client-image {
+				@include qodefTransition(opacity .4s $aux-easing-1);
+			}
+			.qodef-client-hover-image{
+				opacity: 0;
+			}
+			.qodef-client-image-holder:hover .qodef-client-hover-image{
+				opacity: 1;
+			}
+			.qodef-client-image-holder:hover .qodef-client-image{
+				opacity: 0;
+			}
+		}
+
+		&.qodef-clients-zoom {
+			.qodef-client-hover-image {
+			    display: none!important;
+			}
+			.qodef-client-image-holder a:hover .qodef-client-image img {
+				@include qodefTransform(scale(1.1));
+			}
+			.qodef-client-image-holder a .qodef-client-image img {
+				@include qodefTransition(transform 0.15s ease-out);
+			}
+		}
+	}
+
+	&.qodef-clients-two-columns {
+		.qodef-client-holder {
+			width: 50%;
+		}
+	}
+	&.qodef-clients-three-columns {
+		.qodef-client-holder {
+			width: 33.33%;
+		}
+	}
+
+	&.qodef-clients-four-columns {
+		.qodef-client-holder {
+			width: 25%;
+		}
+	}
+	&.qodef-clients-five-columns {
+		.qodef-client-holder {
+			width: 20%;
+		}
+	}
+
+	&.qodef-clients-six-columns {
+		.qodef-client-holder {
+			width: 16.66%;
+		}
+	}
+
+
+	.qodef-client-image-holder{
+		padding: 20px 0;
+	}
+}
+/* ==========================================================================
+# Clients style - end
+========================================================================== */

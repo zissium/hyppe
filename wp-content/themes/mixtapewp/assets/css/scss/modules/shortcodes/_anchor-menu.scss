@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Anchor menu shortcode - start styles
+   ========================================================================== */
+.qodef-anchor-menu-outer{
+	position: fixed;
+	top: 50%;
+	left: 47px;
+	@include qodefTransform(translateY(-50%));
+	z-index: 110; //more than title and content
+	opacity: 0;
+
+	.qodef-anchor-menu-item{
+		padding: 10px 0px;
+	}
+
+	.qodef-anchor{
+
+		.qodef-anchor-menu-item-number{
+			font-size: 14px;
+			color: $default-text-color;
+			display: inline-block;
+			position: relative;
+			padding-right: 10px;
+			width: 30px;
+			-webkit-transform-origin: left center;
+			transform-origin: left center;
+			@include qodefTransform(scale(1));
+			@include qodefTransition(transform 0.3s ease 0.3s);
+		}
+
+		.qodef-anchor-menu-item-label{
+			font-size: 16px;
+			font-weight: 600;
+			position: relative;
+			display: inline-block;
+			@include qodefTransform(scale(1));
+			-webkit-transform-origin: left center;
+			transform-origin: left center;
+			@include qodefTransition(transform 0.3s ease 0.3s);
+		}
+
+		&.current{
+			color: $first-main-color;
+
+			.qodef-anchor-menu-item-label{
+				@include qodefTransform(scale(2));
+			}
+		}
+	}
+
+
+}
+/* ==========================================================================
+   Anchor menu shortcode - end styles
+   ========================================================================== */

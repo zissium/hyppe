@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Contact Form 7 shortcode start styles
+   ========================================================================== */
+div.wpcf7 img.ajax-loader {
+	display: none;
+}
+
+.qodef-two-columns-form {
+	display: table;
+	width: 100%;
+
+	.qodef-column-inner {
+		vertical-align: middle;
+		display: table-cell;
+
+		&:first-child {
+			padding-right: 9px;
+		}
+
+		&:last-child {
+			width: 1%;
+			text-align: left;
+			padding-left: 9px;
+		}
+	}
+}
+
+/* ==========================================================================
+   Contact Form 7 shortcode end styles
+   ========================================================================== */

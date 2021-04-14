@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Start of Vertical Split Slider Responsive
+   ========================================================================== */
+@include ipad-landscape {
+	body.qodef-vertical-split-screen-initialized {
+		overflow-y: visible !important;
+		height: auto !important;
+	}
+
+	.qodef-vertical-split-slider,
+	#multiscroll-nav {
+		display: none;
+	}
+
+	.qodef-vertical-split-slider-responsive {
+		display: block;
+	}
+
+}
+
+/* ==========================================================================
+   End of Vertical Split Slider Responsive
+   ========================================================================== */

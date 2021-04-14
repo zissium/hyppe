@@ -1,0 +1,58 @@
+@include laptop-mid-landscape{
+	.qodef-overlapping-content-holder {
+		.qodef-overlapping-content {
+			padding: 80px 55px 0;
+		}
+	}
+}
+
+@include ipad-landscape {
+	.qodef-overlapping-content-enabled {
+		.qodef-title .qodef-title-holder .qodef-container {
+			padding-bottom: 70px;
+		}
+	}
+
+	.qodef-overlapping-content-holder {
+		margin-top: -70px;
+
+		.qodef-overlapping-content {
+			padding: 40px;
+		}
+	}
+}
+
+@include ipad-portrait {
+	.qodef-overlapping-content-enabled {
+		.qodef-title .qodef-title-holder .qodef-container {
+			padding-bottom: 50px;
+		}
+	}
+
+	.qodef-overlapping-content-holder {
+		margin-top: -50px;
+
+		.qodef-overlapping-content {
+			padding: 20px;
+		}
+	}
+}
+
+@include phone-landscape {
+	.qodef-overlapping-content-enabled {
+		.qodef-title .qodef-title-holder .qodef-container {
+			padding-bottom: 0;
+		}
+	}
+
+	.qodef-overlapping-content-holder {
+		margin-top: 0;
+	}
+}
+
+@include smaller-phone-portrait {
+	.qodef-overlapping-content-holder{
+		width:100%;
+	}
+}
+

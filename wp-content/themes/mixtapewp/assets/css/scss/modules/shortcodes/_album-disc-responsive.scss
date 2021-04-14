@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Album disc shortcode start responsive styles
+   ========================================================================== */
+@include phone-landscape { 
+	.qodef-album-disc{
+		>a,
+		.qodef-album-disc-inner {
+			width: 100%;
+		}
+
+		&.qodef-animate-on-hover {
+			&:hover {
+				.qodef-album-disc-element {
+					@include qodefTransform(translate3d(12%,0,0));
+				}
+			}
+		}
+
+		&.qodef-animate-on-appear {
+			&.qodef-appeared {
+				.qodef-album-disc-element {
+					@include qodefTransform(translate3d(12%,0,0));
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+  Album disc shortcode end responsive styles
+  ========================================================================== */

@@ -1,0 +1,1306 @@
+# Copyright (C) 2017 Select Core
+# This file is distributed under the same license as the Select Core package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Select Core 1.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/qodef-cpt\n"
+"POT-Creation-Date: 2018-08-06 17:32+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-KeywordsList: __;_e;_x;_ex;_n;_nx;_n_noop;_nx_noop;translate_nooped_plural;esc_html__;esc_html_e;esc_html_x;esc_attr__;esc_attr_e;esc_attr_x;number_format_i18n;date_i18n\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: export/functions.php:26
+msgid "Import field is empty"
+msgstr ""
+
+#: export/functions.php:33
+msgid "Options are imported successfully"
+msgstr ""
+
+#: export/functions.php:35
+msgid "Non valid authorization"
+msgstr ""
+
+#: export/functions.php:40
+msgid "You don't have privileges for this operation"
+msgstr ""
+
+#: import/class.wordpress-importer.php:143
+#: import/class.wordpress-importer.php:194
+#: import/class.wordpress-importer.php:198
+#: import/class.wordpress-importer.php:207
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: import/class.wordpress-importer.php:178
+msgid "All done."
+msgstr ""
+
+#: import/class.wordpress-importer.php:178
+msgid "Have fun!"
+msgstr ""
+
+#: import/class.wordpress-importer.php:179
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: import/class.wordpress-importer.php:199
+#, php-format
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr ""
+
+#: import/class.wordpress-importer.php:215
+#, php-format
+msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgstr ""
+
+#: import/class.wordpress-importer.php:240
+#, php-format
+msgid "Failed to import author %s. Their posts will be attributed to the current user."
+msgstr ""
+
+#: import/class.wordpress-importer.php:266
+msgid "Assign Authors"
+msgstr ""
+
+#: import/class.wordpress-importer.php:267
+msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
+msgstr ""
+
+#: import/class.wordpress-importer.php:269
+#, php-format
+msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: import/class.wordpress-importer.php:279
+msgid "Import Attachments"
+msgstr ""
+
+#: import/class.wordpress-importer.php:282
+msgid "Download and import file attachments"
+msgstr ""
+
+#: import/class.wordpress-importer.php:299
+msgid "Import author:"
+msgstr ""
+
+#: import/class.wordpress-importer.php:310
+msgid "or create new user with login name:"
+msgstr ""
+
+#: import/class.wordpress-importer.php:313
+msgid "as a new user:"
+msgstr ""
+
+#: import/class.wordpress-importer.php:321
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: import/class.wordpress-importer.php:323
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: import/class.wordpress-importer.php:324
+msgid "- Select -"
+msgstr ""
+
+#: import/class.wordpress-importer.php:374
+#, php-format
+msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
+msgstr ""
+
+#: import/class.wordpress-importer.php:426
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: import/class.wordpress-importer.php:470
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: import/class.wordpress-importer.php:520
+#: import/class.wordpress-importer.php:744
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: import/class.wordpress-importer.php:610
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: import/class.wordpress-importer.php:647
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: import/class.wordpress-importer.php:709
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: import/class.wordpress-importer.php:875
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: import/class.wordpress-importer.php:882
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: import/class.wordpress-importer.php:945
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: import/class.wordpress-importer.php:958
+msgid "Invalid file type"
+msgstr ""
+
+#: import/class.wordpress-importer.php:1002
+msgid "Remote server did not respond"
+msgstr ""
+
+#: import/class.wordpress-importer.php:1008
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: import/class.wordpress-importer.php:1015
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: import/class.wordpress-importer.php:1020
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: import/class.wordpress-importer.php:1026
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: import/class.wordpress-importer.php:1127
+msgid "Import WordPress"
+msgstr ""
+
+#: import/class.wordpress-importer.php:1134
+#, php-format
+msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+msgstr ""
+
+#: import/class.wordpress-importer.php:1149
+msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+msgstr ""
+
+#: import/class.wordpress-importer.php:1150
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: import/parsers.php:42 import/parsers.php:78 import/parsers.php:86
+#: import/parsers.php:280
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: import/parsers.php:43
+msgid "Details are shown above. The importer will now try again with a different parser..."
+msgstr ""
+
+#: import/parsers.php:90 import/parsers.php:95 import/parsers.php:285
+#: import/parsers.php:474
+msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: import/qodef-import.php:3
+msgid "Status: 403 Forbidden"
+msgstr ""
+
+#: import/qodef-import.php:49 import/qodef-import.php:66
+msgid "Content imported successfully"
+msgstr ""
+
+#: import/qodef-import.php:63
+msgid "An Error Occurred During Import"
+msgstr ""
+
+#: import/qodef-import.php:78
+msgid "Widgets imported successfully"
+msgstr ""
+
+#: import/qodef-import.php:97
+msgid "Custom sidebars imported successfully"
+msgstr ""
+
+#: import/qodef-import.php:103
+msgid "Options imported successfully"
+msgstr ""
+
+#: import/qodef-import.php:162
+msgid "Select Options - Select Import"
+msgstr ""
+
+#: import/qodef-import.php:163
+msgid "Import"
+msgstr ""
+
+#: lib/helpers/helpers.php:115
+msgid "Facebook"
+msgstr ""
+
+#: lib/helpers/helpers.php:116
+msgid "Twitter"
+msgstr ""
+
+#: lib/helpers/helpers.php:117
+msgid "Linkedin"
+msgstr ""
+
+#: lib/helpers/helpers.php:118
+msgid "Instagram"
+msgstr ""
+
+#: lib/helpers/helpers.php:119
+msgid "Pinterest"
+msgstr ""
+
+#: lib/helpers/helpers.php:120
+msgid "Tumbrl"
+msgstr ""
+
+#: lib/helpers/helpers.php:121
+msgid "Google Plus"
+msgstr ""
+
+#: lib/helpers/helpers.php:250 post-types/slider/shortcodes/slider.php:786
+#: post-types/slider/shortcodes/slider.php:818
+#: post-types/testimonials/shortcodes/testimonials.php:187
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: lib/helpers/helpers.php:331 post-types/events/shortcodes/events-list.php:200
+msgid "Sorry, no events matched your criteria."
+msgstr ""
+
+#: lib/helpers/helpers.php:383
+msgid "No tracks Founded."
+msgstr ""
+
+#: main.php:57 main.php:58
+msgid "Select Options"
+msgstr ""
+
+#: main.php:75
+msgid "Select Options - "
+msgstr ""
+
+#: main.php:107
+msgid "Select Options - Backup Options"
+msgstr ""
+
+#: main.php:108
+msgid "Backup Options"
+msgstr ""
+
+#: post-types/albums/albums-register.php:77
+msgid "Albums"
+msgstr ""
+
+#: post-types/albums/albums-register.php:78
+#: post-types/albums/shortcodes/album-player.php:60
+#: post-types/albums/shortcodes/album.php:41
+#: post-types/albums/shortcodes/album.php:49
+msgid "Album"
+msgstr ""
+
+#: post-types/albums/albums-register.php:79
+msgid "New Album"
+msgstr ""
+
+#: post-types/albums/albums-register.php:80
+msgid "Add New Album"
+msgstr ""
+
+#: post-types/albums/albums-register.php:81
+msgid "Edit Album"
+msgstr ""
+
+#: post-types/albums/albums-register.php:99
+#: post-types/albums/albums-register.php:109
+msgid "Labels"
+msgstr ""
+
+#: post-types/albums/albums-register.php:100
+msgid "Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:101
+msgid "Search Labels"
+msgstr ""
+
+#: post-types/albums/albums-register.php:102
+msgid "All Labels"
+msgstr ""
+
+#: post-types/albums/albums-register.php:103
+msgid "Parent Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:104
+msgid "Parent Label:"
+msgstr ""
+
+#: post-types/albums/albums-register.php:105
+msgid "Edit Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:106
+msgid "Update Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:107
+msgid "Add New Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:108
+msgid "New Label Name"
+msgstr ""
+
+#: post-types/albums/albums-register.php:121
+#: post-types/albums/albums-register.php:123
+#: post-types/albums/albums-register.php:124
+#: post-types/albums/albums-register.php:131
+msgid "Genres"
+msgstr ""
+
+#: post-types/albums/albums-register.php:122
+msgid "Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:125
+msgid "Parent Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:126
+msgid "Parent Genres:"
+msgstr ""
+
+#: post-types/albums/albums-register.php:127
+msgid "Edit Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:128
+msgid "Update Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:129
+msgid "Add New Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:130
+msgid "New Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:143
+#: post-types/albums/albums-register.php:145
+#: post-types/albums/albums-register.php:146
+#: post-types/albums/albums-register.php:153
+msgid "Artists"
+msgstr ""
+
+#: post-types/albums/albums-register.php:144
+msgid "Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:147
+msgid "Parent Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:148
+msgid "Parent Artists:"
+msgstr ""
+
+#: post-types/albums/albums-register.php:149
+msgid "Edit Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:150
+msgid "Update Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:151
+msgid "Add New Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:152
+msgid "New Artist Name"
+msgstr ""
+
+#: post-types/albums/artists-custom-fields.php:5
+#: post-types/albums/artists-custom-fields.php:45
+#: post-types/albums/shortcodes/albums-list.php:76
+#: post-types/albums/shortcodes/artists-list.php:62
+#: post-types/carousels/shortcodes/carousel.php:65
+#: post-types/events/shortcodes/events-list.php:90
+msgid "Order"
+msgstr ""
+
+#: post-types/albums/artists-custom-fields.php:7
+#: post-types/albums/artists-custom-fields.php:48
+msgid "Enter a order number for this artist"
+msgstr ""
+
+#: post-types/albums/artists-custom-fields.php:11
+#: post-types/albums/artists-custom-fields.php:53
+msgid "Stage"
+msgstr ""
+
+#: post-types/albums/artists-custom-fields.php:13
+#: post-types/albums/artists-custom-fields.php:56
+msgid "Enter a stage for this artist"
+msgstr ""
+
+#: post-types/albums/artists-custom-fields.php:17
+#: post-types/albums/artists-custom-fields.php:61
+msgid "Link"
+msgstr ""
+
+#: post-types/albums/artists-custom-fields.php:19
+#: post-types/albums/artists-custom-fields.php:64
+msgid "Enter a link for this artist"
+msgstr ""
+
+#: post-types/albums/artists-custom-fields.php:23
+#: post-types/albums/artists-custom-fields.php:70
+msgid "Image"
+msgstr ""
+
+#: post-types/albums/artists-custom-fields.php:27
+#: post-types/albums/artists-custom-fields.php:81
+msgid "Add Image"
+msgstr ""
+
+#: post-types/albums/artists-custom-fields.php:28
+#: post-types/albums/artists-custom-fields.php:82
+msgid "Remove Image"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:41
+msgid "Album Player"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:43
+#: post-types/albums/shortcodes/album.php:43
+#: post-types/albums/shortcodes/albums-list.php:43
+#: post-types/albums/shortcodes/artists-list.php:43
+#: post-types/carousels/shortcodes/carousel.php:40
+#: post-types/events/shortcodes/events-list.php:43
+#: post-types/testimonials/shortcodes/testimonials.php:42
+msgid "by SELECT"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:49
+msgid "Type"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:52
+msgid "Standard"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:53
+msgid "Compact"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:54
+msgid "Simple"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:68
+msgid "Content In Grid"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:71
+#: post-types/albums/shortcodes/albums-list.php:152
+#: post-types/albums/shortcodes/albums-list.php:162
+#: post-types/carousels/shortcodes/carousel.php:105
+#: post-types/carousels/shortcodes/carousel.php:116
+#: post-types/events/shortcodes/events-list.php:118
+#: post-types/slider/tax-custom-fields.php:32
+#: post-types/slider/tax-custom-fields.php:43
+#: post-types/slider/tax-custom-fields.php:55
+#: post-types/slider/tax-custom-fields.php:67
+#: post-types/slider/tax-custom-fields.php:78
+#: post-types/slider/tax-custom-fields.php:89
+#: post-types/slider/tax-custom-fields.php:131
+#: post-types/slider/tax-custom-fields.php:142
+#: post-types/slider/tax-custom-fields.php:153
+#: post-types/testimonials/shortcodes/testimonials.php:68
+#: post-types/testimonials/shortcodes/testimonials.php:80
+#: post-types/testimonials/shortcodes/testimonials.php:92
+#: post-types/testimonials/shortcodes/testimonials.php:113
+#: post-types/testimonials/shortcodes/testimonials.php:124
+msgid "Yes"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:72
+#: post-types/albums/shortcodes/albums-list.php:151
+#: post-types/albums/shortcodes/albums-list.php:163
+#: post-types/carousels/shortcodes/carousel.php:106
+#: post-types/carousels/shortcodes/carousel.php:117
+#: post-types/events/shortcodes/events-list.php:117
+#: post-types/slider/tax-custom-fields.php:31
+#: post-types/slider/tax-custom-fields.php:42
+#: post-types/slider/tax-custom-fields.php:54
+#: post-types/slider/tax-custom-fields.php:66
+#: post-types/slider/tax-custom-fields.php:79
+#: post-types/slider/tax-custom-fields.php:90
+#: post-types/slider/tax-custom-fields.php:132
+#: post-types/slider/tax-custom-fields.php:143
+#: post-types/slider/tax-custom-fields.php:154
+#: post-types/testimonials/shortcodes/testimonials.php:69
+#: post-types/testimonials/shortcodes/testimonials.php:81
+#: post-types/testimonials/shortcodes/testimonials.php:93
+#: post-types/testimonials/shortcodes/testimonials.php:114
+#: post-types/testimonials/shortcodes/testimonials.php:125
+msgid "No"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:79
+msgid "Player Background Color"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:85
+msgid "Play Button Background Color"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:91
+msgid "Navigation Buttons Background Color"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:97
+msgid "Skin"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:100
+#: post-types/albums/shortcodes/album.php:62
+msgid "Light"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:101
+#: post-types/albums/shortcodes/album.php:61
+msgid "Dark"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:102
+msgid "Transparent"
+msgstr ""
+
+#: post-types/albums/shortcodes/album.php:57
+msgid "Album Skin"
+msgstr ""
+
+#: post-types/albums/shortcodes/album.php:60
+msgid "Default"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:41
+msgid "Albums List"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:49
+msgid "Albums List Template"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:52
+msgid "Standard With Space"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:54
+msgid "Gallery With Space"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:55
+msgid "Gallery No Space"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:62
+#: post-types/albums/shortcodes/artists-list.php:49
+#: post-types/carousels/shortcodes/carousel.php:54
+#: post-types/events/shortcodes/events-list.php:75
+msgid "Order By"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:65
+#: post-types/carousels/shortcodes/carousel.php:59
+#: post-types/events/shortcodes/events-list.php:81
+msgid "Date"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:66
+#: post-types/carousels/shortcodes/carousel.php:58
+#: post-types/events/shortcodes/events-list.php:80
+msgid "Title"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:67
+#: post-types/events/shortcodes/events-list.php:79
+msgid "Menu Order"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:72
+#: post-types/albums/shortcodes/albums-list.php:85
+#: post-types/albums/shortcodes/albums-list.php:94
+#: post-types/albums/shortcodes/albums-list.php:103
+#: post-types/albums/shortcodes/albums-list.php:112
+#: post-types/albums/shortcodes/albums-list.php:121
+#: post-types/albums/shortcodes/albums-list.php:135
+#: post-types/albums/shortcodes/albums-list.php:144
+#: post-types/albums/shortcodes/albums-list.php:155
+#: post-types/albums/shortcodes/artists-list.php:58
+#: post-types/albums/shortcodes/artists-list.php:71
+#: post-types/albums/shortcodes/artists-list.php:80
+#: post-types/events/shortcodes/events-list.php:71
+#: post-types/events/shortcodes/events-list.php:86
+#: post-types/events/shortcodes/events-list.php:99
+#: post-types/events/shortcodes/events-list.php:110
+#: post-types/events/shortcodes/events-list.php:121
+msgid "Query and Layout Options"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:89
+msgid "One-Label Albums List"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:93
+msgid "Enter one label slug (leave empty for showing all labels)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:98
+msgid "One-Genre Albums List"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:102
+msgid "Enter one genre slug (leave empty for showing all genres)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:107
+msgid "One-Artist Albums List"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:111
+msgid "Enter one artist slug (leave empty for showing all artists)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:116
+msgid "Number of Albums Per Page"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:120
+#: post-types/events/shortcodes/events-list.php:70
+msgid "(enter -1 to show all)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:125
+msgid "Number of Columns"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:129
+msgid "Two"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:130
+msgid "Three"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:131
+msgid "Four"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:134
+msgid "Default value is Three"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:139
+msgid "Show Only Albums with Listed IDs"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:143
+#: post-types/albums/shortcodes/artists-list.php:79
+msgid "Delimit ID numbers by comma (leave empty for all)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:148
+#: post-types/events/shortcodes/events-list.php:114
+msgid "Show Load More"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:159
+msgid "Show Stores"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:172
+msgid "Choose Stores To Be Shown"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:175
+msgid "iTunes"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:176
+msgid "Google Play"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:177
+msgid "Bandcamp"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:178
+msgid "Spotify"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:179
+msgid "AmazonMP3"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:180
+msgid "Deezer"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:249
+msgid "Sorry, no albums matched your criteria."
+msgstr ""
+
+#: post-types/albums/shortcodes/artists-list.php:41
+msgid "Artists List"
+msgstr ""
+
+#: post-types/albums/shortcodes/artists-list.php:52
+#: post-types/slider/tax-custom-fields.php:185
+msgid "Name"
+msgstr ""
+
+#: post-types/albums/shortcodes/artists-list.php:53
+msgid "Order Number"
+msgstr ""
+
+#: post-types/albums/shortcodes/artists-list.php:75
+msgid "Show Only Artists with Listed IDs"
+msgstr ""
+
+#: post-types/albums/shortcodes/artists-list.php:119
+msgid "Sorry, no artists matched your criteria."
+msgstr ""
+
+#: post-types/albums/shortcodes/templates/load-more-template.php:7
+msgid "Show more"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:56
+#: post-types/carousels/carousel-register.php:57
+msgid "Select Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:58
+msgid "Carousel Items"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:59
+#: post-types/carousels/carousel-register.php:62
+msgid "Add New Carousel Item"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:60
+msgid "Carousel Item"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:61
+msgid "New Carousel Item"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:63
+msgid "Edit Carousel Item"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:83
+#: post-types/carousels/carousel-register.php:93
+msgid "Carousels"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:84
+#: post-types/carousels/shortcodes/carousel.php:38
+msgid "Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:85
+msgid "Search Carousels"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:86
+msgid "All Carousels"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:87
+msgid "Parent Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:88
+msgid "Parent Carousel:"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:89
+msgid "Edit Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:90
+msgid "Update Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:91
+msgid "Add New Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:92
+msgid "New Carousel Name"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:46
+msgid "Carousel Slider"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:76
+msgid "Number of items showing"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:90
+msgid "Image Animation"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:93
+msgid "Image Change"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:94
+msgid "Image Zoom"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:98
+msgid "Note: Only on \"Image Change\" zoom image will be used"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:102
+msgid "Show Arrows navigation?"
+msgstr ""
+
+#: post-types/carousels/shortcodes/carousel.php:113
+msgid "Show Dots navigation?"
+msgstr ""
+
+#: post-types/events/events-register.php:81
+msgid "Events"
+msgstr ""
+
+#: post-types/events/events-register.php:82
+msgid "Event"
+msgstr ""
+
+#: post-types/events/events-register.php:83
+msgid "New Event"
+msgstr ""
+
+#: post-types/events/events-register.php:84
+msgid "Add New Event"
+msgstr ""
+
+#: post-types/events/events-register.php:85
+msgid "Edit Event"
+msgstr ""
+
+#: post-types/events/events-register.php:103
+#: post-types/events/events-register.php:113
+msgid "Event Types"
+msgstr ""
+
+#: post-types/events/events-register.php:104
+msgid "Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:105
+msgid "Search Event Types"
+msgstr ""
+
+#: post-types/events/events-register.php:106
+msgid "All Event Types"
+msgstr ""
+
+#: post-types/events/events-register.php:107
+msgid "Parent Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:108
+msgid "Parent Event Type:"
+msgstr ""
+
+#: post-types/events/events-register.php:109
+msgid "Edit Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:110
+msgid "Update Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:111
+msgid "Add New Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:112
+msgid "New Event Type Name"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:41
+msgid "Events List"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:49
+msgid "Title Tag"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:62
+#: post-types/events/shortcodes/events-list.php:128
+#: post-types/events/shortcodes/events-list.php:135
+msgid "Design Options"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:66
+msgid "Number of Events Per Page"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:78
+msgid "Start Date"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:103
+msgid "Show Event by Status"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:106
+msgid "All"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:107
+msgid "Current and Upcoming"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:108
+msgid "Past"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:125
+msgid "Text Color"
+msgstr ""
+
+#: post-types/events/shortcodes/events-list.php:132
+msgid "Border Color"
+msgstr ""
+
+#: post-types/events/shortcodes/templates/events-list-template.php:11
+msgid "M"
+msgstr ""
+
+#: post-types/events/shortcodes/templates/events-list-template.php:14
+msgid "D"
+msgstr ""
+
+#: post-types/events/shortcodes/templates/events-list-template.php:33
+msgid "buy tickets"
+msgstr ""
+
+#: post-types/events/shortcodes/templates/events-list-template.php:41
+msgid "sold out!"
+msgstr ""
+
+#: post-types/events/shortcodes/templates/events-list-template.php:48
+msgid "free!"
+msgstr ""
+
+#: post-types/events/shortcodes/templates/load-more-template.php:7
+msgid "view all"
+msgstr ""
+
+#: post-types/slider/shortcodes/slider.php:759
+msgid "Sorry, no slides matched your criteria."
+msgstr ""
+
+#: post-types/slider/slider-register.php:53
+#: post-types/slider/slider-register.php:54
+msgid "Select Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:55
+msgid "Slides"
+msgstr ""
+
+#: post-types/slider/slider-register.php:56
+#: post-types/slider/slider-register.php:59
+msgid "Add New Slide"
+msgstr ""
+
+#: post-types/slider/slider-register.php:57
+msgid "Slide"
+msgstr ""
+
+#: post-types/slider/slider-register.php:58
+msgid "New Slide"
+msgstr ""
+
+#: post-types/slider/slider-register.php:60
+msgid "Edit Slide"
+msgstr ""
+
+#: post-types/slider/slider-register.php:80
+#: post-types/slider/slider-register.php:90
+msgid "Sliders"
+msgstr ""
+
+#: post-types/slider/slider-register.php:81
+msgid "Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:82
+msgid "Search Sliders"
+msgstr ""
+
+#: post-types/slider/slider-register.php:83
+msgid "All Sliders"
+msgstr ""
+
+#: post-types/slider/slider-register.php:84
+msgid "Parent Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:85
+msgid "Parent Slider:"
+msgstr ""
+
+#: post-types/slider/slider-register.php:86
+msgid "Edit Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:87
+msgid "Update Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:88
+msgid "Add New Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:89
+msgid "New Slider Name"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:10
+msgid "Slider shortcode"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:14
+msgid "Use this shortcode to insert it on page"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:19
+msgid "Anchor"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:27
+msgid "Effect on header (dark/light style)"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:38
+msgid "Show prev/next thumbs (except for side menu or passepartout)"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:50
+msgid "Show navigation thumbs"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:62
+msgid "Show slide number"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:74
+msgid "Parallax effect"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:85
+msgid "Auto start"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:96
+msgid "Slides Animation"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:100
+msgid "Slide Horizontally"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:101
+msgid "Slide Vertically - Up"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:102
+msgid "Slide Vertically - Down"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:103
+msgid "Slide - Cover Previous Slide"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:104
+msgid "Slide - Peek Into Next Slide"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:105
+msgid "Fade"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:111
+msgid "Time between slide transitions in milliseconds"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:119
+msgid "Slider height in px"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:127
+msgid "Responsive height"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:138
+msgid "Show Navigation Arrows"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:149
+msgid "Show Navigation Bullets"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:186
+msgid "Shortcode"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:187
+msgid "Slug"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:188
+msgid "Posts"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:40
+#: post-types/testimonials/testimonials-register.php:54
+msgid "Testimonials"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:49
+msgid "Category"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:52
+msgid "Category Slug (leave empty for all)"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:57
+msgid "Number"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:60
+msgid "Number of Testimonials"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:65
+msgid "Show Title"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:77
+msgid "Show Author"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:89
+msgid "Show Author Job Position"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:102
+msgid "Animation speed"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:105
+msgid "Speed of slide animation in miliseconds"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:110
+msgid "Show Arrows navigation"
+msgstr ""
+
+#: post-types/testimonials/shortcodes/testimonials.php:121
+msgid "Show Dots navigation"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:55
+msgid "Testimonial"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:56
+msgid "New Testimonial"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:57
+msgid "Add New Testimonial"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:58
+msgid "Edit Testimonial"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:78
+#: post-types/testimonials/testimonials-register.php:88
+msgid "Testimonials Categories"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:79
+msgid "Testimonial Category"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:80
+msgid "Search Testimonials Categories"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:81
+msgid "All Testimonials Categories"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:82
+msgid "Parent Testimonial Category"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:83
+msgid "Parent Testimonial Category:"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:84
+msgid "Edit Testimonials Category"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:85
+msgid "Update Testimonials Category"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:86
+msgid "Add New Testimonials Category"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:87
+msgid "New Testimonials Category Name"
+msgstr ""

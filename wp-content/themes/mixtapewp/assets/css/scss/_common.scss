@@ -1,0 +1,728 @@
+@import 'variables';
+@import 'mixins';
+
+/* ==========================================================================
+   #Comments styles - start
+   ========================================================================== */
+
+.qodef-comment-holder {
+	margin: 0 0 50px;
+	padding-top: 37px;
+	box-sizing: border-box;
+	clear: both;
+
+	.qodef-comment-number {
+		padding: 0 0 23px;
+	}
+
+	.qodef-comment-image {
+		display: block;
+		width: 110px;
+		height: 110px;
+		float: left;
+		border-radius: 100%;
+		overflow: hidden;
+	}
+	.qodef-comment-text {
+		padding: 0 0 0 130px;
+		min-height: 85px;
+
+		.qodef-comment-info {
+			display: inline-block;
+			width: 100%;
+			vertical-align: middle;
+		}
+
+		.qodef-reply-edit-holder {
+			float: right;
+		}
+
+		.replay,
+		.comment-reply-link,
+		.comment-edit-link {
+			margin-left: 10px;
+			font-size: 13px;
+			font-weight: 600;
+			text-transform: lowercase;
+			display: inline-block;
+			color: #353535;
+			position: relative;
+			@include qodefTransition(background-color 0.3s ease-out, color 0.3s ease-out);
+
+		}
+
+		.qodef-comment-name {
+			float: left;
+			margin: 0 0 4px
+		}
+
+		.qodef-comment-date {
+			display: block;
+			font-size: 13px;
+			line-height: 1em;
+			color: #a0a0a0;
+			margin: 0 0 17px;
+			clear: both;
+		}
+
+		.qodef-text-holder {
+
+			&>h1,
+			&>h2,
+			&>h3,
+			&>h4,
+			&>h5,
+			&>h6 {
+				margin-bottom: 15px;
+				margin-top: 20px;
+			}
+
+			&>table {
+				margin-bottom: 30px;
+			}
+
+			&> ul li,
+			&> ol li {
+				display: list-item;
+			}
+
+			p {
+				margin: 0 0 5px;
+			}
+		}
+
+	}
+
+	.qodef-comment-form-closed-message {
+		margin-top: 15px;
+	}
+
+	.qodef-comments-closed{
+		padding-top:16px;
+	}
+
+	
+	.qodef-comment.qodef-pingback-comment{
+
+		.qodef-comment-text {
+			padding: 0;
+			min-height: 0;
+		}
+
+		.qodef-comment-name-holder{
+			margin-bottom: 0;
+		}
+	}
+
+}
+
+.comment-respond {
+
+	margin: 15px 0 20px;
+
+	.comment-reply-title {
+		margin-bottom: 40px;
+
+		&.qodef-comment-reply-title-registered {
+			margin-bottom: 0;
+		}
+
+		#cancel-comment-reply-link{
+			margin-left: 15px;
+		}
+	}
+
+	.logged-in-as {
+		padding: 0;
+		margin: 0;
+	}
+
+	.qodef-comment-registered-user {
+
+		.logged-in-as {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.qodef-comment-list {
+	list-style: none;
+	position: relative;
+	z-index: 150;
+	padding: 0;
+	margin: 0;
+
+	li {
+		display: inline-block;
+		position: relative;
+		width: 100%;
+
+		.qodef-comment {
+			padding: 30px 0 55px 0;
+
+			p {
+				margin: 0;
+			}
+		}
+
+		@for $i from 2 through 10 {
+			&.depth-#{$i} .qodef-comment {
+				padding-left: 110px * ($i - 1);
+				padding-bottom: 35px;
+			}
+		}
+	}
+
+	.children {
+		padding: 0 0 0 0;
+	}
+}
+
+.qodef-newsletter {
+	position: relative;
+
+	.wpcf7-not-valid-tip {
+		margin-top: 80px;
+		margin-bottom: 20px;
+	}
+
+	.wpcf7-form-control {
+		&.wpcf7-text {
+			margin: 0 0 77px !important;
+			padding: 10px 0px;
+			height: 52px;
+		}
+
+		&.wpcf7-submit {
+			padding: 13px 6%;
+			position: relative;
+			height: 52px;
+			cursor:pointer;
+			@include qodefTransition(color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out);
+		}
+	}
+}
+
+%input-style{
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding: 13px 25px;
+	border: 1px solid $default-border-color;
+	outline: 0;
+	font-family: inherit;
+	font-size: 15px;
+	font-weight: 400;
+	background-color: #fff;
+	color: $default-text-color;
+	@include qodefBoxSizing(border-box);
+	vertical-align: middle;
+	border-radius: 0;
+}
+
+.wpcf7-form-control{
+
+	&.wpcf7-text,
+	&.wpcf7-number,
+	&.wpcf7-date,
+	&.wpcf7-textarea,
+	&.wpcf7-select,
+	&.wpcf7-quiz{
+		@extend %input-style;
+	}
+
+	&.wpcf7-textarea{
+		height: 165px;
+	}
+}
+
+#respond textarea,
+#respond input[type='text'],
+.post-password-form input[type='password']{
+	@extend %input-style;
+
+	&::-webkit-input-placeholder{
+		color: $default-text-color;
+	}
+	&:-moz-placeholder{
+		color: $default-text-color;
+		opacity: 1;
+	}
+	&::-moz-placeholder{
+		color: $default-text-color;
+		opacity: 1;
+	}
+	&:-ms-input-placeholder{
+		color: $default-text-color;
+	}
+}
+
+#submit_comment,
+.post-password-form input[type='submit'],
+input.wpcf7-form-control.wpcf7-submit {
+	background-color: $first-main-color;
+	border: 2px solid $first-main-color;
+	border-radius: 0;
+	color: #fff;
+	box-sizing: border-box;
+	display: inline-block;
+	font-family: inherit;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1;
+	outline: none;
+	padding: 17px 58px;
+	position: relative;
+	cursor: pointer;
+	@include qodefTransition(color 0.15s ease-out, background-color 0.15s ease-out, border-color 0.15s ease-out);
+
+	&:hover{
+		border-color: $btn-hover-background;
+		background-color: $btn-hover-background;
+	}
+}
+
+.wpcf7-form .qodef-contact-form-full-width-button {
+
+	input {
+		width: 100%;
+	}
+}
+
+.wpcf7-form .qodef-two-columns-50-50.qodef-columns-small-space > .qodef-two-columns-50-50-inner {
+	margin: 0 -4px;
+
+	.qodef-column .qodef-column-inner {
+	    padding: 0px 4px;
+	}
+}
+
+/* ==========================================================================
+   #Comments styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Pagination styles - start
+   ========================================================================== */
+
+.qodef-container.qodef-container-bottom-navigation {
+
+	.qodef-container-inner {
+		padding: 0 !important;
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+}
+
+
+.qodef-pagination-holder {
+	padding: 15px 0 75px;
+
+	.qodef-pagination {
+		display: inline-block;
+		width: 100%;
+		vertical-align: middle;
+		position: relative;
+		text-align: center;
+
+		ul {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			float: left;
+			text-align: center;
+			display: block;
+
+			a,
+			&.active span {
+				position: relative;
+				display: inline-block;
+				padding: 0 12px;
+				margin: 0;
+				vertical-align: middle;
+				text-decoration: none;
+				font-weight: 400;
+				font-size: 15px;
+				cursor: pointer;
+				white-space: nowrap;
+				box-sizing: content-box;
+				color: #979797;
+				line-height: 40px;
+
+			}
+
+			&.active span {
+				color: $first-main-color;
+			}
+
+			&.qodef-pagination-prev,
+			&.qodef-pagination-next,
+			&.qodef-pagination-first-page,
+			&.qodef-pagination-last-page {
+				position: absolute;
+				a{
+					font-size: 20px;
+					padding: 0;
+				}
+
+			}
+
+			&.qodef-pagination-prev {
+				left: 0;
+
+				&.qodef-pagination-prev-first {
+					left: 25px;
+				}
+			}
+
+			&.qodef-pagination-first-page {
+				left: 0;
+			}
+
+			&.qodef-pagination-next {
+				right: 0;
+
+				&.qodef-pagination-next-last {
+					right: 25px;
+				}
+			}
+
+			&.qodef-pagination-last-page {
+				right: 0;
+			}
+		}
+	}
+}
+
+
+/* ==========================================================================
+   #Pagination styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Owl Slider (Blog single) - begin
+   ========================================================================== */
+.qodef-owl-slider {
+
+	.owl-buttons {
+
+		.owl-prev {
+			position: absolute;
+			top: 50%;
+			@include qodefTransform(translateY(-50%));
+			left: 2%;
+		}
+
+		.owl-next {
+			position: absolute;
+			top: 50%;
+			@include qodefTransform(translateY(-50%));
+			right: 2%;
+		}
+
+		.qodef-prev-icon,
+		.qodef-next-icon {
+			display: inline-block;
+			width: 42px;
+			height: 42px;
+			@include qodefBorderRadius(50%);
+			border: 2px solid #fff;
+			text-align: center;
+
+			i {
+				font-size: 22px;
+				line-height: 40px;
+				color: #fff;
+			}
+
+		}
+
+	}
+
+	.owl-pagination {
+		text-align: center;
+
+		.owl-page {
+			display: inline-block;
+		}
+
+		.owl-page span {
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			margin: 3px;
+			filter: Alpha(Opacity=50);
+			opacity: 0.5;
+			-webkit-border-radius: 20px;
+			-moz-border-radius: 20px;
+			border-radius: 20px;
+			background: #e3e3e3;
+		}
+
+		.owl-page.active span {
+			opacity: 1;
+		}
+
+	}
+
+}
+
+/* ==========================================================================
+   #Owl Slider (Blog single) - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Slick Slider navigation - start
+   ========================================================================== */
+.slick-slider {
+
+	.qodef-slick-prev,
+	.qodef-slick-next {
+		color: #fff;
+		position: absolute;
+		z-index: 100;
+		top: 50%;
+		display: block;
+		padding: 0;
+		cursor: pointer;
+		border: none;
+		outline: none;
+		font-size: 30px;
+		opacity: 0.7;
+		@include qodefTransform(translateY(-50%));
+		@include qodefTransition(opacity 0.3s ease);
+
+		&:hover{
+			opacity: 1;
+		}
+	}
+
+	.qodef-slick-prev {
+		left: 30px;
+	}
+
+	.qodef-slick-next {
+		right: 30px;
+	}
+
+	.qodef-slick-dots {
+		text-align: center;
+		margin: 20px 0 0 0;
+		padding: 0;
+
+
+		li {
+			width: 10px;
+			height: 10px;
+			border-radius: 10px;
+			border: 1px solid #353535;
+			background-color: transparent;
+			box-sizing: border-box;
+			display: inline-block;
+			margin: 0 8px;
+
+			&.slick-active {
+				background-color: #353535;
+			}
+
+		}
+	}
+
+}
+
+/* ==========================================================================
+   #Slick Slider navigation - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Pretty photo preloader - start
+   ========================================================================== */
+
+.pp_loaderIcon {
+
+	.qodef-stripes>div {
+		background-color: #fff !important; //override color selector for the main preloader 
+	}
+}
+
+/* ==========================================================================
+   #Pretty photo preloader - end
+   ========================================================================== */
+
+
+/* ==========================================================================
+   #404 styles - start
+   ========================================================================== */
+.qodef-404-page {
+	padding: 0 !important;
+
+    .qodef-page-not-found {
+		width: 44%;
+        text-align: left;
+
+        .qodef-number-holder {
+            color: $first-main-color;
+            font-size: 200px;
+            line-height: 0.88em;
+            letter-spacing: -2px;
+            font-weight: 700;
+        }
+
+        h1 {
+			margin-top: 6px;
+        }
+
+        p {
+            margin: 13px 0 0;
+
+        }
+
+		.qodef-btn{
+			margin-top: 36px;
+		}
+
+    }
+}
+
+.qodef-image-404 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 45%;
+	height: 100%;
+
+
+
+	img{
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+}
+
+/* ==========================================================================
+   #404 styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Back to Top styles - start
+   ========================================================================== */
+$back-to-top-size: 32px;
+
+#qodef-back-to-top{
+    position: fixed;
+    width:$back-to-top-size;
+    right: 35px;
+    bottom: 35px;
+    margin: 0;
+    z-index: 10000;
+    @include qodefTransition(all .4s cubic-bezier(0.23, 1, 0.32, 1));
+	@include qodefTransform(scale(0));
+    opacity: 0;
+    visibility: hidden;
+}
+
+#qodef-back-to-top.off{
+	@include qodefTransform(scale(0));
+    opacity: 0;
+    visibility: hidden;
+}
+    
+#qodef-back-to-top.on{
+	@include qodefTransform(scale(1));
+    opacity: 1;
+    visibility: visible;
+}
+
+#qodef-back-to-top > span {
+	width:$back-to-top-size;
+	height: $back-to-top-size;
+	line-height:$back-to-top-size;
+	text-align:center;
+    display: block;
+	color: #3b3b3b;
+    font-size: $back-to-top-size;
+	background-color: transparent;
+    @include qodefTransition(background-color 0.15s ease-out, color 0.15s ease-out, border-color 0.15s ease-out);
+	border: 2px solid #3b3b3b;
+	border-radius: 100%;
+}
+
+#qodef-back-to-top span span {
+	display: block;
+	position: relative;
+	z-index: 10;
+	line-height: inherit;
+}
+
+#qodef-back-to-top:hover > span {
+	border-color: #737373;
+	color: #737373;
+}
+
+    
+/* ==========================================================================
+   #Back to Top styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Self Hosted Video styles - start
+   ========================================================================== */
+.qodef-self-hosted-video-holder{
+	.qodef-video-wrap{
+		.mejs-container,
+		.mejs-overlay-play{
+			height: 100% !important; /*!important because of the inline style*/
+			width: 100% !important; /*!important because of the inline style*/
+		}
+	}
+}
+
+/* ==========================================================================
+   #Self Hosted Video styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Screen reader text - start
+   ========================================================================== */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+
+	&:focus {
+		background-color: #f1f1f1;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: #21759b;
+		display: block;
+		font-size: 14px;
+		font-size: 0.875rem;
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000; /* Above WP toolbar. */
+	}
+
+}
+
+/* ==========================================================================
+   #Screen reader text - end
+   ========================================================================== */

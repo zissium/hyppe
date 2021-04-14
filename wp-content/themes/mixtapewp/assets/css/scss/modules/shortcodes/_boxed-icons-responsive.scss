@@ -1,0 +1,24 @@
+/* ==========================================================================
+   Boxed Icons shortcode start styles
+   ========================================================================== */
+.qodef-boxed-icons.qodef-bi-8-columns .qodef-boxed-icon-holder {
+	@include ipad-landscape {
+		width: 25%;
+		padding-top: 25%;
+	}
+	@include phone-portrait {
+		width: 50%;
+		padding-top: 50%;
+	}
+}
+.qodef-boxed-icons.qodef-bi-4-columns .qodef-boxed-icon-holder {
+	@include phone-portrait {
+		width: 50%;
+		padding-top: 50%;
+	}
+}
+/* ==========================================================================
+   Boxed Icons shortcode end styles
+   ========================================================================== */
+
+

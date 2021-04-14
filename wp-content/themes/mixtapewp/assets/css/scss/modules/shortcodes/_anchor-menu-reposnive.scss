@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1440px) {
+	.qodef-anchor-menu-outer {
+		left: 18px;
+
+		.qodef-anchor{
+			.qodef-anchor-menu-item-label{
+				display: none;
+			}
+
+			.qodef-anchor-menu-item-number{
+				padding: 0;
+			}
+
+			&.current{
+				.qodef-anchor-menu-item-number{
+					@include qodefTransform(scale(1.3));
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $ipad-landscape) {
+	.qodef-anchor-menu-outer {
+		display: none;
+	}
+}

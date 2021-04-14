@@ -1,0 +1,512 @@
+/* #Latest posts
+   ========================================================================== */
+.qodef-blog-list-holder{
+    display: inline-block;
+    width: 100%;
+    
+    &>ul{
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0;
+        padding:0;  
+        vertical-align: top;
+        
+        &>li{
+            display: block;
+            position: relative; 
+        }
+    }
+
+    .qodef-item-text-holder {
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 0;
+    }
+
+    .qodef-excerpt{
+        margin: 0 0 16px;
+    }
+
+    .qodef-item-info-section {
+        margin-bottom: 22px;
+    }
+
+    .qodef-item-image img{
+        width:100%;
+        vertical-align: middle;
+    }
+
+    .qodef-blog-list-paging {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.qodef-blog-list-holder.qodef-boxes {
+
+    > ul{
+        clear: both;
+        
+        >li{
+            padding: 0;
+            float: left;
+            border: 0;
+            box-sizing: border-box;
+            margin: 0 2% 2% 0;
+        }
+    }
+
+    .qodef-item-image {
+
+        > a {
+            display: block;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(255,255,255,.1);
+                opacity: 0;
+                @include qodefTransition(opacity .45s ease);
+            }
+
+            &:hover {
+
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .qodef-item-text-holder {
+        padding: 25px 0 0;
+
+
+		.qodef-item-info-section {
+			font-size: 16px;
+			font-weight: 600;
+			color: $default-text-color;
+			margin: 0 0 4px;
+		}
+
+		.qodef-item-title {
+			margin: 0 0 17px;
+		}
+    }
+}
+
+.qodef-blog-list-holder.qodef-boxes.qodef-one-column > ul > li{
+    float: none;
+    margin: 0; 
+}
+
+.qodef-blog-list-holder.qodef-boxes.qodef-two-columns > ul > li{
+    width: 49%;
+}
+
+.qodef-blog-list-holder.qodef-boxes.qodef-three-columns > ul > li{
+    width: 32%;
+}
+
+.qodef-blog-list-holder.qodef-boxes.qodef-four-columns > ul > li{
+    width: 23.5%;
+}
+
+.qodef-blog-list-holder.qodef-boxes.qodef-two-columns ul.qodef-blog-list li:nth-child(2n),
+.qodef-blog-list-holder.qodef-boxes.qodef-three-columns ul.qodef-blog-list li:nth-child(3n),
+.qodef-blog-list-holder.qodef-boxes.qodef-four-columns ul.qodef-blog-list li:nth-child(4n){
+    margin: 0;
+}
+
+.qodef-blog-list-holder.qodef-boxes.qodef-two-columns ul.qodef-blog-list li:nth-child(2n+1),
+.qodef-blog-list-holder.qodef-boxes.qodef-three-columns ul.qodef-blog-list li:nth-child(3n+1),
+.qodef-blog-list-holder.qodef-boxes.qodef-four-columns ul.qodef-blog-list li:nth-child(4n+1){
+    clear: both;
+}
+
+/*------------------image in left box -----------------------------*/
+.qodef-blog-list-holder.qodef-image-in-box{
+
+    ul > li:not(:first-child){
+        padding: 27px 0 0 0;
+    }
+
+    .qodef-blog-list-item-inner{
+        @include qodefTableLayout;
+    }
+
+    .qodef-item-image{
+        @include qodefTableCellLayout;
+        width: 107px;
+        padding-right: 11px;
+    }
+
+    .qodef-item-text-holder{
+        @include qodefTableCellLayout;
+        text-align: left;
+        vertical-align: top;
+        padding: 0;
+    }
+
+    .qodef-item-info-section {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+/*------------------Minimal type styles -----------------------------*/
+.qodef-blog-list-holder.qodef-minimal{
+
+    &> ul > li:not(:first-child){
+        padding: 15px 0 0 0;
+    }
+
+    .qodef-item-text-holder{
+        padding: 0;
+    }
+
+    .qodef-excerpt{
+        margin: 0;
+    }
+}
+
+/*------------------Masonry type styles -----------------------------*/
+
+.qodef-blog-list-holder.qodef-masonry {
+        margin-bottom: 20px;
+        overflow: visible !important;
+        opacity: 1;
+        @include qodefTransition(opacity 0.15s ease-out);
+
+        > ul {
+            opacity: 0;
+
+            &.qodef-appeared{
+                opacity: 1;
+
+                .qodef-blog-list-item-info-section{
+                    border-bottom: transparent;
+                }
+            }
+        }
+
+        .qodef-blog-list-masonry-item {
+            display: block;
+            width: 32%;
+            padding: 0;
+            text-align: left;
+            vertical-align: top;
+            z-index: 100;
+            margin: 0 0 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+			@include qodefBoxShadow(0px 13px 20px 7px rgba(0, 0, 0, 0.1));
+            @include qodefTransition(border-color 0.15s ease-out, box-shadow .3s);
+
+            &:hover {
+                @include qodefBoxShadow(0px 13px 20px 10px rgba(0, 0, 0, 0.1));
+            }
+
+            &.format-link .qodef-blog-list-item-info-section {
+                border-bottom: transparent;
+            }
+
+            .qodef-blog-list-item-text-holder {
+                padding: 49px 37px 22px;
+            }
+
+			.qodef-post-info-date {
+				font-size: 15px;
+				font-weight: 400;
+				margin: 0 0 16px;
+			}
+
+            .qodef-blog-list-item-title {
+                margin-bottom: 0px;
+            }
+
+            .qodef-blog-list-standard.qodef-blog-list-item-info-section,
+            .qodef-blog-list-video.qodef-blog-list-item-info-section,
+            .qodef-blog-list-audio.qodef-blog-list-item-info-section  {
+                margin-top: 0px;
+                padding: 0px;
+                border: none;
+            }
+
+            .qodef-blog-list-item-excerpt {
+                padding: 0;
+            }
+
+            .slick-slide img {
+                vertical-align: middle;
+            }
+            
+            .qodef-inst-mark {
+                position: absolute;
+                color: #fff;
+                font-size: 33px;
+                right: 17px;
+                top: 13px;
+            }
+    
+            .qodef-blog-list-item-info-section,
+            .qodef-blog-list-item-info-section > div a {
+                color: #a5a5a5;
+            }
+
+            .qodef-blog-audio-holder,
+            .qodef-blog-list-item-image {
+                margin-bottom: 0;
+            }
+
+            .qodef-blog-list-item-image a {
+                display: block;
+            }
+
+            .qodef-blog-list-item-image a img{
+                vertical-align: middle;
+            }
+        
+            &.qodef-blog-list-link {
+
+                .qodef-blog-list-item-text-holder {
+                    padding: 75px 54px 87px 30px;
+					background-color: $default-heading-color;
+					background-position: center;
+					background-size: cover;
+					background-repeat: no-repeat;
+
+					.qodef-blog-list-item-title {
+
+						a {
+							color: #fff;
+
+							&:hover {
+								color: #fff;
+							}
+						}
+					}
+				}
+
+                .qodef-blog-list-item-title {
+                    position: relative;
+                    z-index: 99;
+                    font-size: 23px;
+                    font-weight: 400;
+                    letter-spacing: -0.5px;
+                    text-transform: uppercase;
+
+                    a {
+                        color: #353535;
+
+                        &:hover {
+                            color: $first-main-color;
+                        }
+                    }
+
+                    span {
+                        color: $first-main-color;
+                    }
+                }
+            }
+
+            
+
+            &.qodef-blog-list-quote {
+
+                .qodef-blog-list-item-text-holder {
+                    padding: 62px 54px 67px 30px;
+					background-color: $default-heading-color;
+					background-position: center;
+					background-size: cover;
+					background-repeat: no-repeat;
+                }
+
+                .qodef-blog-list-item-title {
+                    position: relative;
+                    z-index: 99;
+                    font-size: 23px;
+                    font-weight: 400;
+                    letter-spacing: -0.5px;
+                    margin-bottom: 26px;
+
+                    a {
+                        color: #fff;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+
+                    span {
+                        color: $first-main-color;
+                    }
+                }
+
+                .qodef-quote-author {
+                    font-size: 15px;
+					font-weight: 600;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .qodef-blog-list-item-mark.qodef-quote-mark {
+                position: absolute;
+                top: 50%;
+                right: 30px;
+                @include qodefTransform(translateY(-50%));
+                color: rgba(0,0,0,0.05);
+                font-size: 195px;
+                left: auto;
+
+                i {
+                    line-height: 1em;
+                }
+            }
+
+            .icon_link {
+                display: block;
+                text-align: right;
+            }
+
+            .icon_link:before {
+                font-size: 155px;
+                line-height: 200px;
+                margin-right: 0px;
+                color: rgba(0,0,0,0.05);
+            }
+
+            .qodef-blog-soundcloud-holder iframe {
+                vertical-align: middle;
+            }
+
+            &.qodef-blog-list-twitter {
+
+				.qodef-blog-list-item-mark.qodef-link-mark {
+					position: absolute;
+					top: 28px;
+					right: 15px;
+					font-size: 28px;
+					color: $default-heading-color;
+				}
+
+				.qodef-blog-list-item-text-holder {
+					padding: 0px;
+					text-align: left;
+				}
+
+				.qodef-ql-content {
+					padding: 70px 35px 30px;
+					position: relative;
+				}
+
+				.qodef-blog-list-item-twitter-user,
+				.qodef-post-title,
+				p,
+				.qodef-blog-list-item-info-section {
+					text-align: left;
+				}
+
+				.qodef-blog-list-item-twitter-user {
+					font-size: 18px;
+					font-weight: 600;
+					margin: 0 0 19px;
+					color: #bdbdbd;
+				}
+
+				.qodef-blog-list-twitter-content {
+					word-wrap: break-word;
+				}
+
+				.qodef-post-title {
+					margin-bottom: 18px;
+				}
+
+				.qodef-blog-list-twitter-excerpt {
+					margin: 34px 0 0;
+				}
+
+				.qodef-blog-list-item-info-section {
+					margin-top: 25%;
+				}
+        	}
+    }
+
+	.qodef-blog-list-masonry-grid-sizer {
+		width: 32%;
+	}
+
+	.qodef-blog-list-masonry-grid-gutter {
+		width: 2%;
+	}
+   }
+
+.qodef-blog-list-holder.qodef-masonry.qodef-holder-with-padding {
+
+    .qodef-blog-list-masonry-item {
+
+        .qodef-blog-list-item-text-holder {
+            padding: 22px 40px;
+        }
+
+         &.qodef-blog-list-link {
+
+            .qodef-blog-list-item-text-holder {
+                padding: 75px 54px 87px 37px;
+            }
+        }
+
+        &.qodef-blog-list-quote {
+
+            .qodef-blog-list-item-text-holder {
+                padding: 62px 54px 67px 37px;
+            }
+        }
+
+        &.qodef-blog-list-twitter {
+
+            .qodef-blog-list-item-text-holder {
+                padding: 0px;
+            }
+        }
+    }
+}
+
+.qodef-blog-list-holder.qodef-masonry.qodef-holder-with-shadow {
+
+    .qodef-blog-list-masonry-item {
+        @include qodefBoxShadow(0 2px 11px 4px rgba(0, 0, 0, 0.05));
+        @include qodefTransition(border-color 0.15s ease-out, box-shadow .3s);
+
+        &:hover {
+            @include qodefBoxShadow(0px 4px 11px 6px rgba(0, 0, 0, 0.08));
+        }
+    }
+}
+
+.qodef-blog-list-holder.qodef-boxes.qodef-holder-with-padding {
+
+    .qodef-item-text-holder {
+        padding: 20px 42px 41px 40px;
+    }
+}
+
+.qodef-blog-list-holder.qodef-boxes.qodef-holder-with-shadow {
+
+    .qodef-blog-list-item {
+        @include qodefBoxShadow(5px 5px 29px 0px rgba(235,235,235,1));
+        @include qodefTransition(border-color 0.15s ease-out, box-shadow .3s);
+
+        &:hover {
+            @include qodefBoxShadow(5px 5px 33px 0px rgba(235, 235, 235, 1));
+        }
+    }
+}

@@ -1,0 +1,9 @@
+wp-content/uplooads/
+wp-content/uplooads/*
+wp-content/wflogs/
+wp-content/wflogs/*
+wp-content/logs/
+wp-content/logs/*
+wp-settings.php
+wp-content/cache/
+wp-content/cache/*

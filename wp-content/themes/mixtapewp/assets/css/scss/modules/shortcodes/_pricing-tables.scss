@@ -1,0 +1,139 @@
+/* ==========================================================================
+# Pricing table style - begin
+========================================================================== */
+
+.qodef-pricing-tables.qodef-two-columns .qodef-price-table{
+	width: 48.75%;
+}
+
+.qodef-pricing-tables.qodef-three-columns .qodef-price-table{
+	width: 31.666666666666668%;
+}
+
+.qodef-pricing-tables.qodef-four-columns .qodef-price-table{
+	width: 23.125%;
+}
+.qodef-price-table{
+    position: relative;
+	width: 100%;
+	padding: 0;
+	margin-left: 2.5%;
+	float: left;
+    
+    &:first-child{
+        margin-left: 0;
+    }
+}    
+    
+.qodef-price-table .qodef-price-table-inner{
+    position: relative;
+    background-color: #f8f8f8;
+
+    ul{
+        list-style: none outside none;
+        margin: 0;
+    }
+
+    ul li{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li.qodef-table-title,
+    ul li.qodef-table-prices,
+    ul li.qodef-table-content{
+        border-bottom: 1px solid #e7e7e7;
+    }
+
+    ul li:last-child {
+        border-bottom: none!important;
+    }
+
+    ul li.qodef-table-title{
+        padding: 31px 10px 24px;
+        position: relative;
+    }
+
+    ul li.qodef-table-title .qodef-title-content {
+        display: block;
+		text-transform: uppercase;
+    }
+
+    ul li.qodef-table-content{
+        padding: 20px 25px 26px;
+    }
+
+	ul li.qodef-table-content ul{
+		padding:0;
+	}
+
+    ul li.qodef-table-content ul li:last-child{
+        border-bottom: none;
+    }
+
+    ul li.qodef-table-prices {
+        padding: 33px 0px 19px;
+        
+        .qodef-price-in-table {
+            text-align: center;
+        }
+
+		.qodef-price-holder {
+			display: block;
+		}
+        .qodef-value {
+            font-size: 24px;
+            line-height: 24px;
+            position: relative;
+            color: #000000;
+            vertical-align:top;
+            font-weight: 300;
+            bottom: 0;
+        }
+        .qodef-price {
+            font-size: 60px;
+            line-height: 60px;
+            padding: 0 3px;
+            vertical-align: middle;
+            font-weight: 600;
+            letter-spacing: -2px;
+			color: #1d1d1d;
+        }
+        .qodef-mark {
+            position: relative;
+            vertical-align:bottom;
+			display: block;
+			padding: 0 0 0 18px;
+        }
+    }
+	.qodef-price-button {
+		padding: 30px 0;
+	}
+}
+
+.qodef-price-table.qodef-active{
+	.qodef-price-table-inner {
+		margin: -26px 0 0;
+		padding: 0 0 10px;
+	}
+	>ul{
+        margin: -38px 0 0;
+        padding: 38px 0 0;
+        background-position: 0 38px;
+    }
+	.qodef-table-title {
+		background-color: #1d1d1d;
+
+		.qodef-title-content {
+			color: #fff;
+		}
+	}
+    .qodef-active-text{
+        text-align: center;
+		display: block;
+    }    
+}
+/* ==========================================================================
+# Pricing table style - end
+========================================================================== */

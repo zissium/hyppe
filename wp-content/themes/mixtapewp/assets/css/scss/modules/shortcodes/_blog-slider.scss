@@ -1,0 +1,92 @@
+/* ==========================================================================
+# Blog Slider style - begin
+========================================================================== */
+.qodef-blog-slider{
+
+	.qodef-blog-slide-title {
+		margin-bottom: 11px;
+	}
+
+	.qodef-blog-slide-post-info {
+		margin-bottom: 28px;
+		font-size: 12px;
+		line-height: 14px;
+
+		> div {
+			display: inline-block;
+			position: relative;
+			padding-right: 12px;
+			margin-right: 12px;
+			border-right: 1px solid #757575;
+
+			a {
+				color: $default-text-color;
+			}
+		}
+
+		> div:last-child {
+			border-right: none;
+			margin-right: 0;
+			padding-right: 0;
+		}
+	}
+
+	.qodef-blog-slide-excerpt {
+		margin-top: 0;
+		margin-bottom: 23px;
+	}
+
+	.qodef-blog-slide-read-more {
+		color: #000;
+		font-weight: 500;
+	}
+
+	.qodef-blog-slide-image {
+		img {
+			vertical-align: middle;
+		}
+	}
+
+	.qodef-blog-slide-info-holder {
+		padding: 70px 42px 67px 42px;
+		background-color: #fff;
+	}
+
+/* #Blog simple slider - start
+========================================================================== */
+
+	&.qodef-blog-slider-type-slider {
+
+
+
+	}
+/* #Blog simple slider - end
+========================================================================== */
+
+
+/* #Blog carousel - start
+========================================================================== */
+
+	&.qodef-blog-slider-type-carousel {
+
+		margin: 0 -13px;
+
+		.qodef-blog-carousel-item {
+			padding: 0 13px;
+		}
+	}
+
+
+
+/* #Blog carousel - end
+========================================================================== */
+
+
+
+}
+
+
+/* ==========================================================================
+# Blog Slider - end
+========================================================================== */
+

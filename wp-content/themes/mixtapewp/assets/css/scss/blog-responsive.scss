@@ -1,0 +1,148 @@
+@import 'variables';
+@import 'mixins';
+
+@include laptop-wide-landscape {
+	.qodef-blog-holder.qodef-masonry-full-width{
+		article,
+		.qodef-blog-masonry-grid-sizer{
+			width: 23.5%;
+		}
+	}
+}
+
+@include ipad-landscape {
+
+	.qodef-blog-holder.qodef-masonry-full-width{
+		article,
+		.qodef-blog-masonry-grid-sizer{
+			width: 32%;
+		}
+	}
+}
+
+@include ipad-portrait {
+	.qodef-blog-holder.qodef-blog-type-masonry{
+		article,
+		.qodef-blog-masonry-grid-sizer{
+			width: 49%;
+		}
+	}
+
+	.qodef-blog-holder.qodef-masonry-full-width{
+		article,
+		.qodef-blog-masonry-grid-sizer{
+			width: 49%;
+		}
+	}
+
+	.qodef-blog-holder.qodef-blog-type-masonry-gallery {
+		article {
+			width: 50%;
+
+			&.qodef-post-size-large-width-height, &.qodef-post-size-large-width {
+				width: 100%;
+			}
+		}
+
+		.qodef-blog-masonry-gallery-grid-sizer {
+			width:50%;
+		}
+	}
+
+	.qodef-column1 .qodef-related-posts-holder .qodef-related-post,
+	.qodef-column2 .qodef-related-posts-holder .qodef-related-post,
+	.qodef-related-posts-holder .qodef-related-post {
+		width: 49.875%;
+		&:nth-child(2n){
+			margin-right: 0;
+		}
+		&:nth-child(2n+1){
+			clear: both;
+		}
+	}
+	
+}
+
+@include phone-landscape {
+	.qodef-blog-holder.qodef-blog-type-masonry{
+		article,
+		.qodef-blog-masonry-grid-sizer{
+			width: 100%;
+		}
+	}
+
+	.qodef-blog-holder.qodef-masonry-full-width{
+		article,
+		.qodef-blog-masonry-grid-sizer{
+			width: 100%;
+		}
+	}
+
+	.qodef-blog-holder article.format-quote .qodef-post-title {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.qodef-blog-holder article .qodef-post-info-bottom .qodef-social-share-holder.qodef-list .qodef-social-share-title {
+	    display: none!important;
+	}
+}
+
+@include phone-portrait {
+	.qodef-blog-holder.qodef-blog-type-masonry-gallery {
+		article {
+			width: 100%;
+
+			&.qodef-post-size-large-width-height, &.qodef-post-size-large-width {
+				width: 100%;
+			}
+		}
+
+		.qodef-blog-masonry-gallery-grid-sizer {
+			width:100%;
+		}
+	}
+
+	.qodef-blog-holder article .qodef-post-info-bottom{
+        .qodef-post-info-bottom-left,
+        .qodef-post-info-bottom-right {
+            float: none;
+            text-align: left;
+            width: 100%;
+        }
+    }
+
+    .qodef-author-description{
+        .qodef-author-description-image{
+            float: none;
+            margin: 0px;
+            text-align: center;
+            width: 100%;
+
+            img{
+                display: inline-block;
+            }
+        }
+
+        .qodef-author-description-text-holder{
+            padding: 10px 0 0 0;
+        }
+    }
+
+    .qodef-post-info-bottom-right {
+        float: left;
+        text-align: right;
+        width: 50%;
+    }
+
+	.qodef-related-posts-holder .qodef-related-post {
+		width: 100% !important;
+		margin-right: 0 !important;
+	}
+	.qodef-related-posts-holder .qodef-related-posts-title h3:before,
+	.qodef-related-posts-holder .qodef-related-posts-title h3:after{
+		display: none !important;
+	}
+
+
+}

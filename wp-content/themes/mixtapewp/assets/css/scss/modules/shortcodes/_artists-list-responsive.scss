@@ -1,0 +1,48 @@
+@include ipad-portrait {
+	.qodef-artists-list-holder {
+		.qodef-artists-grid-sizer {
+			width: 50%;
+		}
+
+		.qodef-artist {
+			width: 50%;
+
+			&:nth-child(1) {
+				margin-top: 80px;
+			}
+
+			&:nth-child(2) {
+				margin-top: 220px;
+			}
+
+			&:nth-child(3) {
+				margin-top: 0px;
+			}
+
+			&:nth-child(3n+1) {
+				clear: both;
+			}
+		}
+	}
+}
+
+@include phone-portrait {
+	.qodef-artists-list-holder {
+		.qodef-artists-grid-sizer {
+			width: 100%;
+		}
+
+		.qodef-artist {
+			width: 100%;
+
+			&:nth-child(1) {
+				margin-top: 0px;
+			}
+
+			&:nth-child(2) {
+				margin-top: 0px;
+			}
+		}
+	}
+}
+

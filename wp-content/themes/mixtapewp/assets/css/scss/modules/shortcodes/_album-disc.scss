@@ -1,0 +1,145 @@
+/*==========================================================================
+   Album disc shortcode start styles
+   ========================================================================== */
+
+.qodef-album-disc {
+	display: inline-block;
+	position: relative;
+
+	%abs {
+		position: absolute;
+		top:0;
+		left:0;
+		height: 100%;
+		width: 100%;
+	}
+
+	>a {
+		@extend %abs;
+		width: 122%;
+		z-index: 100;
+
+		&:hover ~ .qodef-album-disc-inner .qodef-album-disc-case-holder:after {
+			opacity: 1;
+		}
+	}
+
+	.qodef-album-disc-inner {
+		position: relative;
+	}
+
+	.qodef-album-disc-case-holder {
+		position: relative;
+		z-index: 10;
+		
+		.qodef-album-disc-case {
+			display: block;
+		}
+
+		&:after {
+			content:'';
+			@extend %abs;
+			background-color: rgba(255,255,255,.03);
+			opacity: 0;
+			@include qodefTransition(opacity .2s);
+		}
+	}
+
+	.qodef-album-disc-element {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding-top: 100%;
+		width: 100%;
+		@include qodefTransform(translate3d(0,0,0));
+		@include qodefTransition(all .6s cubic-bezier(0.84,-0.29, 0.25, 1));
+
+		%cd-rim {
+			content:'';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: 29%;
+			width: 31%;
+			@include qodefTransform(translate(-50%,-50%));
+			border-radius: inherit;
+			z-index: 200;
+		}
+
+		.qodef-album-disc-image-holder {
+			position: absolute;
+			top: 2.5%;
+			left: 0;
+			height: 95.6%;
+			width: 97.6%;
+			@include qodefBorderRadius(50%);
+			@include qodefTransform(rotate(60deg));
+			@include qodefTransition(all .0s ease .6s);
+
+			.qodef-album-disc-image {
+				@extend %abs;
+				@include qodefBorderRadius(inherit);
+				background-position: center center;
+				background-size: cover;
+				background-repeat: no-repeat;
+
+				.qodef-album-disc-border {
+					position: absolute;
+					height: calc(100% + 3px);
+					width: calc(100% + 2px);
+					top: -3px;
+					left: -1px;
+					@include qodefBorderRadius(100%);
+					z-index: -1;
+					border: 2px solid rgba(255,255,255,.2);
+				}
+
+				&:after {
+					@extend %cd-rim;
+					border: 2px solid rgba(#333,.5);
+				}
+
+				&:before {
+					@extend %cd-rim;
+					background: rgba(255,255,255,.35);
+				}
+			}
+		}
+	}
+
+	&.qodef-animate-on-hover {
+		&:hover {
+			.qodef-album-disc-element {
+				@include qodefTransform(translate3d(23%,0,0));
+				@include qodefTransition(all .35s cubic-bezier(.15,.7,.54,.99));
+			}
+
+			.qodef-album-disc-image-holder {
+				@include qodefTransform(rotate(0deg));
+				@include qodefTransition(all .5s cubic-bezier(.15,.7,.54,.99));
+			}
+		}
+	}
+
+	&.qodef-animate-on-appear {
+		.qodef-album-disc-image-holder {
+			@include qodefTransform(rotate(180deg));
+		}
+
+		&.qodef-appeared {
+			.qodef-album-disc-element {
+				@include qodefTransform(translate3d(38%,0,0));
+				@include qodefTransition(all .6s cubic-bezier(.15,.7,.54,.99));
+			}
+
+			.qodef-album-disc-image-holder {
+				@include qodefTransform(rotate(0deg));
+				@include qodefTransition(all .7s cubic-bezier(0, 0.45, 0.54, 0.99));
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+  Album disc shortcode end styles
+  ==========================================================================*/

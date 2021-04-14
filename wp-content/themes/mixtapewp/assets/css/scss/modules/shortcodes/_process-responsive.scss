@@ -1,0 +1,57 @@
+
+@include laptop-landscape-only {
+	.qodef-process-holder.qodef-process-holder-items-five  {
+		.qodef-process-item-holder {
+			.qodef-pi-holder-inner {
+				padding: 0 25px;
+			}
+			.qodef-pi-number-holder {
+				.qodef-pi-arrow {
+					right: -40px;
+					font-size: 25px;
+				}
+			}
+		}
+		.qodef-process-inner {
+			margin: 0 -25px;
+		}
+	}
+}
+
+@include ipad-landscape {
+	.qodef-process-holder,
+	.qodef-process-holder.qodef-process-holder-items-five {
+		.qodef-process-item-holder {
+			width: 33.33%;
+			margin-bottom: 30px;
+
+			.qodef-pi-arrow {
+				display: none;
+			}
+		}
+	}
+}
+
+@include ipad-portrait {
+	.qodef-process-holder,
+	.qodef-process-holder.qodef-process-holder-items-three,
+	.qodef-process-holder.qodef-process-holder-items-five {
+		.qodef-process-item-holder {
+			width: 50%;
+
+			.qodef-pi-arrow {
+				display: none;
+			}
+		}
+	}
+}
+
+@include phone-landscape {
+	.qodef-process-holder,
+	.qodef-process-holder.qodef-process-holder-items-three,
+	.qodef-process-holder.qodef-process-holder-items-five {
+		.qodef-process-item-holder {
+			width: 100%;
+		}
+	}
+}

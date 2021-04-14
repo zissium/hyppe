@@ -1,0 +1,73 @@
+$grid-width: 1300px;
+$grid-width-laptop-wide-landscape: 1100px;
+$grid-width-laptop-landscape: 950px;
+$vertical-grid-width-laptop-landscape: 1035px;
+$grid-width-ipad-landscape: 768px;
+$vertical-grid-width-ipad-landscape: 900px;
+$grid-width-ipad-portrait: 600px;
+$grid-width-phone-landscape: 420px;
+$grid-width-phone-portrait: 300px;
+$grid-width-smaller-phone-portrait: 95%;
+
+$grid-width-boxed: 1350px;
+$grid-width-laptop-wide-landscape-boxed: 1150px;
+$grid-width-laptop-landscape-boxed: 1000px;
+$grid-width-ipad-landscape-boxed: 818px;
+$grid-width-ipad-portrait-boxed: 650px;
+$grid-width-phone-landscape-boxed: 470px;
+$grid-width-phone-portrait-boxed: 350px;
+$grid-width-smaller-phone-portrait-boxed: 96%;
+
+$grid-width-1300: 1300px;
+$grid-width-1200: 1200px;
+$grid-width-1000: 1000px;
+$grid-width-800: 800px;
+
+$first-main-color: #000;
+$first-main-font: 'Poppins', sans-serif;
+
+$default-background-color: #fff;
+$default-elements-background-color: #dadada;
+$default-text-color: #8a8a8a;
+$default-heading-color: #000;
+$default-border-color: #d2d2d2;
+$default-dark-border-color: #5a5a5a;
+$header-light-color: #ffffff;
+$header-dark-color: #000000;
+$box-background-color: #f3f3f3;
+$box-dark-background-color: #181818;
+$blog-icons-color: #dadada;
+$blog-icons-dark-color: #303030;
+$btn-hover-background: #1d1d1d;
+
+//responsive breakpoints
+$laptop-wide-landscape: 1400px;
+$laptop-mid-landscape: 1280px;
+$laptop-landscape: 1200px;
+$ipad-landscape: 1024px;
+$ipad-portrait: 768px;
+$phone-landscape: 667px;
+$phone-portrait: 480px;
+$smaller-phone-portrait: 320px;
+
+$vertical-menu-width: 90px;
+
+// responsive breakpoints vertical menu
+$vertical-menu-laptop-wide-landscape: 1650px;
+$vertical-menu-laptop-landscape: 1490px;
+$vertical-menu-ipad-landscape: 1314px;
+
+//skins
+$metal-background-color: #151515;
+$metal-title-background-color: #0a0a0a;
+$metal-box-background-color: #262626;
+$metal-blog-icons-color: #333333;
+$light-box-background-color: #262626;
+$light-blog-icons-color: #333333;
+$light-border-color: #343434;
+
+
+// easings
+$primary-easing: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+$aux-easing-1: cubic-bezier(0.19, 0.65, 0.02, 0.93);
+$aux-easing-2: cubic-bezier(0.18, 1.35, 0.2, 1.04);

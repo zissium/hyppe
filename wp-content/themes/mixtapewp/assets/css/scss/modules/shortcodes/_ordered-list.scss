@@ -1,0 +1,33 @@
+/* ==========================================================================
+# Ordered List Style - begin
+========================================================================== */
+.qodef-ordered-list ol {
+	counter-reset: li;
+	display: block;
+	list-style-type: none;
+	background-position: left center;
+	background-repeat: no-repeat;
+	margin: 0 0 30px;
+    li{
+        font-family: inherit;
+        padding: 6px 0px;
+    }
+    >li:before{
+        color: $first-main-color;
+        content: counter(li, decimal-leading-zero);
+        counter-increment: li;
+        padding-right: 15px;
+    }
+}
+.qodef-ordered-list ul{
+    counter-reset: li;
+	display: block;
+	list-style-type: none;
+	background-position: left center;
+	background-repeat: no-repeat;
+	margin: 0 0 30px;
+}
+
+/* ==========================================================================
+# Ordered List Style - end
+========================================================================== */

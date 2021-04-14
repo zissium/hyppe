@@ -1,0 +1,123 @@
+.qodef-header-vertical {
+    .qodef-vertical-dropdown-float {
+        .menu-item .qodef-menu-second {
+            position: absolute;
+            top: -13px;
+            left: calc(210px + 35px); /*because of the padding*/
+            width: 287px;
+            margin-left: 50px;
+            opacity: 0;
+            background-color: rgba(0,0,0,.9);
+            visibility: hidden;
+
+            @include qodefTransition(all 0.3s ease-in-out);
+
+            * {
+                visibility: hidden;
+
+                @include qodefTransition(visibility 0.3s ease-in-out)
+            }
+        }
+
+        .menu-item .qodef-menu-second.qodef-float-open {
+            margin-left: 0px;
+            opacity: 1;
+            visibility: visible;
+
+            * {
+                visibility: visible;
+            }
+        }
+
+        .menu-item .qodef-menu-second.vertical_menu_start ul li ul,
+        .menu-item .qodef-menu-second.vertical_menu_start ul li ul * {
+            visibility: hidden;
+        }
+
+        .menu-item .qodef-menu-second.vertical_menu_start ul li ul.qodef-float-open,
+        .menu-item .qodef-menu-second.vertical_menu_start ul li ul.qodef-float-open * {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .qodef-menu-second .qodef-menu-inner ul {
+            width: 100%;
+            @include qodefBoxSizing(border-box);
+            padding: 13px 0;
+        }
+
+        li.qodef-menu-narrow .qodef-menu-second .qodef-menu-inner ul {
+            /*because of the .narrow styling*/
+            border: none;
+            padding: 13px 0px 9px 0px;
+        }
+
+        .qodef-menu-second .qodef-menu-inner ul ul {
+            position: absolute;
+            border: none;
+            top: 0;
+            left: 100%;
+            margin-left: 50px;
+            height: auto;
+            visibility: hidden;
+            width: 287px;
+            opacity: 0;
+            overflow: hidden;
+            z-index: 10;
+            background-color: rgba(0,0,0,.9);
+            transition: all 0.3s ease-in-out;
+
+            @include qodefTransition(all 0.3s ease-in-out);
+        }
+
+        .qodef-menu-second .qodef-menu-inner ul ul.qodef-float-open {
+            opacity: 1;
+            margin-left: 0;
+            visibility: visible;
+	        z-index: 900;
+        }
+
+        .qodef-menu-second .qodef-menu-inner ul li a {
+            display: block;
+            height: auto;
+            font-weight: 400;
+            line-height: 18px;
+            color: #c7c7c7;
+            margin: 0 19px!important;
+            padding: 13px 4px!important;
+            text-decoration: none;
+            position: relative;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            @include qodefTransition(color 0.15s ease-out);
+
+            &:hover {
+                color: #fff;
+            }
+
+            .qodef-item-inner-desc {
+                font-size: 13px;
+                font-style: italic;
+                font-weight: 400;
+                color: #8c8c8c;
+                transition: color .15s ease-out;
+	            line-height: 1em;
+            }
+        }
+
+        .qodef-menu-second .qodef-menu-inner ul li a:hover .qodef-item-inner-desc {
+            color: #fff;
+        }
+
+        ul li a .qodef-menu-arrow {
+            line-height: 21px;
+            float: right;
+        }
+
+        .qodef-menu-second .qodef-menu-inner > ul > li > a .qodef-menu-icon {
+            @include qodefTransition(color 0.15s ease-out);
+        }
+    }
+}

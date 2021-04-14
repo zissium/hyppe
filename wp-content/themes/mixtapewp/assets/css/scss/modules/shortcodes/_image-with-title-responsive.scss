@@ -1,0 +1,47 @@
+@media only screen and (max-width: $ipad-portrait) {
+
+	.qodef-image-with-title {
+        &.qodef-iwt-left{
+            .qodef-iwt-text{
+                @include qodefTransform(translateX(3%));
+            }
+        }
+
+        &.qodef-iwt-right {
+            .qodef-iwt-text{
+                @include qodefTransform(translateX(-3%));
+            }
+        }
+
+		&.qodef-iwt-vertical-middle {
+
+			.qodef-iwt-text {
+				@include qodefTransform(translateX(3%) translateY(-50%));
+			}
+
+			/* Right Horizontal Alignment */
+			&.qodef-iwt-right {
+
+				.qodef-iwt-text {
+					@include qodefTransform(translateX(-3%) translateY(-50%));
+				}
+			}
+		}
+
+		/* Bottom Vertical Alignment */
+		&.qodef-iwt-vertical-bottom {
+
+			.qodef-iwt-text {
+				@include qodefTransform(translateX(3%));
+			}
+
+			/* Right Horizontal Alignment */
+			&.qodef-iwt-right {
+
+				.qodef-iwt-text {
+					@include qodefTransform(translateX(-3%));
+				}
+			}
+		}
+	}
+}

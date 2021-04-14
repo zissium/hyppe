@@ -1,0 +1,28 @@
+@include ipad-landscape {
+	.qodef-fullscreen-search-holder {
+		.qodef-search-label {
+		    font-size: 20px;
+		    font-weight: 500;
+		}
+		.qodef-form-holder {
+		    padding-bottom: 0;
+		}
+		.qodef-field-holder {
+		    width: 60%;
+		}
+		.qodef-search-submit {
+		    font-size: 17px;
+		}
+	}
+}
+
+@include phone-landscape {
+	.qodef-fullscreen-search-holder {
+		.qodef-search-label {
+			display: none;
+		}
+		.qodef-field-holder {
+		    width: 80%;
+		}
+	}
+}

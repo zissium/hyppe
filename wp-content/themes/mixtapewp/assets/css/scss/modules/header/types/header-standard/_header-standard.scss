@@ -1,0 +1,51 @@
+.qodef-header-standard {
+
+    .qodef-menu-area {
+        background-color: #fff;
+		border-bottom: 1px solid transparent;
+		box-sizing: border-box;
+
+        .qodef-vertical-align-containers {
+
+            .qodef-position-right-inner{
+                height: 100%;
+            }
+        }
+    }
+	.qodef-vertical-align-containers {
+		.widget {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.qodef-drop-down .qodef-menu-wide .widget a{
+			margin: 0 !important; //disable hover
+		}
+	}
+
+	.qodef-fullscreen-menu-opener{
+		span{
+			padding-right:10px;
+		}
+	}
+
+	.qodef-fullscreen-menu-opener,
+	.qodef-right-from-main-menu-widget{
+		position:relative;
+		display:inline-block;
+		vertical-align: top;
+		top: 50%;
+		padding-right:10px;
+		@include qodefTransform(translateY(-50%));
+	}
+
+	.qodef-sticky-header{
+
+		.qodef-position-center-inner,
+		.qodef-position-right-inner {
+			height: 100%;
+		}
+
+	}
+}
+

@@ -1,0 +1,59 @@
+/* ==========================================================================
+# Unordered List Style - begin
+========================================================================== */
+
+.qodef-unordered-list ul{
+	display: block;
+	margin: 0;
+	padding: 0;
+    list-style-type: none;
+    
+    >li{
+        position: relative;
+        padding: 6px 0px 6px 24px;
+
+        &:before {
+            width: 15px;
+            line-height: inherit;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            padding: 0;
+            color: $first-main-color;
+            text-align: center;
+            content: '\25cf';
+            font-size: 10px;
+        }
+    }    
+}
+.qodef-unordered-list.qodef-line  ul{
+    >li:before {
+        content: '-';
+        font-size: inherit;
+    }
+}
+.qodef-unordered-list.qodef-arrow ul{
+    
+    >li:before {
+        top: 1px;
+        content: '\24';
+        font-size: 15px;
+        font-family: 'ElegantIcons';
+    }
+}
+.qodef-unordered-list.qodef-animate-list ul li {
+    opacity: 0;
+    top: -40px;
+    @include qodefTransition(opacity 0.4s ease-in-out,
+            top 0.4s ease-in-out)
+}
+
+.qodef-unordered-list.qodef-animate-list.qodef-appeared ul li,
+.touch .no_animation_on_touch .qodef-unordered-list.qodef-animate-list  ul li{
+    opacity: 1;
+    top: 0;
+}
+
+/* ==========================================================================
+# Unordered List Style - end
+========================================================================== */

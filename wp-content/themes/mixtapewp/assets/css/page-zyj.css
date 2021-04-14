@@ -1,0 +1,494 @@
+footer .qodef-footer-top:not(.qodef-footer-top-full) .qodef-container-inner {
+    padding: 0;
+    line-height: 34px;
+}
+
+.qodef-footer-inner .qodef-four-columns .qodef-column{
+    float: left;
+    width: 25%;
+}
+
+footer .qodef-footer-top.qodef-footer-top-aligment-center {
+    text-align: center;
+    padding: 10px;
+}
+
+body footer {
+    background-color: #000000!important;
+}
+
+.contactFormWrapper {
+    background-color: #171717;
+    color: #fff;
+}
+
+
+.contactFormContent {
+    width: 1190px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.radio-block {
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.radio-block .radio {
+ display: inline-block;
+    margin-right: 20px;
+}
+
+.displaynone {
+    display: none!important;
+}
+
+.leftContent {
+    float: left;
+    width: 650px;
+    padding-right: 80px;
+    border-right: 1px solid rgba(255,255,255,.1);
+    margin-top: 20px;
+}
+
+input.res-inp {
+    font-size: 16px!important;
+    color: #fff!important;
+    width: 240px!important;
+    height: 48px!important;
+    line-height: 48px!important;
+    box-sizing: border-box;
+    border-radius: 30px!important;
+    background: none!important;
+    padding: 0 10px 0 16px;
+    transition: border-color .4s;
+
+}
+
+.distpicker select.res-inp {
+    width: 43%!important;
+}
+select.res-inp {
+    white-space: nowrap!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    padding-right: 30px!important;
+    float:left!important;
+    margin-right: 10px!important;
+    height: auto!important; 
+}
+
+#contact_industry {
+    margin-left: 1%;
+}
+
+select.res-inp {
+    font-size: 16px!important;
+    width: 242px!important;
+    height: 48px!important;
+    line-height: 48px!important;
+    color: #fff!important;
+    border-radius: 30px!important;
+    padding: 0 10px 0 16px!important;
+    transition: border-color .4s!important;
+    appearance: none!important;
+    -moz-appearance: none!important;
+    -webkit-appearance: none!important;
+    background-color: #7d7d7d!important;
+    outline: 0!important;
+    
+}
+
+.screen-reader-response ,.wpcf7-response-output {
+    display: none!important;
+}
+
+.distpicker {
+    width: 43%;
+    float:left;
+}
+
+.message {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    background-color: #e4e4e4;
+    padding: 20px;
+    color: #000;
+}
+
+.btn-erea {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.btn-erea .btn-reservation {
+    width: 506px;
+    height: 48px!important;
+    line-height: 48px!important;
+    font-size: 16px;
+}
+
+.qodef-album-details span:first-child {
+    display: none;
+}
+
+.qodef-album-details {
+    overflow: hidden;
+    float: right;
+    display: inline-block;
+    width: 75%;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 800px!important;
+        margin: 1.75rem auto;
+        top:20%;
+    }
+}
+
+.albumsabel {
+    float:left;
+    margin-right: 20px;
+}
+
+.albumlist {
+    overflow: hidden;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.qodef-album-details span {
+ 
+    margin-right: 20px;
+
+}
+
+.leftContent h3 {
+    padding-left: 27%;
+}
+
+.btn-white {
+    display: inline-block;
+    zoom: 1;
+    box-sizing: border-box;
+    border-radius: 29px;
+    background-color: #296bef;
+    /* box-shadow: 0 1px 0 rgba(44,114,255,.08), 0 6px 12px rgba(44,114,255,.18); */
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 32px;
+    height: 48px;
+    /* font-weight: bold; */
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+    outline: 0;
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    background-color: #2196F3;
+}
+
+.distpicker .form-group select {
+    background: none;
+    border-radius: 30px;
+    color:#fff;
+}
+
+.inputWrapper {
+    list-style-type:none;
+    padding-left: 1%;
+    padding-bottom: 20px;
+}
+
+.notice {
+    color: #f10000;
+    display: none;
+    position: absolute;
+    bottom: -25px;
+    z-index: 1111;
+    left: 10px;
+    font-size: 14px;
+}
+
+
+
+.inputWrapper li {
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+.inputWrapper li > div {
+    float:left;
+    margin-right: 20px;
+    position: relative;
+}
+
+.res-inp::-webkit-input-placeholder{
+    color:#fff;
+}
+.res-inp::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#fff;
+}
+input::-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#fff;
+}
+input::-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#fff;
+}
+
+.rightContent {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.borderRed {
+    border: #ef0000 solid 2px!important;
+}
+
+.inputWrapper .disableColor {
+    background-color: #c5c5c5!important;
+    border-radius: 20px;
+    margin: 0;
+}
+
+.resouce {
+    padding: 0 8%;
+}
+
+.resouce .qodef-iwt-text-holder {
+    text-align: left;
+}
+
+.caseTitle {
+    text-align: center;
+}
+
+.maketingWrapper img {
+    position: absolute;
+    top:0;
+    left:0;
+    cursor: pointer;
+}
+
+.maketingWrapper .image2 {
+    display: none;
+}
+
+.brandlist {
+    text-align: center;
+}
+
+.peixun-title {
+   text-align: center;
+}
+
+.peixun-desc .vc_column-inner {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    /* padding: 00; */
+    height: 230px;
+    padding-top: 0!important;
+}
+
+.customshchem .wpb_text_column p {
+    font-size: 24px;
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.headerBannerdecri {
+    margin: 15% 20%;
+}
+
+.casetitle {
+    text-align: center;
+}
+
+header .qodef-vertical-align-containers .qodef-position-left {
+    float: left;
+    height: 100%!important;
+    padding-left: 0!important;
+    position: relative;
+    z-index: 2;
+}
+
+header .qodef-vertical-align-containers .qodef-position-right {
+    float: right;
+    padding-right: 0;
+    height: 100%!important;
+    position: relative;
+    text-align: right;
+    z-index: 2;
+}
+
+header .qodef-main-menu>ul {
+    height: 100%!important;
+}
+
+
+
+@media (max-width: 767px) {
+    .contactFormContent {
+        width: auto!important;
+    }
+
+    .serviceDecri .wpb_raw_html {
+        margin-top: 1% !important;
+        padding-right: 5% !important;
+        padding-left: 5% !important;
+    }
+
+    .serviceAdvantage  .vc_column-inner {
+        margin-top: 1% !important;
+        padding-right: 5% !important;
+        padding-left: 5% !important;
+    }
+
+    .headerbannerwrapper {
+        min-height: 300px!important;
+        background-image: none!important;
+    }
+
+    .headerbannerwrapper .wpb_raw_html {
+        margin:10px!important;
+    }
+
+    .en-flag {
+        background-position: 51px 25px!important;
+    }
+
+    .headerbannerwrapper .bannerDescWrapper {
+        margin-top: 5% !important;
+        margin-right: 10% !important;
+        margin-left: 20% !important;
+        margin: 0!important;
+        margin-bottom: 10px!important;
+    }
+
+    .headerBannerdecri h5 {
+       font-size: 28px!important;
+    }
+
+    .headerBannerdecri h3 {
+        font-size: 15px!important;
+     }
+
+    .headerBannerdecri {
+        margin: 0;
+        padding:20px;
+    }
+
+    .bannerWrapper {
+        margin-left: 2% !important;
+    }
+
+    .leftContent {
+        width: auto!important;
+        float:none!important;
+        padding-right: 0;
+    }
+
+    input.res-inp {
+        width: 90%!important;
+        margin: 0 auto;
+        display: block;
+    }
+
+    select.res-inp {
+        width: 90%!important;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .btn-erea .btn-reservation {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .distpicker {
+        width:100%!important;
+    }
+    
+    .inputWrapper {
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+
+    .distpicker select.res-inp {
+        width: 90%!important;
+        margin-right: 0!important;
+        margin-left: 0;
+        margin: 0 auto!important;
+        /* margin-right: 0!important; */
+        float: none!important;
+        margin-bottom: 15px!important;
+    }
+
+    #contact_industry {
+        width: 100%!important;
+        width: 90%!important;
+        margin: 0 auto!important;
+        margin-bottom: 15px!important;
+        float: none!important;
+        display: block;
+    }
+
+    .inputWrapper li > div {
+        float: none;
+        margin-right: 0; 
+        position: relative;
+    }
+
+    .inputWrapper li {
+        padding-bottom: 0;
+    }
+
+    .qodef-mobile-header .qodef-mobile-header-inner {
+        height:50px!important;
+    }
+
+    .leftContent h3 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    footer .qodef-footer-top {
+        display:none;
+    }
+
+    .qodef-mobile-header .qodef-mobile-nav {
+        display: none;
+        background-color: #fff;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+    }  
+    
+    .qodef-animate-mobile-header .qodef-mobile-nav {
+        display: none!important;
+    }
+
+    .qodef-mobile-header .qodef-mobile-nav a, .qodef-mobile-header .qodef-mobile-nav h4 {
+        color: #131212;
+    }
+
+    .product-cat-list {
+        width: 95%;
+        padding: 0;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+
+}

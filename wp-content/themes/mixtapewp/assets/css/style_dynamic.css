@@ -1,0 +1,218 @@
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/assets/custom-styles/general-custom-styles.php mixtape_qodef_design_styles function */
+.qodef-preload-background { background-image: url(https://yabaro.com/wp-content/themes/mixtapewp/assets/img/preload_pattern.png) !important;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/assets/custom-styles/general-custom-styles.php mixtape_qodef_design_styles function */
+.qodef-boxed .qodef-wrapper { background-attachment: fixed;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/assets/custom-styles/general-custom-styles.php mixtape_qodef_h6_styles function */
+h6 { color: #a5a5a5;font-weight: 400;}
+
+/* generated in /home/projects/yabaro.com/wp-content/plugins/select-core/shortcodes/button/custom-styles/custom-styles.php mixtape_qodef_button_typography_styles function */
+.qodef-btn { font-family: Open Sans;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_1 function */
+.cf7_custom_style_1 ::-webkit-input-placeholder { color: rgba(255,255,255,0.4);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_1 function */
+.cf7_custom_style_1 :-moz-placeholder { color: rgba(255,255,255,0.4);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_1 function */
+.cf7_custom_style_1 ::-moz-placeholder { color: rgba(255,255,255,0.4);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_1 function */
+.cf7_custom_style_1 :-ms-input-placeholder { color: rgba(255,255,255,0.4);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_1 function */
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date, .cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea, .cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz { color: rgba(255,255,255,0.4);font-size: 16px;line-height: 20px;font-weight: 600;text-transform: capitalize;background-color: rgba(255, 255, 255, 0);border-color: rgba(255, 255, 255, 1);border-width: 2px;border-top: none;border-left: none;border-right: none;margin-bottom: 77px;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_1 function */
+.cf7_custom_style_1 input:focus::-webkit-input-placeholder, .cf7_custom_style_1 textarea:focus::-webkit-input-placeholder { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_1 function */
+.cf7_custom_style_1 input:focus:-moz-placeholder, .cf7_custom_style_1 textarea:focus:-moz-placeholder { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_1 function */
+.cf7_custom_style_1 input:focus::-moz-placeholder, .cf7_custom_style_1 textarea:focus::-moz-placeholder { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_1 function */
+.cf7_custom_style_1 input:focus:-ms-input-placeholder, .cf7_custom_style_1 textarea:focus:-ms-input-placeholder { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_1 function */
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date:focus, .cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea:focus, .cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz:focus { color: #ffffff;background-color: rgba(255, 255, 255, 0);border-color: rgba(255, 255, 255, 1);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_button_styles_1 function */
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit { color: #000000;font-size: 14px;height: 52px;font-weight: 700;text-transform: lowercase;background-color: rgba(255, 255, 255, 1);border-color: rgba(250, 250, 250, 1);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_button_hover_styles_1 function */
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit:not([disabled]):hover { color: #ffffff;background-color: rgba(255, 255, 255, 0);border-color: rgba(255, 255, 255, 1);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_2 function */
+.cf7_custom_style_2 ::-webkit-input-placeholder { color: #838282;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_2 function */
+.cf7_custom_style_2 :-moz-placeholder { color: #838282;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_2 function */
+.cf7_custom_style_2 ::-moz-placeholder { color: #838282;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_2 function */
+.cf7_custom_style_2 :-ms-input-placeholder { color: #838282;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_2 function */
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-text, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-number, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-date, .cf7_custom_style_2 textarea.wpcf7-form-control.wpcf7-textarea, .cf7_custom_style_2 select.wpcf7-form-control.wpcf7-select, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-quiz { color: #838282;font-size: 18px;line-height: 52px;font-weight: 400;text-transform: capitalize;background-color: rgba(255, 255, 255, 0);border-color: rgba(0, 0, 0, 1);border-width: 2px;border-top: none;border-left: none;border-right: none;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;padding-left: 5px;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_2 function */
+.cf7_custom_style_2 input:focus::-webkit-input-placeholder, .cf7_custom_style_2 textarea:focus::-webkit-input-placeholder { color: #838282;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_2 function */
+.cf7_custom_style_2 input:focus:-moz-placeholder, .cf7_custom_style_2 textarea:focus:-moz-placeholder { color: #838282;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_2 function */
+.cf7_custom_style_2 input:focus::-moz-placeholder, .cf7_custom_style_2 textarea:focus::-moz-placeholder { color: #838282;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_2 function */
+.cf7_custom_style_2 input:focus:-ms-input-placeholder, .cf7_custom_style_2 textarea:focus:-ms-input-placeholder { color: #838282;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_2 function */
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-text:focus, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-number:focus, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-date:focus, .cf7_custom_style_2 textarea.wpcf7-form-control.wpcf7-textarea:focus, .cf7_custom_style_2 select.wpcf7-form-control.wpcf7-select:focus, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-quiz:focus { color: #838282;background-color: rgba(255, 255, 255, 0);border-color: rgba(0, 0, 0, 1);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_button_styles_2 function */
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-submit { color: #ffffff;font-size: 14px;height: 52px;font-weight: 700;text-transform: lowercase;background-color: rgba(0, 0, 0, 1);border-color: rgba(0, 0, 0, 1);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_button_hover_styles_2 function */
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-submit:not([disabled]):hover { color: #ffffff;background-color: rgba(29, 29, 29, 1);border-color: rgba(29, 29, 29, 1);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_3 function */
+.cf7_custom_style_3 ::-webkit-input-placeholder { color: rgba(255,255,255,0.5);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_3 function */
+.cf7_custom_style_3 :-moz-placeholder { color: rgba(255,255,255,0.5);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_3 function */
+.cf7_custom_style_3 ::-moz-placeholder { color: rgba(255,255,255,0.5);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_3 function */
+.cf7_custom_style_3 :-ms-input-placeholder { color: rgba(255,255,255,0.5);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_text_styles_3 function */
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-text, .cf7_custom_style_3 input.wpcf7-form-control.wpcf7-number, .cf7_custom_style_3 input.wpcf7-form-control.wpcf7-date, .cf7_custom_style_3 textarea.wpcf7-form-control.wpcf7-textarea, .cf7_custom_style_3 select.wpcf7-form-control.wpcf7-select, .cf7_custom_style_3 input.wpcf7-form-control.wpcf7-quiz { color: rgba(255,255,255,0.5);font-size: 16px;line-height: 20px;font-weight: 600;text-transform: capitalize;background-color: rgba(255, 255, 255, 0);border-color: rgba(255, 255, 255, 1);border-width: 2px;border-top: none;border-left: none;border-right: none;margin-bottom: 77px;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_3 function */
+.cf7_custom_style_3 input:focus::-webkit-input-placeholder, .cf7_custom_style_3 textarea:focus::-webkit-input-placeholder { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_3 function */
+.cf7_custom_style_3 input:focus:-moz-placeholder, .cf7_custom_style_3 textarea:focus:-moz-placeholder { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_3 function */
+.cf7_custom_style_3 input:focus::-moz-placeholder, .cf7_custom_style_3 textarea:focus::-moz-placeholder { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_3 function */
+.cf7_custom_style_3 input:focus:-ms-input-placeholder, .cf7_custom_style_3 textarea:focus:-ms-input-placeholder { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_focus_styles_3 function */
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-text:focus, .cf7_custom_style_3 input.wpcf7-form-control.wpcf7-number:focus, .cf7_custom_style_3 input.wpcf7-form-control.wpcf7-date:focus, .cf7_custom_style_3 textarea.wpcf7-form-control.wpcf7-textarea:focus, .cf7_custom_style_3 select.wpcf7-form-control.wpcf7-select:focus, .cf7_custom_style_3 input.wpcf7-form-control.wpcf7-quiz:focus { color: #ffffff;background-color: rgba(255, 255, 255, 0);border-color: rgba(255, 255, 255, 1);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_button_styles_3 function */
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-submit { color: #ffffff;font-size: 14px;height: 52px;font-weight: 700;text-transform: lowercase;background-color: rgba(255, 255, 255, 0);border-color: rgba(255, 255, 255, 1);border-width: 2px;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/contactform7/custom-styles/contact-form.php mixtape_qodef_contact_form7_button_hover_styles_3 function */
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-submit:not([disabled]):hover { color: #000000;background-color: rgba(255, 255, 255, 1);border-color: rgba(255, 255, 255, 0);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/header/custom-styles/header.php mixtape_qodef_header_standard_menu_area_styles function */
+.qodef-header-standard .qodef-page-header .qodef-logo-wrapper a { max-height: 90px;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/header/custom-styles/header.php mixtape_qodef_header_standard_menu_area_styles function */
+.error404 .qodef-content .qodef-container .qodef-404-page { height: calc(100vh - 100px);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/header/custom-styles/header.php mixtape_qodef_header_standard_menu_area_styles function */
+.qodef-header-standard .qodef-page-header .qodef-menu-area { background-color: rgba(255, 255, 255, 1);border-bottom: none;height: 100px;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/header/custom-styles/header.php mixtape_qodef_header_full_screen_menu_area_styles function */
+.qodef-header-full-screen .qodef-page-header .qodef-menu-area { border-bottom: none;}
+
+
+        
+        
+        
+        
+	            
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                    .qodef-drop-down .qodef-menu-second .qodef-menu-inner > ul > li:last-child > a,
+            .qodef-drop-down .qodef-menu-second .qodef-menu-inner > ul > li > ul > li:last-child > a,
+            .qodef-drop-down .qodef-menu-second .qodef-menu-inner > ul > li > ul > li > ul > li:last-child > a{
+            border-bottom:1px solid transparent;
+            }
+
+                            .qodef-drop-down .qodef-menu-second .qodef-menu-inner ul li,
+            .header-widget.widget_nav_menu ul.menu li ul li{
+	        border-bottom-width:1px;
+	        border-bottom-style:solid;
+                        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                
+                /* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/search/custom-styles/search.php mixtape_qodef_search_opener_icon_colors function */
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header) .qodef-search-opener,
+			.qodef-light-header.qodef-header-style-on-scroll .qodef-page-header .qodef-search-opener,
+			.qodef-light-header .qodef-top-bar .qodef-search-opener { color: #ffffff !important;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/search/custom-styles/search.php mixtape_qodef_search_text_styles function */
+.qodef_search_field::-webkit-input-placeholder { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/search/custom-styles/search.php mixtape_qodef_search_text_styles function */
+.qodef_search_field:-moz-placeholder { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/search/custom-styles/search.php mixtape_qodef_search_text_styles function */
+.qodef_search_field::-moz-placeholder { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/search/custom-styles/search.php mixtape_qodef_search_text_styles function */
+.qodef_search_field:-ms-input-placeholder { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/search/custom-styles/search.php mixtape_qodef_search_text_styles function */
+.qodef-search-cover input[type="text"], .qodef-fullscreen-search-opened .qodef-form-holder .qodef-search-field, .qodef-search-slide-window-top input[type="text"] { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/search/custom-styles/search.php mixtape_qodef_search_label_styles function */
+.qodef-fullscreen-search-holder .qodef-search-label { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/search/custom-styles/search.php mixtape_qodef_search_icon_styles function */
+.qodef-search-slide-window-top > i, .qodef-fullscreen-search-holder .qodef-search-submit { color: rgba(255,255,255,0.7);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/search/custom-styles/search.php mixtape_qodef_search_close_icon_styles function */
+.qodef-search-slide-window-top .qodef-search-close i, .qodef-search-cover .qodef-search-close i,.qodef-search-cover .qodef-search-close span, .qodef-fullscreen-search-close { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/search/custom-styles/search.php mixtape_qodef_search_close_icon_styles function */
+.qodef-search-slide-window-top .qodef-search-close i:hover, .qodef-search-cover .qodef-search-close i:hover,.qodef-search-cover .qodef-search-close span:hover, .qodef-fullscreen-search-close:hover { color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/search/custom-styles/search.php mixtape_qodef_search_border_styles function */
+.qodef-fullscreen-search-holder .qodef-field-holder { border-color: rgba(255,255,255,0.4);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/search/custom-styles/search.php mixtape_qodef_search_border_styles function */
+.qodef-fullscreen-search-holder .qodef-field-holder .qodef-line { background-color: rgba(255,255,255,0.4);}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/sidearea/custom-styles/sidearea.php mixtape_qodef_side_area_slide_from_right_type_style function */
+.qodef-side-menu-slide-from-right .qodef-wrapper .qodef-cover { background-color: #ffffff;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/sidearea/custom-styles/sidearea.php mixtape_qodef_side_area_alignment function */
+.qodef-side-menu-slide-from-right .qodef-side-menu, .qodef-side-menu-slide-with-content .qodef-side-menu, .qodef-side-area-uncovered-from-content .qodef-side-menu { text-align: left;}
+
+/* generated in /home/projects/yabaro.com/wp-content/themes/mixtapewp/framework/modules/sidearea/custom-styles/sidearea.php mixtape_qodef_side_area_title_styles function */
+.qodef-side-menu-title h4, .qodef-side-menu-title h5 { color: #ffffff;}
+

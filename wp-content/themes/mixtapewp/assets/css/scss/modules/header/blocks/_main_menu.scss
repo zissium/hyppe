@@ -1,0 +1,739 @@
+.qodef-main-menu {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+
+    .qodef-main-menu-line{
+    	position: absolute;
+    	left:0;
+    	width: 0;
+    	height: 0;
+    	z-index: 100;
+    	border-top: 4px solid currentColor;
+    	top:0;
+    	@include qodefTransition(width .4s, left .6s cubic-bezier(0.19, 0.65, 0.02, 0.93));
+    }
+
+    ul {
+        list-style: none outside none;
+        margin: 0px;
+        padding: 0px;
+        text-align: left;
+
+        li {
+
+            position: relative;
+            display: inline-block;
+            float: left;
+            padding: 0px;
+            margin: 0px;
+            background-repeat: no-repeat;
+            background-position: right;
+
+            a {
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 500;
+                color: $first-main-color;
+
+                body:not(.qodef-menu-with-large-icons) & span.qodef-item-inner i:before{
+                    margin: 0 7px 0 0;
+                }
+
+				.qodef-item-outer{
+					position: relative;
+					display: inline-block;
+					width: 100%;
+					vertical-align: middle;
+				}
+
+				.qodef-featured-icon{
+					font-size: 9px;
+					color: #fff;
+					display: block;
+					position: absolute;
+					right:0;
+					top:1px;
+					@include qodefTransform(translateX(150%));
+				}
+            }
+        }
+    }
+
+    > ul {
+
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        height: 100%;
+
+        > li {
+
+            height: 100%;
+
+            body:not(.qodef-menu-item-first-level-bg-color) &:hover > a,
+            &.qodef-active-item > a {
+                color: $first-main-color;
+            }
+
+            &.qodef-has-sub {
+                > a i.qodef-menu-arrow {
+                    display: none;
+                    margin-left: 6px;
+                }
+
+                > a .qodef-item-inner > i.qodef-menu-arrow{
+                    position: relative;
+                    left:4px;
+                }
+
+	            > a{
+		            span.plus{
+			            display: none;
+			            position: relative;
+			            right: 10px;
+			            font-family: 'ElegantIcons';
+			            speak: none;
+			            font-style: normal;
+			            font-weight: normal;
+			            font-variant: normal;
+			            text-transform: none;
+			            line-height: 1;
+			            -webkit-font-smoothing: antialiased;
+			            &:before{
+				            content:"\33";
+			            }
+		            }
+	            }
+            }
+
+            > a {
+
+                height: 100%;
+                position: relative;
+                padding: 0;
+                display: inline-block;
+                vertical-align: middle;
+                border-style: solid;
+                border-width: 0px;
+                border-color: transparent;
+                background-color: transparent;
+                @include qodefTransition(color 0.15s ease-out, color 0.15s ease-out, border-color 0.15s ease-out, background-color 0.15s ease-out);
+
+                &:before {
+                    height: 2px;
+                    bottom: 0px;
+                }
+
+                &:after {
+                    height: 1px;
+                    bottom: 4px;
+                }
+
+                body.qodef-menu-with-large-icons &{
+                    text-align: center;
+                    vertical-align:middle;
+                }
+
+                > span.qodef-item-outer{
+                    display: block;
+                    position: relative;
+                    top: 50%;
+                    @include qodefTransform(translateY(-50%));
+                }
+
+                span.qodef-item-inner {
+                    display: inline-block;
+                    padding: 0 15px;
+                    border-width: 0px;
+                    position: relative;
+                    border-color: transparent;
+                    background-color: transparent;
+                    @include qodefTransition(text-decoration 0.2s ease-out, border-color 0.2s ease-out, background-color 0.2s ease-out);
+
+                    body.qodef-menu-with-large-icons &{
+                        text-align: center;
+                        vertical-align:middle;
+                    }
+                }
+
+                span.qodef-item-inner:before,
+                span.qodef-item-inner:after,
+                &:before,
+                &:after {
+                    content: "";
+                    display: none;
+                    position: absolute;
+                    left: 0px;
+                    background-color: transparent;
+                    @include qodefTransition(background-color 0.15s ease-out);
+                    width: 100%;
+
+                }
+
+                span.qodef-item-inner:before {
+                    bottom: 0px;
+                    height: 2px;
+                }
+
+                span.qodef-item-inner:after {
+                    height: 1px;
+                    bottom: 4px;
+                }
+
+                body.qodef-menu-with-large-icons & span.qodef-item-inner i{
+                    display: inline-block;
+                    width:100%;
+                    vertical-align:middle;
+                }
+
+                > i.blank{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    body:not(.qodef-menu-with-large-icons) & .qodef-drop-down .qodef-menu-wide.qodef-menu-icons .qodef-menu-second i:before {
+        margin: 0;
+    }
+}
+.qodef-drop-down .qodef-menu-wide.qodef-wide-background .qodef-menu-second .qodef-menu-inner > ul > li:first-child > a {
+	padding-left:0;
+	margin-left:0;
+}
+.qodef-drop-down .qodef-menu-wide.qodef-wide-background .qodef-menu-second ul li:first-child > ul > li a {
+	padding-left:0;
+	margin-left:0;
+}
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header),
+.qodef-light-header.qodef-header-style-on-scroll .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header){
+	.qodef-main-menu > ul > li{
+		> a {
+			color: $header-light-color;
+		}
+	}
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header),
+.qodef-dark-header.qodef-header-style-on-scroll .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header){
+	.qodef-main-menu > ul > li{
+		> a {
+			color: $header-dark-color;
+		}
+	}
+}
+
+
+/* Narrow drop down styles
+   ========================================================================== */
+.qodef-drop-down{
+	ul{
+		list-style: none;
+
+		li{
+			position: relative;
+		}
+	}
+
+	%second-ul{
+		display:inline-block;
+		position: relative;
+		background-color: rgba(0,0,0,0.9);
+	}
+
+	.qodef-menu-second{
+		left: -24px;
+		top: 100%;
+		position: absolute;
+		display: block;
+		visibility: hidden;
+		overflow: hidden;
+		opacity: 0;
+		z-index: 10;
+		@include qodefTransition(top 0.15s ease-out);
+
+		&.qodef-drop-down-start{
+			visibility: visible;
+			overflow: visible;
+			opacity: 1;
+			@include qodefTransition(opacity 0.2s ease-out);
+		}
+
+		header.transparent.fixed.scrolled &,
+		header.transparent.fixed_hiding.scrolled &,
+		header.transparent.with_border:not(.sticky) &,
+		header.transparent.qodef-menu-item-first-level-bg-color:not(.sticky) &{
+			top: 100%;
+		}
+
+		header.transparent:not(.sticky) &{
+			top: 75%;
+		}
+
+		&.right {
+			right: -24px;
+			left: auto;
+		}
+	}
+
+	.qodef-menu-second .qodef-menu-inner{
+		position: relative;
+		padding: 0;
+		display: block;
+		z-index: 997;
+
+		> ul{
+			@extend %second-ul;
+
+			> li:last-child > a,
+			> li > ul > li:last-child > a,
+			> li > ul > li > ul > li:last-child > a{
+				border-bottom: 0;
+			}
+		}
+
+		ul li{
+			display: block;
+			position: relative;
+			float: none;
+			height: auto;
+			background: 0;
+			border-bottom-color: transparent;
+			@include qodefTransition(background-color .15s ease-out);
+			.qodef-item-inner-desc {
+				font-size: 13px;
+    			font-weight: 400;
+   			 	color: #8c8c8c;
+   			 	text-transform: none;
+   			 	transition: color .15s ease-out;
+			}
+		}
+
+		ul li a,
+		ul li h4{
+			display: block;
+			color: #afaeae;
+			height: auto;
+			font-size: 14px;
+			line-height: 17px;
+			font-weight: 400;
+			margin: 0 35px;
+			padding: 7px 4px;
+			float:none;
+			@include qodefTransition(color .15s ease-out, margin .15s ease-out);
+		}
+
+		> ul > li:hover > a,
+		ul li.qodef-sub ul li:hover > a,
+		ul li.qodef-sub ul li:hover > a .qodef-item-inner-desc {
+			color: #fff;
+			margin-left: 40px;
+			margin-right: 30px;
+		}
+
+		ul.right li ul{
+			margin-left: -2px;
+		}
+
+		ul.right li{
+			a,
+			h4{
+				text-align: right;
+			}
+
+			ul{
+				left: -99.5%;
+			}
+
+			&.qodef-sub a i.qodef-menu-arrow{
+				right: auto;
+				left: -5px;
+				@include qodefTransform(rotate(180deg) translateY(50%));
+			}
+
+			&:hover > a,
+			&.qodef-sub ul li:hover > a,
+			&.qodef-sub ul li:hover > a .qodef-item-inner-desc {
+				margin-left: 30px;
+				margin-right: 40px;
+			}
+		}
+
+		ul li.qodef-sub a i.qodef-menu-arrow{
+			position: absolute;
+			top: 50%;
+			right: -5px;
+			vertical-align: middle;
+			color: inherit;
+			font-size: 10px;
+			@include qodefTransform(translateY(-50%));
+		}
+	}
+
+	li.qodef-menu-left-position .qodef-menu-second{
+		left: 0;
+	}
+
+	li.qodef-menu-right-position .qodef-menu-second{
+		left: auto;
+		right: 0;
+	}
+
+	li.qodef-menu-left-position .qodef-menu-second .qodef-menu-inner,
+	li.qodef-menu-right-position .qodef-menu-second .qodef-menu-inner{
+		> ul{
+			width: auto;
+			white-space: nowrap;
+
+			> li{
+				float: none;
+				display: inline-block;
+				width: 225px;
+				vertical-align: top;
+			}
+		}
+	}
+
+	> ul > li{
+		&:hover > .qodef-menu-second{
+			z-index: 20;
+		}
+	}
+
+	.qodef-menu-narrow .qodef-menu-second .qodef-menu-inner ul{
+		@extend %second-ul;
+		padding: 24px 0px;
+
+		li:last-child{
+			border-bottom: none;
+		}
+
+		li{
+			padding: 0;
+			width: 225px;
+			@include qodefTransition(background-color .15s ease-out);
+		}
+
+		li ul{
+			position: absolute;
+			left: 100%;
+			top: -24px; /* same as padding in father ul */
+			height: auto;
+			opacity:0;
+			overflow: hidden;
+			z-index: 10;
+			-webkit-transform: translateZ(0);
+			@include qodefTransition(opacity .2s ease-out);
+		}
+
+
+		li:hover ul{
+			z-index: 20;
+			opacity:1;
+		}
+
+		&.right li ul{
+			left: -99%;
+		}
+	}
+}
+
+/*
+header.transparent .qodef-drop-down li:not(.qodef-menu-right-position):not(.qodef-menu-left-position) .qodef-menu-second:not(.right) {
+    left: 16px;
+}
+*/
+header.transparent.qodef-menu-item-first-level-bg-color .qodef-drop-down .qodef-menu-second:not(.right) {
+    left: 0;
+}
+
+
+/* slide_from_bottom start */
+
+body.qodef-dropdown-slide-from-bottom .qodef-drop-down{
+	.qodef-menu-second {
+		overflow: visible;
+		@include qodefTransition(top 0.15s ease-out, opacity 0.2s ease-out, height 0s ease-out 0.5s);
+	}
+
+	.qodef-menu-wide,
+	.qodef-menu-narrow{
+		.qodef-menu-second .qodef-menu-inner > ul{
+			top:30px;
+			@include qodefTransition(all 0.3s cubic-bezier(.39,.575,.565,1));
+		}
+
+		.qodef-menu-second.qodef-drop-down-start .qodef-menu-inner > ul{
+			top: 0;
+		}
+	}
+
+	.qodef-menu-narrow .qodef-menu-second .qodef-menu-inner ul li{
+		ul{
+			top: 22px;
+			@include qodefTransition(all 0.3s cubic-bezier(.39,.575,.565,1));
+		}
+
+		&:hover ul{
+			top: -1px; /* same as padding in father ul */
+		}
+	}
+}
+
+/* slide_from_bottom end */
+
+
+/* slide_from_top start */
+
+body.qodef-dropdown-slide-from-top .qodef-drop-down{
+	.qodef-menu-second {
+		overflow: visible;
+		@include qodefTransition(top 0.15s ease-out, opacity 0.2s ease-out, height 0s ease-out 0.5s);
+	}
+
+	.qodef-menu-wide,
+	.qodef-menu-narrow{
+		.qodef-menu-second .qodef-menu-inner > ul{
+			top:-30px;
+			@include qodefTransition(all 0.3s cubic-bezier(.39,.575,.565,1));
+		}
+
+		.qodef-menu-second.qodef-drop-down-start .qodef-menu-inner > ul{
+			top: 0;
+		}
+	}
+
+	.qodef-menu-narrow .qodef-menu-second .qodef-menu-inner ul li{
+		ul{
+			top: -22px;
+			@include qodefTransition(all 0.3s cubic-bezier(.39,.575,.565,1));
+		}
+
+		&:hover ul{
+			top: -1px; /* same as padding in father ul */
+		}
+	}
+}
+
+/* slide_from_top end */
+
+/* slide_from_left start */
+
+body.qodef-dropdown-slide-from-left .qodef-drop-down{
+	.qodef-menu-second {
+		overflow: visible;
+		@include qodefTransition(top 0.15s ease-out, opacity 0.15s ease-out, height 0s ease-out 0.4s);
+	}
+
+	.qodef-menu-wide,
+	.qodef-menu-narrow{
+		.qodef-menu-second .qodef-menu-inner > ul{
+			left:-30px;
+			@include qodefTransition(all 0.2s ease-out);
+		}
+
+		.qodef-menu-second.qodef-drop-down-start .qodef-menu-inner > ul{
+			left: 0;
+		}
+	}
+
+	.qodef-menu-narrow .qodef-menu-second .qodef-menu-inner ul li{
+		ul{
+			left: calc(100% - 30px);
+			@include qodefTransition(all 0.2s ease-out);
+		}
+
+		&:hover ul{
+			left: 100%;
+		}
+	}
+}
+
+/* slide_from_left end */
+
+/* Wide drop down styles
+   ========================================================================== */
+.qodef-drop-down .qodef-menu-wide{
+	.qodef-menu-second ul{
+		padding: 38px 0px 17px 0px;
+	}
+
+	.qodef-menu-second ul li{
+		float: left;
+		width: 295px;
+		padding: 0px;
+		border-bottom: 0;
+		border-bottom-color:transparent;
+		width: 100%;
+		@include qodefBoxSizing(border-box);
+
+		&:first-child {
+			border-left: none;
+		}
+
+		a{
+			padding: 8px 15px;
+			margin: 0;
+
+			&:hover{
+				margin-left: 5px !important;
+			}
+		}
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		&:nth-child(4n+1){
+			clear: both;
+		}
+
+		ul{
+			display: inline-block;
+			left: 0;
+			padding: 5px 0 0 0;
+			position: relative;
+			top: 0;
+			visibility: visible;
+			background-color: transparent !important;
+		}
+
+		ul .widget{
+			padding: 0px 18px;
+		}
+
+		ul li{
+			border: 0;
+		}
+	}
+
+	.qodef-menu-second > .qodef-menu-inner > ul{
+		width: 1100px;
+
+		> li{
+			width: 25%;
+		}
+
+		@media only screen and (min-width: 1400px) {
+			.qodef-grid-1300 & {
+				width: $grid-width-1300;
+			}
+		}
+
+		@media only screen and (min-width: 1300px) {
+			.qodef-grid-1200 & {
+				width: $grid-width-1200;
+			}
+		}
+
+		@media only screen and (min-width: 1200px) {
+			.qodef-grid-1000 & {
+				width: $grid-width-1000;
+			}
+		}
+
+		@media only screen and (min-width: 1024px) {
+			.qodef-grid-800 & {
+				width: $grid-width-800;
+			}
+		}
+	}
+
+	.qodef-menu-second i,
+	.qodef-menu-second .qodef-menu-inner ul li.qodef-sub a i.qodef-menu-arrow{
+		display: none;
+	}
+
+	.qodef-menu-second .qodef-menu-inner > ul > li{
+
+		> a {
+			line-height: 22px;
+			color: #fff;
+			font-size: 18px;
+			font-weight: 500;
+		}
+
+		&:hover > a{
+			margin: 0px !important;
+		}
+	}
+
+	.qodef-menu-second .qodef-menu-inner ul li {
+		&.qodef-sub h4 a,
+		h4 a{
+			padding: 0px !important;
+		}
+	}
+
+	&.qodef-menu-left-position,
+	&.qodef-menu-right-position{
+		.qodef-menu-second ul li{
+			width: 180px;
+		}
+	}
+
+	/* &:not(.qodef-menu-right-position) .qodef-menu-second ul li{
+		&:first-child,
+		&:nth-child(4n+1){
+			border-left-color: transparent;
+		}
+	} */
+
+	&.qodef-menu-right-position .qodef-menu-second ul li{
+		float: right;
+
+		&:last-child,
+		&:nth-child(4n){
+			border-left-color: transparent;
+		}
+	}
+}
+
+/* Wide drop down with full width background styles
+   ========================================================================== */
+.qodef-drop-down .qodef-menu-wide.qodef-wide-background{
+	.qodef-menu-second {
+		background-color: rgba(0,0,0,0.90);
+
+		.qodef-menu-inner{
+			text-align: center;
+		}
+
+		.qodef-menu-inner ul{
+			text-align: left;
+			background-color: transparent;
+		}
+	}
+}
+
+/* Wide with icons drop down styles
+   ========================================================================== */
+.qodef-drop-down .qodef-menu-wide.qodef-menu-icons .qodef-menu-second{
+	ul li a span{
+		position: relative;
+		display: block;
+	}
+
+	i{
+		width: 24px;
+		height: auto;
+		float: left;
+		display: inline-block;
+		vertical-align: middle;
+		color: inherit;
+		line-height: inherit;
+
+		&.blank{
+			background: none;
+			border: 0px;
+			display:none;
+		}
+	}
+}
+/* Widgets in wide styles
+   ========================================================================== */
+.qodef-drop-down .qodef-menu-second .qodef-menu-inner ul li .widget.widget_text a:hover {
+	color: #fff!important;
+}

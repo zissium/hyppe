@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Boxed Icons shortcode - start styles
+   ========================================================================== */
+.qodef-boxed-icons{
+	position: relative;
+
+	.qodef-boxed-icon-holder {
+		position: relative;
+		float: left;
+		width: 25%;
+		color: #fff;
+		background-color: $box-dark-background-color;
+		padding: 25% 0 0;
+
+		.qodef-boxed-icon {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		}
+
+		.qodef-boxed-icon-inner {
+			display: table;
+			width: 100%;
+			height: 100%;
+
+			.qodef-boxed-icon-custom-icon,
+			.qodef-icon-shortcode {
+				display: table-cell;
+				vertical-align: middle;
+				@include qodefTransition(transform .4s cubic-bezier(0.23, 1, 0.32, 1));
+			}
+		}
+
+		.qodef-boxed-icon-title {
+			position: absolute;
+			width: 80%;
+			left: 10%;
+			font-size: 17px;
+			font-weight: 500;
+			color: #757575;
+			text-align: center;
+			opacity: 0;
+			@include qodefTransition(transform .5s cubic-bezier(0.23, 1, 0.32, 1), opacity .5s cubic-bezier(0.23, 1, 0.32, 1));
+		}
+
+	}
+
+	&.qodef-bi-8-columns {
+
+		.qodef-boxed-icon-holder {
+			width: 12.5%;
+			padding-top: 12.5%;
+		}
+	}
+
+	/* Light Skin */
+	&.qodef-bi-skin-light {
+
+		.qodef-boxed-icon-holder {
+			background-color: #fff;
+			color: $box-dark-background-color;
+
+			.qodef-boxed-icon-title {
+				color: $blog-icons-dark-color;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Boxed Icons shortcode - end styles
+   ========================================================================== */
+
+

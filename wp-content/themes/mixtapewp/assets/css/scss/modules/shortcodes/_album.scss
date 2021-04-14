@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Album styles - begin
+   ========================================================================== */
+
+.qodef-album-track-list {
+	a {
+		color: $first-main-color;
+		&:hover {
+			color: $default-text-color;
+		}
+	}
+	.qodef-album-track {
+		display: table;
+		width: 100%;
+		padding: 13px 0;
+		color: $first-main-color;
+		letter-spacing: -1px;
+
+		.qodef-at-title {
+			display: table-cell;
+			width: 68%;
+			padding-right: 10px;
+			box-sizing: border-box;
+			font-weight: 600;
+			font-size: 18px;
+			cursor: pointer;
+			@include qodefTransition(color .15s ease-out);
+
+			&:hover{
+				color: $default-text-color;
+			}
+		}
+
+		.qodef-at-time {
+			font-size: 14px;
+			font-weight: 500;
+			color: $default-text-color;
+		}
+
+		.qodef-at-play-button{
+			font-size: 25px;
+			position: relative;
+			top: 1px;
+		}
+
+		.qodef-at-play-button,
+		.qodef-at-video-button-holder,
+		.qodef-at-download-holder,
+		.qodef-at-time {
+			display: table-cell;
+			width: 8%;
+			text-align: center;
+		}
+		.qodef-at-play-button,
+		.qodef-at-video-button-holder,
+		.qodef-at-download-holder {
+			text-align: right;
+			vertical-align: middle;
+		}
+	}
+
+	.qodef-at-pause-icon {
+		display: none;
+	}
+
+	.qodef-track-playing {
+		.qodef-at-play-icon {
+			display: none;
+		}
+		.qodef-at-pause-icon {
+			display: inline-block;
+		}
+	}
+
+	.qodef-track-paused {
+		.qodef-at-play-icon {
+			display: inline-block;
+		}
+		.qodef-at-pause-icon {
+			display: none;
+		}
+	}
+
+	.qodef-track-playing .qodef-at-title,
+	.qodef-track-playing .qodef-at-play-button {
+		color: $default-text-color;
+	}
+
+	&.qodef-album-light {
+		color: $header-light-color;
+		a, 
+		.qodef-at-title,
+		.qodef-at-time,
+		.qodef-at-play-button{
+			color: $header-light-color;
+		}
+		a:hover {
+			opacity: 0.6;
+		}
+
+		.qodef-track-playing .qodef-at-title,
+		.qodef-track-playing .qodef-at-play-button {
+			opacity: 0.6;
+		}
+	}
+
+	&.qodef-album-dark {
+		color: $header-dark-color;
+		a,
+		.qodef-at-title,
+		.qodef-at-time,
+		.qodef-at-play-button{
+			color: $header-dark-color;
+		}
+
+		a:hover {
+			opacity: 0.6;
+		}
+
+		.qodef-track-playing .qodef-at-title,
+		.qodef-track-playing .qodef-at-play-button {
+			opacity: 0.6;
+		}
+	}
+
+}
+
+
+/* ==========================================================================
+   Album styles - end
+   ========================================================================== */

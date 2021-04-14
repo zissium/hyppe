@@ -1,0 +1,1190 @@
+/* #Reset default styles - start
+   ========================================================================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+blockquote {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+    content: '';
+    content: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border: medium none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    vertical-align: middle;
+}
+
+table th {
+    border: 0;
+    font-weight: 600;
+    padding: 16px 7px;
+    text-align: center;
+}
+
+table td {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+a img {
+    border: none;
+}
+
+img, .wp-caption {
+    height: auto;
+    max-width: 100%;
+}
+
+.wpb_single_image .vc_single_image-wrapper.vc_box_shadow img {
+    box-shadow: 0 15px 24px rgba(172, 172, 172, 0.4) !important;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+/* #Reset default styles - end
+   ========================================================================== */
+
+/* #General styles that are used in our theme - start
+ * Here are defined global styles on body element, on container elements that hold every page,
+ * headings and links, inputs, core wp styles and default pagination styles
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clear:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+html {
+    height: 100%;
+    margin: 0 !important;
+    @include qodefTransition(all 0.33s ease-out);
+    overflow-y: scroll !important; /* to prevent page jumping on ajax and when there is not enough content */
+}
+
+body {
+    background-color: $default-background-color;
+    color: $default-text-color;
+    font-family: $first-main-font;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    line-height: 27px;
+    overflow-x: hidden !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $default-heading-color;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.1em; /* 56px/50px */
+
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 1.15em; /* 46px/40px */
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 1.13em; /* 34px/30px */
+
+}
+
+h4 {
+    font-size: 21px;
+    line-height: 1.2em; /* 25px/21px */
+
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em; /* 24px/16px */
+
+}
+
+h6 {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.3em; /* 20px/15px */
+
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    @include qodefTypographyLayout();
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    color: $default-text-color;
+}
+
+a,
+p a {
+    color: $first-main-color;
+    cursor: pointer;
+    text-decoration: none;
+    @include qodefTransition(color 0.15s ease-out);
+
+    &:hover {
+        color: $default-text-color;
+    }
+}
+
+p {
+    margin: 0 0 25px;
+}
+
+input[type='submit'],
+.woocommerce input[type='button'],
+.woocommerce-page input[type='button'] {
+    -webkit-appearance: none;
+}
+
+ul, ol {
+    list-style-position: inside;
+    margin: 15px 0;
+}
+
+ul ul,
+ol ol,
+ol ul,
+ul ol {
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+
+pre {
+    background-color: $default-background-color;
+    margin: 15px 0;
+    max-width: 100%;
+    padding: 15px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+dt {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+dd {
+    margin-bottom: 15px;
+}
+
+sub, sup {
+    font-size: 75%;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    top: 0.5ex;
+}
+
+sup {
+    bottom: 0.5ex;
+}
+
+.wp-caption-text {
+    font-style: italic;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+}
+
+table thead tr, table tbody tr {
+    border: 1px solid $default-border-color;
+}
+
+table tbody th {
+    border-right: 1px solid $default-border-color;
+}
+
+blockquote:not(.qodef-blockquote-shortcode) {
+    border: none;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.6em;
+}
+
+blockquote cite {
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Webkit */
+::selection {
+    background: $first-main-color;
+    color: $default-background-color;
+}
+
+/* Gecko/Mozilla */
+::-moz-selection {
+    background: $first-main-color;
+    color: $default-background-color;
+}
+
+.wp-caption,
+.wp-caption-text,
+.sticky,
+.gallery-caption,
+.bypostauthor {
+    opacity: 1;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 10px auto;
+}
+
+.alignwide {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@include ipad-landscape() {
+    .alignwide {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.alignfull {
+    clear: both;
+    left: -1rem;
+    max-width: calc(100% + (2 * 1rem));
+    position: relative;
+    width: calc(100% + (2 * 1rem));
+}
+
+@include ipad-landscape() {
+    .alignfull {
+        left: calc(-12.5% - 75px);
+        margin-bottom: calc(2 * 1rem);
+        margin-top: calc(2 * 1rem);
+        max-width: calc(125% + 150px);
+        width: calc(125% + 150px);
+    }
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.meta {
+    display: none;
+}
+
+.qodef-wrapper {
+    background-color: $default-background-color;
+    left: 0px;
+    position: relative;
+    @include qodefTransition(left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1));
+    z-index: 1000;
+
+    .qodef-wrapper-inner {
+        overflow: hidden;
+        width: 100%;
+    }
+}
+
+.qodef-meta {
+    display: none;
+}
+
+.qodef-content {
+    background-color: $default-background-color; /*this is needed because of the uncovering footer*/
+    margin-top: 0;
+    position: relative;
+    z-index: 100;
+}
+
+/*visual composer override styles*/
+.wpb_row, .wpb_content_element,
+ul.wpb_thumbnails-fluid > li,
+.last_toggle_el_margin, .wpb_button {
+    margin-bottom: 0 !important; // important is in order to prevent visual composer styles in all cases
+}
+
+.qodef-content {
+    .qodef-content-inner > .qodef-container > .qodef-container-inner,
+    .qodef-content-inner > .qodef-full-width > .qodef-full-width-inner {
+        padding: 75px 0 0;
+    }
+}
+
+.qodef-boxed {
+
+    overflow: hidden !important; /* this is because content jumping while using accordion and display:inline-block on 'body.qodef-boxed .qodef-wrapper'   */
+
+    .qodef-wrapper {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+
+        .qodef-wrapper-inner {
+            margin: auto;
+            overflow: visible;
+            width: $grid-width-boxed;
+        }
+    }
+
+    .qodef-content {
+        overflow: hidden;
+    }
+
+    .qodef-footer-inner {
+        margin: auto;
+        width: $grid-width-boxed;
+    }
+
+    .qodef-page-header .qodef-sticky-header,
+    .qodef-page-header .qodef-fixed-wrapper.fixed {
+        left: auto;
+        width: $grid-width-boxed;
+    }
+}
+
+.qodef-smooth-transition-loader {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2000;
+
+    &.qodef-hide-spinner {
+
+        .qodef-st-loader {
+            display: none;
+        }
+
+    }
+
+}
+
+.qodef-container {
+    background-color: #fff; //beacuse of the Select Slider, since content have to go over it
+    padding: 0;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+
+    &:before {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+        content: " ";
+        display: table;
+    }
+}
+
+.qodef-container-inner { //not in parent selector since this class is used for positioning other elements in grid
+    margin: 0px auto;
+    position: relative; //for grid lines, since they are absolute positioned
+    width: $grid-width;
+
+    & > h1,
+    & > h2,
+    & > h3,
+    & > h4,
+    & > h5,
+    & > h6 {
+        margin: 15px 0;
+    }
+
+}
+
+.qodef-full-width {
+    position: relative;
+    z-index: 100;
+}
+
+@media only screen and (min-width: 1400px) {
+    .qodef-grid-1300 {
+
+        .qodef-grid,
+        .qodef-container-inner,
+        .qodef-grid-section .qodef-section-inner,
+        .qodef-footer-top-border-holder.qodef-in-grid,
+        .qodef-footer-bottom-border-holder.qodef-in-grid {
+            width: $grid-width-1300;
+        }
+
+    }
+
+    .qodef-grid-1300.qodef-boxed {
+
+        .qodef-footer-inner,
+        .qodef-wrapper-inner {
+            width: $grid-width-1300 + 50px;
+        }
+
+        .qodef-page-header .qodef-sticky-header,
+        .qodef-page-header .qodef-fixed-wrapper.fixed {
+            left: auto;
+            width: $grid-width-1300 + 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .qodef-grid-1200 {
+
+        .qodef-grid,
+        .qodef-container-inner,
+        .qodef-grid-section .qodef-section-inner,
+        .qodef-footer-top-border-holder.qodef-in-grid,
+        .qodef-footer-bottom-border-holder.qodef-in-grid {
+            width: $grid-width-1200;
+        }
+    }
+
+    .qodef-grid-1200.qodef-boxed {
+
+        .qodef-footer-inner,
+        .qodef-wrapper-inner {
+            width: $grid-width-1200 + 50px;
+        }
+
+        .qodef-page-header .qodef-sticky-header,
+        .qodef-page-header .qodef-fixed-wrapper.fixed {
+            left: auto;
+            width: $grid-width-1200 + 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .qodef-grid-1000 {
+
+        .qodef-grid,
+        .qodef-container-inner,
+        .qodef-grid-section .qodef-section-inner,
+        .qodef-footer-top-border-holder.qodef-in-grid,
+        .qodef-footer-bottom-border-holder.qodef-in-grid {
+            width: $grid-width-1000;
+        }
+    }
+
+    .qodef-grid-1000.qodef-boxed {
+
+        .qodef-footer-inner,
+        .qodef-wrapper-inner {
+            width: $grid-width-1000 + 50px;
+        }
+
+        .qodef-page-header .qodef-sticky-header,
+        .qodef-page-header .qodef-fixed-wrapper.fixed {
+            left: auto;
+            width: $grid-width-1000 + 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .qodef-grid-800 {
+
+        .qodef-grid,
+        .qodef-container-inner,
+        .qodef-grid-section .qodef-section-inner,
+        .qodef-footer-top-border-holder.qodef-in-grid,
+        .qodef-footer-bottom-border-holder.qodef-in-grid {
+            width: $grid-width-800;
+        }
+    }
+
+    .qodef-grid-800.qodef-boxed {
+
+        .qodef-footer-inner,
+        .qodef-wrapper-inner {
+            width: $grid-width-800 + 50px;
+        }
+
+        .qodef-page-header .qodef-sticky-header,
+        .qodef-page-header .qodef-fixed-wrapper.fixed {
+            left: auto;
+            width: $grid-width-800 + 50px;
+        }
+    }
+}
+
+.qodef-grid-lines-holder {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+
+    .qodef-grid-line {
+        border-left: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        display: block;
+        float: left;
+        height: 100%;
+
+        &:last-child {
+            border-right: 1px solid #e5e5e5;
+        }
+    }
+
+    &.qodef-grid-columns-2 {
+        .qodef-grid-line {
+            width: 50%;
+        }
+    }
+
+    &.qodef-grid-columns-3 {
+        .qodef-grid-line {
+            width: 33.33%;
+        }
+    }
+
+    &.qodef-grid-columns-4 {
+        .qodef-grid-line {
+            width: 25%;
+        }
+    }
+
+    &.qodef-grid-columns-5 {
+        .qodef-grid-line {
+            width: 20%;
+        }
+    }
+
+    &.qodef-grid-columns-6 {
+        .qodef-grid-line {
+            width: 16.667%;
+        }
+    }
+
+}
+
+/* #General styles that are used in our theme - end
+   ========================================================================== */
+
+/* #Grid system styles - start
+ * Here are defined styles for grid system that is used outside Visual Composer
+   ========================================================================== */
+
+.qodef-two-columns-66-33 {
+    width: 100%;
+
+    .qodef-column1 {
+        float: left;
+        width: 66.66%;
+
+        .qodef-column-inner {
+            padding: 0 25px 0 0;
+        }
+    }
+
+    .qodef-column2 {
+        float: left;
+        width: 33.33%;
+
+        .qodef-column-inner {
+            padding: 0 0 0 25px;
+
+        }
+    }
+}
+
+.qodef-two-columns-33-66 {
+    width: 100%;
+
+    .qodef-column1 {
+        float: left;
+        width: 33.33%;
+
+        .qodef-column-inner {
+            padding: 0 25px 0 0;
+        }
+    }
+
+    .qodef-column2 {
+        float: left;
+        width: 66.66%;
+
+        .qodef-column-inner {
+            padding: 0 0 0 25px;
+        }
+    }
+}
+
+.qodef-two-columns-75-25 {
+    width: 100%;
+
+    .qodef-column1 {
+        float: left;
+        width: 75%;
+
+        .qodef-column-inner {
+            padding: 0 25px 0 0;
+        }
+    }
+
+    .qodef-column2 {
+        float: left;
+        width: 25%;
+
+        .qodef-column-inner {
+            padding: 0 0 0 25px;
+        }
+    }
+}
+
+.qodef-two-columns-25-75 {
+    width: 100%;
+
+    .qodef-column1 {
+        float: left;
+        width: 25%;
+
+        .qodef-column-inner {
+            padding: 0 25px 0 0;
+        }
+    }
+
+    .qodef-column2 {
+        float: left;
+        width: 75%;
+
+        .qodef-column-inner {
+            padding: 0 0 0 25px;
+        }
+    }
+}
+
+.qodef-two-columns-50-50 {
+    width: 100%;
+
+    > .qodef-two-columns-50-50-inner {
+        margin: 0 -32px;
+    }
+
+    .qodef-column {
+        float: left;
+        width: 50%;
+
+        .qodef-column-inner {
+            padding: 0 32px;
+        }
+    }
+}
+
+.qodef-three-columns {
+    width: 100%;
+
+    > .qodef-three-columns-inner {
+        margin: 0 -15px;
+    }
+
+    .qodef-column {
+        float: left;
+        width: 33.33%;
+
+        .qodef-column-inner {
+            padding: 0 15px;
+        }
+    }
+}
+
+.qodef-four-columns {
+    width: 100%;
+
+    > .qodef-four-columns-inner {
+        margin: 0 -15px;
+    }
+
+    .qodef-column {
+        float: left;
+        width: 25%;
+
+        .qodef-column-inner {
+            padding: 0 15px;
+        }
+    }
+}
+
+.qodef-five-columns {
+    width: 100%;
+
+    > .qodef-five-columns-inner {
+        margin: 0 -15px;
+    }
+
+    .qodef-column {
+        float: left;
+        width: 20%;
+
+        .qodef-column-inner {
+            padding: 0 15px;
+        }
+    }
+}
+
+body.woocommerce.woocommerce-page {
+    .qodef-two-columns-66-33.woocommerce_with_sidebar .qodef-column1 .qodef-column-inner,
+    .qodef-two-columns-75-25.woocommerce_with_sidebar .qodef-column1 .qodef-column-inner {
+        padding-left: 40px;
+    }
+
+    .qodef-two-columns-33-66.woocommerce_with_sidebar .qodef-column2 .qodef-column-inner,
+    .qodef-two-columns-25-75.woocommerce_with_sidebar .qodef-column2 .qodef-column-inner {
+        padding-right: 40px;
+    }
+
+    .full_width {
+        .qodef-two-columns-66-33.woocommerce_with_sidebar .qodef-column1 .qodef-column-inner,
+        .qodef-two-columns-75-25.woocommerce_with_sidebar .qodef-column1 .qodef-column-inner {
+            padding-left: 0;
+        }
+
+        .qodef-two-columns-33-66.woocommerce_with_sidebar .qodef-column2 .qodef-column-inner,
+        .qodef-two-columns-25-75.woocommerce_with_sidebar .qodef-column2 .qodef-column-inner {
+            padding-right: 0;
+        }
+    }
+}
+
+/* #Grid system styles - end
+   ========================================================================== */
+
+@include keyframes(preload-background) {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.qodef-preload-background {
+    background-attachment: scroll !important;
+    background-color: transparent !important;
+    background-repeat: repeat !important;
+    background-size: inherit !important;
+    @include animation(preload-background, 40s, infinite, linear, 0s);
+}
+
+.qodef-grid {
+    margin: 0 auto;
+    width: $grid-width;
+}
+
+.qodef-vertical-align-containers {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0 68px;
+    position: relative;
+    width: 100%;
+
+    &.qodef-25-50-25 {
+
+        .qodef-position-left,
+        .qodef-position-right {
+            width: 25%;
+        }
+
+        .qodef-position-center {
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 50%;
+        }
+
+        .qodef-position-left-inner,
+        .qodef-position-center-inner,
+        .qodef-position-right-inner {
+            width: 98%;
+        }
+
+    }
+
+    &.qodef-33-33-33 {
+
+        .qodef-position-left,
+        .qodef-position-center,
+        .qodef-position-right {
+            width: 33.33%;
+        }
+
+        .qodef-position-center {
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 50%;
+        }
+
+        .qodef-position-left-inner,
+        .qodef-position-center-inner,
+        .qodef-position-right-inner {
+            width: 98%;
+        }
+
+    }
+
+    &.qodef-50-50 {
+
+        .qodef-position-left,
+        .qodef-position-right {
+            width: 50%;
+        }
+
+        .qodef-position-left-inner,
+        .qodef-position-center-inner,
+        .qodef-position-right-inner {
+            width: 98%;
+        }
+
+    }
+
+    .qodef-position-left {
+        float: left;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .qodef-position-center {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .qodef-position-right {
+        float: right;
+        height: 100%;
+        position: relative;
+        text-align: right;
+        z-index: 2;
+    }
+
+    .qodef-position-left-inner,
+    .qodef-position-center-inner,
+    .qodef-position-right-inner {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .qodef-position-right.qodef-has-widget .qodef-position-right-inner {
+        height: 100%;
+    }
+
+    .qodef-position-left:before,
+    .qodef-position-center:before,
+    .qodef-position-right:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        margin-right: -3px; /* adjusts for spacing */
+        vertical-align: middle;
+    }
+
+}
+
+/* ==========================================================================
+   #Row styles - start
+   ========================================================================== */
+
+.qodef-section {
+    position: relative;
+
+    &.qodef-section-with-shadow {
+        box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .qodef-row-box {
+        margin-left: -100px;
+        margin-right: -100px;
+        padding: 55px 85px 80px;
+    }
+
+    .qodef-row-overlap {
+        margin-top: -115px;
+    }
+
+    .qodef-row-overlap.qodef-row-overlap-small {
+        margin-top: -65px;
+    }
+
+}
+
+.qodef-grid-section .qodef-section-inner {
+    margin: 0 auto;
+    position: relative;
+    width: $grid-width;
+    z-index: 20;
+}
+
+.qodef-section-inner-margin {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.qodef-content-aligment-left {
+    text-align: left;
+}
+
+.qodef-content-aligment-center {
+    text-align: center;
+}
+
+.qodef-content-aligment-right {
+    text-align: right;
+}
+
+/* ==========================================================================
+   Angled shape styles
+   ========================================================================== */
+
+.qodef-grunge-effect {
+    display: block;
+    position: absolute;
+    z-index: 20;
+
+    &.qodef-grunge-effect-top {
+        top: -51px;
+    }
+
+    &.qodef-grunge-effect-bottom {
+        bottom: -51px;
+        @include qodefTransform(rotate(180deg));
+    }
+
+    svg {
+        fill: #fff;
+    }
+
+    path,
+    polygon {
+        fill: inherit;
+    }
+}
+
+/* ==========================================================================
+   End of Angled shape styles
+   ========================================================================== */
+
+/* #Parallax section styles - start
+   ========================================================================== */
+
+.qodef-parallax-section-holder {
+    background-attachment: fixed;
+    background-color: transparent;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 0px;
+    position: static;
+
+    &.qodef-vertical-middle-align {
+        display: table;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .qodef-parallax-content-outer {
+        display: table-cell;
+        height: 100%;
+        padding: 100% 0;
+        vertical-align: middle;
+    }
+
+    .touch &.qodef-parallax-section-holder-touch-disabled {
+        background-attachment: scroll;
+        background-position: center top !important;
+        background-size: cover;
+        height: auto !important;
+        min-height: 150px;
+    }
+
+}
+
+/* #Video section styles - start
+   ========================================================================== */
+
+.qodef-section {
+
+    .qodef-mobile-video-image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: none;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .qodef-video-overlay {
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 11;
+
+        &.qodef-video-overlay-active {
+            background-image: url("img/pixel-video.png");
+            background-position: 0px 0px;
+            background-repeat: repeat;
+            opacity: 1;
+        }
+    }
+
+    .qodef-video-wrap {
+
+        left: 0px;
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: 10;
+
+        .mejs-offscreen {
+            display: none;
+        }
+
+        .mejs-container .mejs-controls {
+            display: none !important;
+        }
+
+        .mejs-poster {
+            -moz-background-size: cover !important;
+            -o-background-size: cover !important;
+            -webkit-background-size: cover !important;
+            background-size: cover !important;
+        }
+
+        .mejs-container {
+            background-color: transparent !important;
+            background-image: none !important;
+            height: auto !important;
+            width: 100% !important;
+        }
+
+        .mejs-mediaelement {
+            background: none !important;
+            border: 0px !important;
+        }
+
+        .mejs-container .mejs-poster img {
+            max-width: none !important;
+            width: 100% !important;
+        }
+
+    }
+}
+
+/* ==========================================================================
+   #Row styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Textarea styles
+   ========================================================================== */
+
+.wpcf7-form-control {
+    &.wpcf7-text,
+    &.wpcf7-textarea {
+        -webkit-appearance: none;
+    }
+}
+
+.comment-form {
+    textarea,
+    input[type=text] {
+        -webkit-appearance: none;
+    }
+}
+
+/* ==========================================================================
+   End of Textarea styles
+   ========================================================================== */

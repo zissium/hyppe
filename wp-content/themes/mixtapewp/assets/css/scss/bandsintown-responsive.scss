@@ -1,0 +1,40 @@
+@import 'variables';
+@import 'mixins';
+
+@include phone-landscape {
+
+	.bit-widget-container {
+		table,
+		table td,
+		table th {
+		    display: inline-block;
+		    width: 100% !important;
+		    vertical-align: middle;
+		}
+
+		table td {
+		    padding: 0px;
+		}
+
+
+		table tr:not(.bit-header) th{
+		    display: none;
+		}
+
+		td .bit-uiButton {
+		    padding: 0!important; 
+		}
+		td.bit-rsvp {
+		    padding-bottom: 35px!important;
+		}
+
+		td {
+		    height: auto!important;
+		    padding: 5px 0px!important;
+		}
+
+		.bit-bottom td {
+			padding: 35px 0px!important;
+		}
+	}
+}

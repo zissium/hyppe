@@ -1,0 +1,382 @@
+.single-album {
+	.qodef-album-image {
+		margin-bottom: 50px;
+
+		img {
+			vertical-align: middle;
+			box-shadow: 0px 15px 24px rgba(172, 172, 172, 0.4);
+		}
+	}
+
+	.qodef-audio-player-wrapper{
+		margin-bottom: 81px;
+	}
+
+	.qodef-album-tracks-holder {
+		margin-bottom: 33px;
+
+		.qodef-tracks-holder-title {
+			margin-bottom: 0px;
+		}
+
+		.qodef-tracks-holder {
+			padding: 5px 0px;
+
+			.qodef-track-holder {
+				padding: 15px 20px;
+
+				.fa-play {
+					display: none;
+					color: $first-main-color;
+					font-size: 12px;
+					margin-right: 7px;
+					position: relative;
+					top: -2px;
+				}
+
+				&.qodef-active-track {
+					.fa-play {
+						display: inline-block;
+					}
+					span {
+						color: $first-main-color;
+					}
+					.qodef-track-number {
+						display: none;
+					}
+				}
+				.qodef-track-title {
+					display: inline-block;
+					cursor: pointer;
+					font-size: 18px;
+					font-weight: 500;
+					line-height: 1em;
+					letter-spacing: 0px;
+				}
+
+				.qodef-track-buy {
+					float: right;
+					font-size: 14px;
+					font-weight: 600;
+					letter-spacing: -1px;
+					a {
+						color: $first-main-color;
+
+						&:hover {
+							color: $default-text-color;
+						}
+					}
+				}
+			}
+		}
+
+		.qodef-album-track{
+			padding: 15px 20px;
+			box-sizing: border-box;
+
+			.qodef-at-title{
+				color: $default-text-color;
+				font-weight: 500;
+			}
+		}
+	}
+
+	.qodef-about-album-holder {
+		margin-bottom: 27px;
+
+		.qodef-about-album-holder-title {
+			margin-bottom: 15px;
+		}
+	}
+
+	.qodef-album-details-holder {
+		margin-bottom: 55px;
+
+		.qodef-album-details span {
+			&:first-child {
+				font-size: 15px;
+				font-weight: 400;
+				letter-spacing: 0px;
+				line-height: 29px;
+				color: $first-main-color;
+				opacity: 0.9;
+			}
+			&:nth-child(2) {
+				font-size: 15px;
+				letter-spacing: 0px;
+				line-height: 29px;
+			}
+		}
+	}
+
+	.qodef-lyrics-holder {
+
+		.qodef-lyrics-holder-inner {
+			margin-bottom: 70px;
+		}
+
+		.qodef-lyrics-holder-title {
+			margin-bottom: 22px;
+		}
+
+		.qodef-accordion-holder {
+			.qodef-title-holder {
+				margin-bottom: 0;
+			}
+			.qodef-tab-title span.qodef-tab-title-inner {
+				font-weight: 600;
+				font-size: 14px;
+				letter-spacing: -0.5px;
+				padding-left: 5px;
+			}
+		}
+
+	}
+
+	/* Reviews */
+	.qodef-single-album-reviews-holder {
+		opacity: 0;
+		background-color: #f9f9f9;
+		padding: 50px;
+		margin-bottom: 82px;
+
+		.qodef-single-album-reviews-title {
+			margin-bottom: 14px;
+		}
+
+		.qodef-single-album-text {
+			margin-bottom: 20px;
+		}
+
+		.qodef-single-album-author {
+			font-size: 21px;
+			color: #000;
+			font-weight: 600;
+
+			&:before{
+				content: "-";
+				position: relative;
+				margin-right: 5px;
+			}
+		}
+
+		.slick-slider .qodef-slick-next,
+		.slick-slider .qodef-slick-prev{
+			top: auto;
+			bottom: 0px;
+			right: 0;
+			@include qodefTransform(none);
+			font-size: 25px;
+			color: $default-text-color;
+			opacity: 1;
+		}
+
+		.slick-slider .qodef-slick-prev{
+			right: 30px;
+			left: auto;
+			&:after {
+				content: "/";
+				font-size: 16px;
+				display: inline-block;
+				position: absolute;
+				right: -8px;
+				top: 0;
+			}
+		}
+	}
+
+	.qodef-album-follow-share-holder {
+		.qodef-social-share-title {
+			display: none;
+		}
+		.qodef-album-follow-share-holder-title {
+			margin-bottom: 20px;
+		}
+
+		.qodef-social-share-holder.qodef-list li {
+			margin-right: 17px;
+			a {
+				font-size: 21px;
+			}
+		}
+	}
+
+	.qodef-latest-video-holder {
+		margin-top: 55px;
+		.qodef-latest-video-holder-title {
+			margin-bottom: 23px;
+		}
+	}
+
+	.qodef-album-nav {
+		$nav-height :40px;
+		height: $nav-height;
+		line-height: $nav-height;
+		text-align: center;
+		position: relative;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-bottom: 70px;
+
+		.qodef-album-nav-inner {
+			position: relative;
+		}
+
+		.qodef-album-next,
+		.qodef-album-prev,
+		.qodef-album-back-btn {
+			height: $nav-height;
+		}
+
+		.qodef-album-back-btn {
+			display: inline-block;
+
+			a{
+				color: $first-main-color;
+
+				&:before{
+					content: "\e08c";
+					font-size: 30px;
+					font-family: 'ElegantIcons';
+					position: relative;
+					float: left;
+					width: 30px;
+				}
+
+				&:hover{
+					color: $default-text-color;
+				}
+			}
+		}
+
+		.qodef-album-next a,
+		.qodef-album-prev a{
+			color: #8a8a8a;
+			line-height: $nav-height;
+			font-size: 20px;
+			font-weight: 400;
+			@include qodefTransition(color 0.15s ease-in-out);
+
+			&:hover {
+				color: $first-main-color;
+				@include qodefTransition(color 0.15s ease-in-out);
+			}
+		}
+
+		.qodef-album-next,
+		.qodef-album-prev {
+			position: absolute;
+			top: 0;
+
+			& a:before{
+				font-size: 20px;
+				font-family: 'Linearicons-Free';
+				position: relative;
+				float: left;
+				width: 20px;
+			}
+		}
+
+		.qodef-album-prev {
+			left: 0;
+
+			& a:before{
+				content: "\e875";
+			}
+		}
+
+		.qodef-album-next {
+			right: 0;
+
+			& a:before{
+				content: "\e876";
+			}
+		}
+	}
+
+
+	/* Stores */
+	.qodef-single-album-stores-holder {
+		padding: 20px 0 15px 0px;
+		.qodef-single-album-stores-title {
+			margin-bottom: 16px;
+		}
+
+		.qodef-single-album-store {
+			float: left;
+			padding-right: 10px;
+		}
+
+		.qodef-single-album-store:nth-child(3n+1) {
+		    clear: both;
+		}
+	}
+
+	/* Minimal */
+
+	.qodef-album-minimal {
+		.qodef-about-album-holder .qodef-about-album-holder-title {
+			padding-top: 0;
+			border-top: none;
+		}
+
+		.qodef-audio-player-wrapper{
+			margin: 0;
+		}
+
+		.qodef-album-details-holder {
+			border-bottom: none;
+		}
+
+		.qodef-single-album-stores-holder {
+
+			.qodef-single-album-store {
+				float: none;
+				padding-left: 5px;
+				padding-right: 18px;
+				.qodef-single-album-store-link {
+					font-size: 18px;
+					color: #858585;
+					line-height: 23px;
+					&:hover {
+						color: $first-main-color;
+					}
+				}
+			}
+		}
+	}
+
+	/*Compact */
+
+	.qodef-album-compact {
+
+		.qodef-about-album-holder-title {
+			border-top: none;
+		}
+
+		.qodef-single-album-stores-holder {
+			margin: 0 0 50px;
+			padding: 0;
+
+			.qodef-single-album-store {
+				float: none;
+				padding-left: 5px;
+				padding-right: 18px;
+				.qodef-single-album-store-link {
+					color:	#858585;
+					font-size: 18px;
+					line-height: 23px;
+					&:hover {
+						color: $first-main-color;
+					}
+				}
+			}
+		}
+	}
+
+	.qodef-album-comprehensive,
+	.qodef-album-minimal,
+	.qodef-album-compact {
+	    padding-bottom: 70px;
+	}
+}

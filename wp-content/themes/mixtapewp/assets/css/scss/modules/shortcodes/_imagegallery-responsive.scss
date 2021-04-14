@@ -1,0 +1,354 @@
+/* ==========================================================================
+# Image Gallery - begin
+========================================================================== */
+
+/* Image Gallery Grid - begin
+========================================================================== */
+
+.qodef-image-gallery {
+
+	.qodef-image-gallery-grid.qodef-gallery-columns-2 {
+
+		.qodef-gallery-image {
+
+			@include phone-portrait {
+				width: 100%;
+			}
+
+		}
+
+	}
+
+	.qodef-image-gallery-grid.qodef-gallery-columns-3 {
+
+		.qodef-gallery-image {
+
+			@include ipad-portrait {
+				width: 50%;
+
+				&:nth-child(2n+1) {
+					clear: both;
+				}
+
+				&:nth-child(3n+1) {
+					clear: none;
+				}
+
+			}
+
+			@include phone-portrait {
+				width: 100%;
+			}
+
+		}
+
+	}
+
+	.qodef-image-gallery-grid.qodef-gallery-columns-4 {
+
+		.qodef-gallery-image {
+
+			@include ipad-landscape {
+				width: 50%;
+
+				&:nth-child(2n+1) {
+					clear: both;
+				}
+
+				&:nth-child(4n+1) {
+					clear: none;
+				}
+			}
+
+			@include phone-portrait {
+				width: 100%;
+			}
+
+		}
+
+	}
+
+	.qodef-image-gallery-grid.qodef-gallery-columns-5 {
+
+		.qodef-gallery-image {
+
+			@include laptop-landscape {
+				width: 25%;
+
+				&:nth-child(4n+1) {
+					clear: both;
+				}
+
+				&:nth-child(5n+1) {
+					clear: none;
+				}
+
+			}
+
+			@include ipad-landscape {
+				width: 33.333%;
+
+				&:nth-child(3n+1) {
+					clear: both;
+				}
+
+				&:nth-child(4n+1) {
+					clear: none;
+				}
+
+			}
+
+			@include ipad-portrait {
+				width: 50%;
+
+				&:nth-child(2n+1) {
+					clear: both;
+				}
+
+				&:nth-child(3n+1) {
+					clear: none;
+				}
+			}
+
+			@include phone-portrait {
+				width: 100%;
+			}
+
+		}
+
+	}
+
+	.qodef-image-gallery-grid-with-space {
+
+		&.qodef-image-gallery-grid.qodef-gallery-columns-2 {
+
+			.qodef-gallery-image {
+
+				@include phone-portrait {
+					width: 100%;
+					margin-right: 0;
+					margin-bottom: 2%;
+				}
+
+			}
+
+		}
+
+		&.qodef-image-gallery-grid.qodef-gallery-columns-3 {
+
+			.qodef-gallery-image {
+
+				@include ipad-portrait {
+					width: 49%;
+					margin-right: 2%;
+					margin-bottom: 2%;
+
+					&:nth-child(2n) {
+						margin-right: 0;
+					}
+
+					&:nth-child(2n+1) {
+						clear: both;
+						margin-right: 2%;
+					}
+
+					&:nth-child(3n+1) {
+						clear: none;
+					}
+
+				}
+
+				@include phone-portrait {
+					width: 100%;
+					margin-right: 0;
+					margin-bottom: 2%;
+				}
+
+			}
+
+		}
+
+		&.qodef-image-gallery-grid.qodef-gallery-columns-4 {
+
+			.qodef-gallery-image {
+
+				@include ipad-landscape {
+					width: 32.2%;
+					margin-right: 1.7%;
+					margin-bottom: 1.7%;
+
+					&:nth-child(2n+1) {
+						clear: none;
+					}
+
+					&:nth-child(4n) {
+						margin-right: 1.7%;
+					}
+
+					&:nth-child(3n) {
+						margin-right: 0;
+					}
+
+					&:nth-child(3n+1) {
+						clear: both;
+						margin-right: 1.7%;
+					}
+
+					&:nth-child(4n+1) {
+						clear: none;
+					}
+				}
+
+				@include ipad-portrait {
+					width: 49%;
+					margin-right: 2%;
+					margin-bottom: 2%;
+
+					&:nth-child(2n) {
+						margin-right: 0;
+					}
+
+					&:nth-child(2n+1) {
+						clear: both;
+						margin-right: 2%;
+					}
+					
+					&:nth-child(3n+1) {
+						clear: none;
+					}
+
+				}
+
+				@include phone-portrait {
+					width: 100%;
+					margin-right: 0;
+					margin-bottom: 2%;
+				}
+
+			}
+
+		}
+
+		&.qodef-image-gallery-grid.qodef-gallery-columns-5 {
+
+			.qodef-gallery-image {
+
+				@include laptop-landscape {
+					width: 24%;
+					margin-right: 1.33333%;
+					margin-bottom: 1.33333%;
+
+					&:nth-child(4n) {
+						margin-right: 0;
+					}
+
+					&:nth-child(4n+1) {
+						clear: both;
+						margin-right: 1.33333%;
+					}
+
+					&:nth-child(5n+1) {
+						clear: none;
+					}
+
+				}
+
+				@include ipad-landscape {
+					width: 32.2%;
+					margin-right: 1.7%;
+					margin-bottom: 1.7%;
+
+					&:nth-child(4n) {
+						margin-right: 1.7%;
+					}
+
+					&:nth-child(3n) {
+						margin-right: 0;
+					}
+
+					&:nth-child(3n+1) {
+						clear: both;
+						margin-right: 1.7%;
+					}
+
+					&:nth-child(4n+1) {
+						clear: none;
+					}
+
+				}
+
+				@include ipad-portrait {
+					width: 49%;
+					margin-right: 2%;
+					margin-bottom: 2%;
+
+					&:nth-child(2n) {
+						margin-right: 0;
+					}
+
+					&:nth-child(2n+1) {
+						clear: both;
+						margin-right: 2%;
+					}
+
+					&:nth-child(3n+1) {
+						clear: none;
+					}
+				}
+
+				@include phone-portrait {
+					width: 100%;
+					margin-right: 0;
+					margin-bottom: 2%;
+				}
+
+			}
+
+		}
+	}
+}
+
+/* Image Gallery Grid - end
+========================================================================== */
+
+/* Image Gallery Slider - begin
+========================================================================== */
+
+/* Image Gallery Slider - end
+========================================================================== */
+/* Image Masonry Gallery - begin
+========================================================================== */
+
+.qodef-image-gallery-masonry{
+
+	@include ipad-portrait{
+		.qodef-image-masonry-grid-sizer,
+		.qodef-gallery-image.qodef-size-square,
+		.qodef-gallery-image.qodef-size-portrait{
+			width: 50%;
+		}
+
+		.qodef-gallery-image.qodef-size-big-square,
+		.qodef-gallery-image.qodef-size-landscape{
+			width: 100%;
+		}
+	}
+
+	@include phone-portrait{
+		.qodef-image-masonry-grid-sizer,
+		.qodef-gallery-image.qodef-size-square,
+		.qodef-gallery-image.qodef-size-portrait,
+		.qodef-gallery-image.qodef-size-big-square,
+		.qodef-gallery-image.qodef-size-landscape{
+			width: 100%;
+		}
+	}
+
+}
+
+/* Image Masonry Gallery - end
+========================================================================== */
+
+/* ==========================================================================
+# Image Gallery - end
+========================================================================== */

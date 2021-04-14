@@ -1,0 +1,66 @@
+/* ==========================================================================
+# Counter style - begin
+========================================================================== */
+.qodef-counter-holder {
+	@include qodefRelativeHolderLayout();
+	color: $default-heading-color;
+	padding: 20px 0;
+	opacity: 0;
+	box-sizing: border-box;
+	@include qodefTransition(opacity 0.3s ease-in);
+
+	&.qodef-counter-left {
+		text-align: left;
+	}
+
+	&.qodef-counter-right {
+		text-align: right;
+	}
+
+	&.qodef-counter-center {
+		text-align: center;
+		padding: 20px 40px;
+	}
+
+	&.qodef-counter-with-border {
+
+		&::after {
+			position: absolute;
+			display: block;
+			content: " ";
+			top: 50%;
+			right: 0;
+			height: 43px;
+			border-right: 1px solid #404040;
+			@include qodefTransform(translateY(-50%));
+		}
+	}
+
+	.qodef-counter {
+		font-size: 90px;
+		line-height: 1em;
+		font-weight: 600;
+		letter-spacing: -4px;
+		margin-bottom: 10px;
+		color: inherit;
+		display: inline-block !important;
+		height: 1em;
+		vertical-align: middle;
+	}
+
+	.qodef-counter-title {
+		font-weight: 500;
+	}
+
+	.qodef-counter-text {
+		margin: 5px 0 0 0;
+	}
+}
+
+.qodef-counter-holder-show {
+	opacity: 1;
+}
+
+/* ==========================================================================
+# Counter style - end
+========================================================================== */

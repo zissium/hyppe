@@ -1,0 +1,43 @@
+$overlapping-content-amount: 80px;
+.qodef-overlapping-content-enabled {
+	.qodef-content-inner > .qodef-container {
+		position: static;
+		text-align: center;
+	}
+
+	.qodef-title .qodef-title-holder .qodef-container {
+		padding-bottom: $overlapping-content-amount;
+
+		@include qodefBoxSizing(border-box);
+	}
+}
+
+.qodef-overlapping-content-holder {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	z-index: 102;
+	margin-top: -$overlapping-content-amount;
+	text-align: left;
+	visibility: hidden;
+	opacity: 0;
+	@include qodefTransform(translateY(100px));
+	&.qodef-appeared {
+		visibility: visible;
+		opacity: 1;
+		@include qodefTransform(translateY(0px));
+	}
+	&.qodef-animated {
+		visibility: visible;
+		opacity: 1;
+		@include qodefTransform(translateY(0px));
+		-webkit-transition:opacity .5s ease .1s, -webkit-transform 1.5s cubic-bezier(0.25, 0.1, 0.02, 0.91) .2s;
+		transition:opacity .5s ease .1s, transform 1.5s cubic-bezier(0.25, 0.1, 0.02, 0.91) .2s;
+	}
+
+	.qodef-overlapping-content {
+		background-color: #fff;
+		padding: 27px 27px 0;
+	}
+
+}

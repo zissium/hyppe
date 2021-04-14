@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Events List start style
+   ========================================================================== */
+.qodef-events-list-holder-outer {
+	margin: 0;
+	position: relative;
+}
+.qodef-event-content {
+	display: table;
+	border-bottom: 2px solid #f5f5f5;
+	width: 100%;
+	padding: 20px 0;
+
+	.qodef-event-date-holder,
+	.qodef-event-title-holder,
+	.qodef-event-buy-tickets-holder {
+		display: table-cell;
+		vertical-align: middle;
+		color: #000;
+		@include qodefTransition(color 0.15s ease-out);
+	}
+
+	.qodef-event-date-holder {
+    	width: 11%;
+		white-space: nowrap;
+	}
+	.qodef-event-title-holder {
+		width: 74%;
+		padding-left: 23px;
+	}
+	.qodef-event-buy-tickets-holder {
+		width: 15%;
+		text-align: right;
+	}
+	.qodef-event-date-holder-left,
+	.qodef-event-date-holder-right {
+		display: inline-block;
+	}
+	.qodef-event-date-holder-left {
+        padding-right: 12px;
+		width: 72px;
+	}
+	.qodef-event-date-holder-right {
+		font-size: 20px;
+    	line-height: 27px;
+    	font-weight: 400;
+    	text-align: center;
+    }
+    .qodef-event-day-number-holder {
+    	font-size: 60px;
+    	line-height: 1em;
+    	letter-spacing: -1px;
+    	font-weight: 600;
+    }
+    .qodef-event-day-holder,
+    .qodef-event-month-holder {
+    	display: block;
+    }
+
+	.qodef-event-buy-tickets-button {
+		font-size: 13px;
+		font-weight: 600;
+		@include qodefTransition(color .15s ease-out);
+
+		&:hover {
+			color: $default-text-color !important;
+		}
+
+		&:before{
+			content: '\39';
+			font-size: 20px;
+			font-family: 'ElegantIcons';
+			position: relative;
+			top: 4px;
+			width: 20px;
+		}
+	}
+
+	.qodef-event-sold-out-holder {
+		font-size: 14px;
+		font-weight: 600;
+    	color: #8a8a8a;
+	}
+
+	&:hover {
+		.qodef-event-date-holder,
+		.qodef-event-title-holder a{
+			color: $default-text-color !important;
+		}
+	}
+}
+
+.qodef-events-list-paging {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    position: relative; 
+
+    .qodef-stripes{
+    	position: absolute;
+    	top: 26px;
+    	left: calc(50% - 10px);
+    	opacity: 0;
+    	z-index: -1;
+    }
+}
+
+/* ==========================================================================
+   Events List end style
+   ========================================================================== */

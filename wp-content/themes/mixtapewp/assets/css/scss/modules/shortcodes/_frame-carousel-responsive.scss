@@ -1,0 +1,70 @@
+/* ==========================================================================
+# Frame Carousel Responsive - begin
+========================================================================== */
+
+@media only screen and (min-width: $laptop-landscape) {
+    .qodef-frame-carousel .owl-controls {
+      	display: none;
+    }
+}
+
+@include ipad-landscape {
+	.qodef-frame-carousel .qodef-frame-carousel-carousel .owl-stage-outer{
+		opacity: 0!important;
+	}
+
+	.qodef-frame-carousel .owl-carousel {
+		z-index: 25;
+	}
+
+	.qodef-frame-carousel .qodef-frame-carousel-carousel {
+		top: 0;
+		height: 100%;
+	}
+}
+
+@include ipad-portrait {
+	.qodef-frame-carousel .qodef-frame-carousel-monitor-image-holder {
+		padding: 21px 68px 54px;
+	}
+
+	.qodef-frame-carousel .owl-controls .owl-nav {
+		padding: 0 20px;
+	}
+}
+
+@include phone-landscape {
+	.qodef-frame-carousel .qodef-frame-carousel-monitor-image-holder {
+		padding: 3.5% 11.7%;
+	}
+
+	.qodef-frame-carousel .owl-controls .owl-nav {
+		padding: 0 5px;
+	}
+
+	.qodef-frame-carousel .owl-controls  .qodef-owl-prev .qodef-top-part,
+	.qodef-frame-carousel .owl-controls  .qodef-owl-prev .qodef-bottom-part,
+	.qodef-frame-carousel .owl-controls  .qodef-owl-next .qodef-top-part,
+	.qodef-frame-carousel .owl-controls  .qodef-owl-next .qodef-bottom-part {
+	    height: 20px;
+	}
+
+	.qodef-frame-carousel .owl-controls .qodef-bottom-part {
+		top: 16px;
+	}
+}
+
+@include phone-portrait {
+	.qodef-frame-carousel .qodef-frame-carousel-monitor-image-holder {
+		padding: 3.3% 12.3%;
+	}
+}
+
+@include smaller-phone-portrait {
+	.qodef-frame-carousel .qodef-frame-carousel-monitor-image-holder {
+		padding: 3.3% 12.2%;
+	}
+}
+/* ==========================================================================
+# Frame Carousel Responsive - end
+========================================================================== */

@@ -1,0 +1,106 @@
+/* ==========================================================================
+# Message style - begin
+========================================================================== */
+/* Unique style for both types  - begin
+========================================================================== */
+.qodef-message{
+    position: relative;
+	padding: 24px 27px;
+	margin: 0;
+	background-color: $default-elements-background-color;
+    border: 0 solid $default-border-color;
+
+    @media only screen and (max-width: 480px){
+        padding: 20px 22px;
+    }
+
+    .qodef-message-inner{
+        position: relative;
+        padding-right: 20px;
+        
+        .qodef-message-text{
+            display: table;
+            height: 100%;
+
+            @media screen and (max-width: 320px) {
+               line-height: normal !important;
+            }
+
+            .qodef-message-text-inner{
+                display: table-cell;
+                height: 100%;
+                vertical-align: middle;
+                color: $default-heading-color;
+                font-weight: 400;
+                font-size: 14px;
+                font-style: normal;
+            }
+        }
+        
+        a {
+
+			&.qodef-close {
+				position: absolute;
+				right: 6px;
+				top: 2px;
+				line-height: 13px;
+				font-size: 18px;
+				color: $first-main-color;
+
+				i {
+					width: 14px;
+					height: 14px;
+					color: $default-heading-color;
+					font-weight: 600;
+					display: inline-block;
+
+					&:hover {
+						color: inherit !important;
+					}
+				}
+			}
+        }
+    }
+}
+/* Unique style for both types - end
+========================================================================== */
+
+/* Type with icon - begin
+========================================================================== */
+.qodef-message.qodef-with-icon{
+
+    .qodef-message-icon-holder{
+        float: right;
+        padding: 0 20px 0 34px;
+
+        @media only screen and (max-width: 600px){
+            padding: 20px 22px;
+        }
+
+        .qodef-message-icon{
+            display: table;
+            height: 100%;
+	        color: $default-heading-color;
+
+            .qodef-message-icon-inner{
+                display: table-cell;
+                height: 100%;
+                vertical-align: middle;
+                font-size: 18px;
+                font-weight: 400;
+
+                >i,
+                >span {
+                    line-height: 1em;
+                    padding: 8px;
+                } 
+            }
+        }
+    }
+}
+
+/* Type with icon - end
+========================================================================== 
+/* ==========================================================================
+# Message style - end
+========================================================================== */

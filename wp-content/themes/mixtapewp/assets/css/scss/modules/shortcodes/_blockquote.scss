@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Blockquote shortcode start styles
+   ========================================================================== */
+blockquote{
+	@include qodefRelativeHolderLayout();
+	height: 100%;
+	margin: 0;
+	padding: 40px 0px;
+	overflow: hidden;
+	box-sizing: border-box;
+
+	> * {
+		@include qodefTypographyLayout();
+		margin: 0;
+	}
+
+	&:before {
+		@include qodefRelativeHolderLayout();
+		width: auto;
+		content: '\f10e';
+		font-family: 'FontAwesome';
+		font-size: 50px;
+		color: $first-main-color;
+	}
+
+	p {
+		@include qodefRelativeHolderLayout();
+		width: calc(100% - 100px);
+		text-align: left;
+		color: $header-dark-color;
+		padding: 0 0 0 25px;
+		margin: 0;
+		z-index: 10;
+	}
+}
+
+/* ==========================================================================
+   Blockquote shortcode end styles
+   ========================================================================== */

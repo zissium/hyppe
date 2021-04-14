@@ -1,0 +1,110 @@
+$top-bar-height: 40px;
+
+.qodef-top-bar {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+	position: relative;
+    font-weight: 400;
+    height: $top-bar-height;
+	box-sizing: border-box;
+    z-index: 111;
+    display: inline-block;
+    vertical-align: middle;
+	
+    .qodef-grid {
+        height: 100%;
+
+        .qodef-vertical-align-containers {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .qodef-logo-wrapper a {
+        max-height: $top-bar-height;
+    }
+
+    .qodef-position-center {
+
+        p {
+            font-size: 13px;
+            color: #c99e66;
+        }
+    }
+
+	.widget {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 22px;
+		padding-right: 24px;
+		position: relative;
+		line-height: 40px;
+		font-size:12px;
+
+		&:after {
+			position: absolute;
+			border-right: 1px solid #c2c2c2;
+			height: 40%;
+			content: '';
+			width: 1px;
+			right: 0;
+			top: 30%;
+		}
+		&:last-child {
+			border: 0;
+			padding-right: 0;
+			margin-right: 0;
+
+			&:after {
+				border-right: 0;
+			}
+		}
+	}
+
+}
+
+.qodef-top-bar-light .qodef-top-bar,
+.qodef-light-header .qodef-top-bar {
+	color: $header-light-color !important; //Beacause of inline color styles
+
+	.widget {
+		color: $header-light-color !important; //Beacause of inline color styles
+
+		p,
+		a,
+		span,
+		i,
+		.widgettitle {
+			color: $header-light-color !important; //Beacause of inline color styles
+		}
+
+		a:hover,
+		span.qodef-icon-element:hover {
+			color: $first-main-color!important;
+		}
+
+	}
+}
+
+.qodef-top-bar-dark .qodef-top-bar,
+.qodef-dark-header .qodef-top-bar {
+	color: $header-dark-color !important; //Beacause of inline color styles
+
+	.widget {
+		color: $header-dark-color !important; //Beacause of inline color styles
+
+		p,
+		a,
+		span,
+		i,
+		.widgettitle {
+			color: $header-dark-color !important; //Beacause of inline color styles
+		}
+
+		a:hover,
+		span.qodef-icon-element:hover {
+			color: $first-main-color!important;
+		}
+
+	}
+}

@@ -1,0 +1,184 @@
+.qodef-grid,
+.qodef-container-inner,
+.qodef-grid-section .qodef-section-inner,
+.qodef-slider .carousel-inner .qodef-slider-content-outer{
+
+	@include laptop-wide-landscape {
+		width: $grid-width-laptop-wide-landscape;
+	}
+
+	@include laptop-landscape {
+		width: $grid-width-laptop-landscape;
+	}
+
+	@include ipad-landscape {
+		width: $grid-width-ipad-landscape;
+	}
+
+	@include ipad-portrait {
+		width: $grid-width-ipad-portrait;
+	}
+
+	@include phone-landscape {
+		width: $grid-width-phone-landscape;
+	}
+
+	@include phone-portrait {
+		width: $grid-width-phone-portrait;
+	}
+
+	@include smaller-phone-portrait {
+		width: $grid-width-smaller-phone-portrait;
+	}
+}
+
+
+//vertical menu responsive
+
+.qodef-header-vertical .qodef-grid,
+.qodef-header-vertical .qodef-container-inner,
+.qodef-header-vertical .qodef-grid-section .qodef-section-inner,
+.qodef-header-vertical .qodef-slider .carousel-inner .qodef-slider-content-outer{
+	@include vertical-menu-laptop-wide-landscape {
+		width: $grid-width-laptop-wide-landscape;
+	}
+
+	@include vertical-menu-laptop-landscape {
+		width: $vertical-grid-width-laptop-landscape;
+	}
+
+	@include vertical-menu-ipad-landscape {
+		width: $vertical-grid-width-ipad-landscape;
+	}
+
+}
+
+
+.qodef-boxed .qodef-wrapper  .qodef-wrapper-inner,
+.qodef-boxed .qodef-wrapper  .qodef-footer-inner,
+.qodef-boxed .qodef-page-header .qodef-sticky-header,
+.qodef-boxed .qodef-page-header .qodef-fixed-wrapper.fixed {
+
+  @include laptop-mid-landscape {
+  	width: $grid-width-laptop-wide-landscape-boxed;
+  }
+
+  @include laptop-landscape {
+    width: $grid-width-laptop-landscape-boxed;
+  }
+
+  @include ipad-landscape {
+    width: $grid-width-ipad-landscape-boxed;
+  }
+
+  @include ipad-portrait {
+    width: $grid-width-ipad-portrait-boxed;
+  }
+
+  @include phone-landscape {
+    width: $grid-width-phone-landscape-boxed;
+  }
+
+  @include phone-portrait {
+    width: $grid-width-phone-portrait-boxed;
+  }
+
+  @include smaller-phone-portrait {
+    width: $grid-width-smaller-phone-portrait-boxed;
+  }
+}
+
+@include laptop-wide-landscape {
+	.qodef-grid-lines-holder{
+		&.qodef-grid-columns-5,
+		&.qodef-grid-columns-6{
+			.qodef-grid-line {
+				width: 25%;
+			}
+		}
+
+		.qodef-grid-column-4{
+			border-right: 1px solid #e5e5e5;
+		}
+
+		.qodef-grid-column-5,
+		.qodef-grid-column-6{
+			display: none;
+		}
+	}
+}
+
+@include ipad-landscape {
+  .qodef-content{
+    margin-top: 0px !important;
+  }
+}
+
+
+@include ipad-portrait {
+	.qodef-grid-lines-holder{
+		&.qodef-grid-columns-3,
+		&.qodef-grid-columns-4,
+		&.qodef-grid-columns-5,
+		&.qodef-grid-columns-6{
+			.qodef-grid-line {
+				width: 50%;
+			}
+		}
+
+		.qodef-grid-column-2{
+			border-right: 1px solid #e5e5e5;
+		}
+
+		.qodef-grid-column-3,
+		.qodef-grid-column-4{
+			display: none;
+		}
+	}
+
+	.qodef-two-columns-50-50 .qodef-column,
+	.qodef-two-columns-66-33 .qodef-column1,
+	.qodef-two-columns-66-33 .qodef-column2,
+	.qodef-two-columns-33-66 .qodef-column1,
+	.qodef-two-columns-33-66 .qodef-column2,
+	.qodef-two-columns-25-75 .qodef-column1,
+	.qodef-two-columns-25-75 .qodef-column2,
+	.qodef-two-columns-75-25 .qodef-column1,
+	.qodef-two-columns-75-25 .qodef-column2,
+	.qodef-three-columns .qodef-column,
+	.qodef-four-columns .qodef-column,
+	.qodef-five-columns .qodef-column{
+		width: 100%;
+	}
+
+	.qodef-five-columns>.qodef-five-columns-inner,
+	.qodef-four-columns>.qodef-four-columns-inner,
+	.qodef-three-columns>.qodef-three-columns-inner,
+	.qodef-two-columns-50-50>.qodef-two-columns-50-50-inner{
+		margin: 0;
+	}
+	
+	.qodef-two-columns-66-33 .qodef-column1 .qodef-column-inner,
+	.qodef-two-columns-66-33 .qodef-column2 .qodef-column-inner,
+	.qodef-two-columns-33-66 .qodef-column1 .qodef-column-inner,
+	.qodef-two-columns-33-66 .qodef-column2 .qodef-column-inner,
+	.qodef-two-columns-75-25 .qodef-column1 .qodef-column-inner,
+	.qodef-two-columns-75-25 .qodef-column2 .qodef-column-inner,
+	.qodef-two-columns-25-75 .qodef-column1 .qodef-column-inner,
+	.qodef-two-columns-25-75 .qodef-column2 .qodef-column-inner,
+	.qodef-five-columns>.qodef-five-columns-inner .qodef-column-inner,
+	.qodef-four-columns>.qodef-four-columns-inner .qodef-column-inner,
+	.qodef-three-columns>.qodef-three-columns-inner .qodef-column-inner,
+	.qodef-two-columns-50-50>.qodef-two-columns-50-50-inner .qodef-column-inner
+	{
+		padding: 0 0 0 0;
+	}
+
+}
+
+@include smaller-phone-portrait {
+  .qodef-section-inner-margin {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
