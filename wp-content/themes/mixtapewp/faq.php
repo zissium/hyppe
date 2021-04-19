@@ -1,3 +1,5 @@
+<?php /* Template Name: faq */ ?>
+
 <div class="faqwrapper">
     <div class="wholesale">
         <h2>Wholesale Inquiry</h2>
