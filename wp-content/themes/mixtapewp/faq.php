@@ -1,5 +1,7 @@
 <?php /* Template Name: faq */ ?>
 
+<?php get_header(); ?>
+
 <div class="faqwrapper">
     <div class="wholesale">
         <h2>Wholesale Inquiry</h2>
@@ -59,3 +61,5 @@
     </div>
 
 </div>
+
+<?php get_footer(); ?>
