@@ -1239,3 +1239,88 @@ function conbineData() {
 
 }
 
+
+add_action( 'rest_api_init', 'wtheme_rest_register_route' );
+function wtheme_rest_register_route() {
+register_rest_route( 'country/v1', 'getdata', [
+	'methods'  => 'GET',
+	'callback' => 'getCountryCode'
+] );
+
+register_rest_route( 'country/v1', 'getallcountry', [
+	'methods'  => 'GET',
+	'callback' => 'getallcountry'
+] );
+}
+
+
+function getallcountry() {
+	global $wpdb;
+	$results = $wpdb->get_results( "SELECT * FROM countries ORDER BY Country_name ASC;"); 
+	foreach($results as $item) {
+		$country_id=$item->country_id;
+		$country_name=$item->country_name;
+		$result .= "<option value='$country_id'>$country_name</option>";
+	}
+
+
+	print json_encode($result);
+}
+
+function getCountryCode() {
+	global $wpdb;
+
+	if(isset($_GET["country_id"])){
+		//Get all state data
+		$country_id= $_GET['country_id'];
+		$query = "SELECT * FROM states WHERE country_id = '$country_id' 
+		ORDER BY state_name ASC";
+		
+		$results = $wpdb->get_results($query); 
+
+		$count = count($results);
+		
+		//Display states list
+		if($count > 0){
+			$result .= '<option value="">Select state</option>';
+			foreach($results as $item) {
+				$state_id=$item->state_id;
+				$state_name=$item->state_name;
+				$result .=  "<option value='$state_id'>$state_name</option>";
+			}
+		}else{
+			$result .= '<option value="">State not available</option>';
+		}
+
+
+	}
+
+	if(isset($_GET["state_id"])){
+		$state_id= $_GET['state_id'];
+		//Get all city data
+		$query = "SELECT * FROM cities WHERE state_id = '$state_id' 
+		ORDER BY city_name ASC";
+
+		$results = $wpdb->get_results($query); 
+		
+		//Count total number of rows
+		$count = count($results);
+		
+		//Display cities list
+		if($count > 0){
+			$result .= '<option value="">Select city</option>';
+			
+			foreach($results as $item) {
+				$city_id=$item->city_id;
+				$city_name=$item->city_name;
+				$result .= "<option value='$city_id'>$city_name</option>";
+			}
+		}else{
+			$result .= '<option value="">City not available</option>';
+		}
+	}
+
+	print json_encode($result);
+}
+
+
