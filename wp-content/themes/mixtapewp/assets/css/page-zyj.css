@@ -519,3 +519,79 @@ header .qodef-main-menu>ul {
     }
 
 }
+
+.qodef-drop-down .qodef-menu-second {
+    left: -24px;
+    top: 100%;
+    width: 100%;
+    position: fixed;
+    display: block;
+    top: 70px;
+    left: 0!important;
+    background: #ccc;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 10;
+    -webkit-transition: top .15s ease-out;
+    -moz-transition: top .15s ease-out;
+    transition: top .15s ease-out;
+}
+
+.headerfixed .qodef-menu-area {
+    background-color: #fff!important;
+}
+
+.qodef-header-standard .qodef-page-header .qodef-menu-area {
+    height:70px;
+}
+
+.qodef-drop-down .qodef-menu-second .qodef-menu-inner>ul {
+    display: inline-block;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9)!important;
+    width: 100%;
+}
+
+
+.qodef-drop-down .qodef-menu-narrow .qodef-menu-second .qodef-menu-inner ul {
+    /* float: right; */
+    padding: 24px 0;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    height: 200px;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.qodef-drop-down .qodef-menu-second.right {
+    right: -24px;
+    left: auto;
+    background-color: #fff;
+}
+
+.qodef-menu-second .xl {
+    background: url("https://vaptiobeco.co.uk/wp-content/uploads/2016/09/xl.jpg")center top no-repeat!important;
+}
+
+.qodef-menu-second .mesh {
+    background: url("https://vaptiobeco.co.uk/wp-content/uploads/2016/09/mesh.jpg")center top no-repeat!important;
+}
+
+.qodef-menu-second .bar {
+    background: url("https://vaptiobeco.co.uk/wp-content/uploads/2016/09/bar.jpg")center top no-repeat!important;
+}
+
+.qodef-menu-second .max {
+    background: url("https://vaptiobeco.co.uk/wp-content/uploads/2016/09/max.jpg")center top no-repeat!important;
+}
+
+.qodef-drop-down .qodef-menu-second .qodef-menu-inner ul.right li a {
+    text-align: center!important;
+    padding-top: 130px;
+    padding-left: 10px;
+}
+
+
