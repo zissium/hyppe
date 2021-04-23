@@ -8,15 +8,15 @@
         <ul class="items">
             <li>
                 1. Q: How can I become your wholesaler?
-                <p>A: Please fill out our contact form(超链接) or email 邮箱. </p>
+                <p>A: Please fill out our <a href="https://vaptiobeco.co.uk/contact">contact form</a> or email <a href="mailto:uk@vaptio.com">uk@vaptio.com</a>. </p>
             </li>
             <li>
                 2. Q: What’s your wholesale pricing.
-                <p>A: Please contact us(超链接), we will reply you ASAP.  </p>
+                <p>A: Please <a href="https://vaptiobeco.co.uk/contact">contact us</a>, we will reply you ASAP.  </p>
             </li>
             <li>
                 3. Q: How can I purchase your products?
-                <p>A: Please fill out our contact form(超链接), our staff will get back to you and help you ASAP.</p>
+                <p>A: Please fill out our <a href="https://vaptiobeco.co.uk/contact">contact form</a>, our staff will get back to you and help you ASAP.</p>
             </li>
             <li>
                 4. Q: Can I get more information to promote your products?
