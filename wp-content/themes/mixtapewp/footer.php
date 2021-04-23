@@ -121,3 +121,14 @@ mixtape_qodef_get_footer();
 <?php endif; ?>    
 
 
+<script>
+   (function($){
+    $(".product-menu").hover(function(){
+        $("body").addClass("headerfixed");
+    },function(){
+        $("body").removeClass("headerfixed");
+    });
+})(jQuery);  
+</script>
+
+
