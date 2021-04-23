@@ -67,13 +67,13 @@
     $(".faqwrapper .items li").click(function(){
         if($(this).find("p").is(":hidden")) {
             $(this).find("p").show();
-            $(".close-submenu").show();
-            $(".open-submenu").hide();
+            $(this).find(".close-submenu").show();
+            $(this).find(".open-submenu").hide();
         }
         else {
             $(this).find("p").hide();
-            $(".close-submenu").hide();
-            $(".open-submenu").show();
+            $(this).find(".close-submenu").hide();
+            $(this).find(".open-submenu").show();
         }
     });
 })(jQuery);  
