@@ -557,7 +557,7 @@ header .qodef-main-menu>ul {
 .product-menu .qodef-menu-second .qodef-menu-inner ul {
     /* float: right; */
     padding: 24px 0;
-    display: flex;
+    display: flex!important;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     height: 200px;
