@@ -572,6 +572,12 @@ header .qodef-main-menu>ul {
     background-color: #fff;
 }
 
+.aboutus .qodef-menu-second .qodef-menu-inner ul li {
+    padding: 0;
+    width: auto!important;
+    padding-right: 50px!important;
+}
+
 .product-menu .qodef-menu-second .xl {
     background: url("https://vaptiobeco.co.uk/wp-content/uploads/2016/09/XL.jpg")center top no-repeat!important;
 }
