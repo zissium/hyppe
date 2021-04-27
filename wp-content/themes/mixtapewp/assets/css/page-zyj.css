@@ -588,10 +588,16 @@ header .qodef-main-menu>ul {
     background: url("https://vaptiobeco.co.uk/wp-content/uploads/2016/09/max.jpg")center top no-repeat!important;
 }
 
+.product-menu .qodef-menu-second .mate {
+    background: url("https://vaptiobeco.co.uk/wp-content/uploads/2016/09/Beco-mate.jpg")center top no-repeat!important;
+}
+
 .product-menu .qodef-menu-second .qodef-menu-inner ul.right li a {
     text-align: center!important;
     padding-top: 130px;
     padding-left: 10px;
 }
+
+
 
 
