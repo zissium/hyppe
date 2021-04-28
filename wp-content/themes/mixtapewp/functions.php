@@ -1286,7 +1286,12 @@ function getCountryCode() {
 			foreach($results as $item) {
 				$state_id=$item->state_id;
 				$state_name=$item->state_name;
-				$result .=  "<option value='$state_id'>$state_name</option>";
+				if($state_id == 77) {
+					$result .=  "<option selected value='$state_id'>$state_name</option>";
+				}
+				else {
+					$result .=  "<option value='$state_id'>$state_name</option>";
+				}	
 			}
 		}else{
 			$result .= '<option value="">State not available</option>';
