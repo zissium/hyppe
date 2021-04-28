@@ -1291,7 +1291,7 @@ function getCountryCode() {
 				}
 				else {
 					$result .=  "<option value='$state_id'>$state_name</option>";
-				}	
+				}		
 			}
 		}else{
 			$result .= '<option value="">State not available</option>';
