@@ -573,9 +573,13 @@ header .qodef-main-menu>ul {
 }
 
 .aboutus .qodef-menu-second .qodef-menu-inner ul li {
-    padding: 0;
+    padding: 0!important;
     width: auto!important;
-    padding-right: 50px!important;
+    float: right;
+}
+
+.aboutus .qodef-menu-second {
+    background: none!important;
 }
 
 .product-menu .qodef-menu-second .xl {
