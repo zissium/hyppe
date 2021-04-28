@@ -1260,7 +1260,13 @@ function getallcountry() {
 	foreach($results as $item) {
 		$country_id=$item->country_id;
 		$country_name=$item->country_name;
-		$result .= "<option value='$country_id'>$country_name</option>";
+		if($country_id == 77) {
+			$result .= "<option selected value='$country_id'>$country_name</option>";
+		}
+		else {
+			$result .= "<option value='$country_id'>$country_name</option>";
+		}		
+		
 	}
 
 
@@ -1286,12 +1292,7 @@ function getCountryCode() {
 			foreach($results as $item) {
 				$state_id=$item->state_id;
 				$state_name=$item->state_name;
-				if($state_id == 77) {
-					$result .=  "<option selected value='$state_id'>$state_name</option>";
-				}
-				else {
-					$result .=  "<option value='$state_id'>$state_name</option>";
-				}		
+				$result .=  "<option value='$state_id'>$state_name</option>";
 			}
 		}else{
 			$result .= '<option value="">State not available</option>';
