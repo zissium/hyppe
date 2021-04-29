@@ -123,7 +123,7 @@ mixtape_qodef_get_footer();
 
 <script>
    (function($){
-    $(".product-menu").hover(function(){
+    $(".product-menu ,.aboutus").hover(function(){
         $("body").addClass("headerfixed");
     },function(){
         $("body").removeClass("headerfixed");
