@@ -11,11 +11,14 @@
 	<?php wp_head(); ?>
      <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/page-zyj.css">
+    
     <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/bootstrap/js/bootstrap.min.js"></script>
     
     <?php if(wp_is_mobile()): ?>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/footer.css">
     <?php endif; ?>  
+
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1081915_spry101w9gf.css">
     
 </head>
 
