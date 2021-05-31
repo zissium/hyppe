@@ -50,9 +50,8 @@
 
     <script>
    (function($){
-    $(".qodef-icon-font-awesome").click(function(){
+    $(".qodef-mobile-menu-opener a").click(function(){
          if($(".qodef-mobile-nav").is(":hidden")) {
-            $(".qodef-mobile-nav").show();
         }else {
             $(".qodef-mobile-nav").hide();
         }
