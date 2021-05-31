@@ -48,7 +48,17 @@
 
     <script src="<?php echo get_template_directory_uri();?>/assets/js/header-footer-m.js" type="text/javascript" charset="utf-8"></script>
 
-   
+    <script>
+   (function($){
+    $(".qodef-mobile-opener-icon-holder").click(function(){
+         if($(".qodef-mobile-nav").is(":hidden")) {
+
+        }else {
+            $(".qodef-mobile-nav").hide();
+        }
+    });
+})(jQuery);  
+</script>
 
 
 <?php else: ?>
