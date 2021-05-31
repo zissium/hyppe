@@ -52,7 +52,7 @@
    (function($){
     $(".qodef-mobile-opener-icon-holder").click(function(){
          if($(".qodef-mobile-nav").is(":hidden")) {
-
+            $(".qodef-mobile-nav").show();
         }else {
             $(".qodef-mobile-nav").hide();
         }
