@@ -51,9 +51,7 @@
     <script>
    (function($){
     $(".qodef-mobile-menu-opener a").click(function(){
-         if($(".qodef-mobile-nav").is(":hidden")) {
-            $(".qodef-mobile-nav").show();
-        }else {
+         if(!$(".qodef-mobile-nav").is(":hidden")) {
             $(".qodef-mobile-nav").hide();
         }
     });
