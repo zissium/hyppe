@@ -48,15 +48,6 @@
 
     <script src="<?php echo get_template_directory_uri();?>/assets/js/header-footer-m.js" type="text/javascript" charset="utf-8"></script>
 
-    <script>
-   (function($){
-    $(".qodef-mobile-menu-opener a").click(function(){
-         if(!$(".qodef-mobile-nav").is(":hidden")) {
-            $(".qodef-mobile-nav").hide();
-        }
-    });
-})(jQuery);  
-</script>
 
 
 <?php else: ?>
