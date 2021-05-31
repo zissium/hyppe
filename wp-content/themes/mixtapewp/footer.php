@@ -50,7 +50,7 @@
 
     <script>
    (function($){
-    $(".qodef-mobile-opener-icon-holder").click(function(){
+    $(".qodef-icon-font-awesome").click(function(){
          if($(".qodef-mobile-nav").is(":hidden")) {
             $(".qodef-mobile-nav").show();
         }else {
