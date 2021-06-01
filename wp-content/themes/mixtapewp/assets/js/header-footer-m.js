@@ -29,7 +29,7 @@
             $(".qodef-mobile-nav").show();
         }
         else {
-            $(".qodef-mobile-nav").hidden();
+            $(".qodef-mobile-nav").hide();
         }
         
     });
