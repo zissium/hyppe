@@ -24,10 +24,6 @@
         $("html,body").animate({ scrollTop: 0 }, 500);
     });
 
-    $(".qodef-mobile-menu-opener .qodef-mobile-opener-icon-holder").click(function(){
-         $(".qodef-mobile-nav").show();
-    });
-
 
 
     $(".emailsend").click(function(){
