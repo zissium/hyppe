@@ -25,7 +25,13 @@
     });
 
     $(".qodef-mobile-menu-opener .qodef-mobile-opener-icon-holder").click(function(){
-         $(".qodef-mobile-nav").show();
+        if($(".qodef-mobile-nav").is(":hidden")) {
+            $(".qodef-mobile-nav").show();
+        }
+        else {
+            $(".qodef-mobile-nav").hidden();
+        }
+        
     });
 
 
