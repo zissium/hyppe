@@ -48,6 +48,18 @@
 
     <script src="<?php echo get_template_directory_uri();?>/assets/js/header-footer-m.js" type="text/javascript" charset="utf-8"></script>
 
+    <script>
+   (function($){
+    $(".qodef-mobile-menu-opener a").click(function(){
+         if($("body").hasClass("mobilemenushow")) {
+            $("body").removeClass("mobilemenushow");
+        }
+        else {
+            $("body").addClass("mobilemenushow");
+        }
+    });
+})(jQuery);  
+</script>
 
 
 <?php else: ?>
