@@ -34,12 +34,12 @@
         
     });
 
-    $(".mobile_arrow").click(function(){
-        if($(this).parent().find(".sub_menu").is(":hidden")) {
-            $(this).parent().find(".sub_menu").show();
+    $(".qodef-mobile-header .qodef-mobile-nav li").click(function(){
+        if($(this).find(".sub_menu").is(":hidden")) {
+            $(this).find(".sub_menu").show();
         }
         else {
-            $(this).parent().find(".sub_menu").hide();
+            $(this).find(".sub_menu").hide();
         }
     });
 
