@@ -1329,4 +1329,27 @@ function getCountryCode() {
 	print json_encode($result);
 }
 
+/* Disable archives pages */
+add_action('template_redirect', 'my_disable_archives_function');
+
+function my_disable_archives_function()
+{
+  /* Conditional checks examples:
+      is_category() 
+      is_tag()
+      is_date()
+      is_author()
+      is_tax()
+      is_search() ... */
+
+    // Return a 404 for all archive types, except the my_custom_post_type archive.
+    $post_types = array('my_custom_post_type');
+
+  if ( (is_archive() && !is_post_type_archive( $post_types )) )
+  {
+      global $wp_query;
+      $wp_query->set_404();
+      status_header(404);
+  }
+}
 
