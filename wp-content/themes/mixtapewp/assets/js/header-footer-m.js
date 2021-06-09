@@ -25,21 +25,21 @@
     });
 
     $(".qodef-mobile-menu-opener .qodef-mobile-opener-icon-holder").click(function(){
-        if($(this).parent().find(".qodef-mobile-nav").is(":hidden")) {
-            $(this).parent().find(".qodef-mobile-nav").show();
+        if($(".qodef-mobile-nav").is(":hidden")) {
+            $(".qodef-mobile-nav").show();
         }
         else {
-            $(this).parent().find(".qodef-mobile-nav").hide();
+            $(".qodef-mobile-nav").hide();
         }
         
     });
 
     $(".mobile_arrow").click(function(){
-        if($(".sub_menu").is(":hidden")) {
-            $(".sub_menu").show();
+        if($(this).parent().find(".sub_menu").is(":hidden")) {
+            $(this).parent().find(".sub_menu").show();
         }
         else {
-            $(".sub_menu").hide();
+            $(this).parent().find(".sub_menu").hide();
         }
     });
 
