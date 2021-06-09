@@ -34,6 +34,15 @@
         
     });
 
+    $(".mobile_arrow").click(function(){
+        if($(".sub_menu").is(":hidden")) {
+            $(".sub_menu").show();
+        }
+        else {
+            $(".sub_menu").hide();
+        }
+    });
+
 
 
     $(".emailsend").click(function(){
