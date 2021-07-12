@@ -49,6 +49,7 @@
     <script src="<?php echo get_template_directory_uri();?>/assets/js/header-footer-m.js" type="text/javascript" charset="utf-8"></script>
 
 
+
 <?php else: ?>
 
 <?php
@@ -64,6 +65,18 @@ mixtape_qodef_get_footer();
         $("body").addClass("headerfixed");
     },function(){
         $("body").removeClass("headerfixed");
+    });
+
+    $(window).scroll(function() {
+        var scroH = $(this).scrollTop();
+        $(window).scroll(function() {
+            var a = $(this).scrollTop();
+            if (a > 0) {
+                $("body").addClass("black");
+            } else {
+                $("body").removeClass("black");
+            }
+        })
     });
 })(jQuery);  
 </script>

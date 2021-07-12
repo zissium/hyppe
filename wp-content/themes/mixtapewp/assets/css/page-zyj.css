@@ -543,6 +543,12 @@ header .qodef-main-menu>ul {
     background-color: rgba(255, 255, 255, 0.87)!important;
 }
 
+.black .qodef-page-header .qodef-menu-area {
+    position: fixed;
+    top:0;
+    left:0;
+}
+
 .qodef-drop-down .qodef-menu-second .qodef-menu-inner>ul {
     display: inline-block;
     position: relative;
