@@ -540,12 +540,13 @@ header .qodef-main-menu>ul {
 
 .qodef-header-standard .qodef-page-header .qodef-menu-area {
     height:70px;
+    background-color: rgba(255, 255, 255, 0.87)!important;
 }
 
 .qodef-drop-down .qodef-menu-second .qodef-menu-inner>ul {
     display: inline-block;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.87);
+    background-color: rgba(255, 255, 255, 0.9)!important;
     width: 100%;
 }
 
