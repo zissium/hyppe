@@ -615,5 +615,9 @@ footer .qodef-footer-inner {
     width:1200px!important;
 }
 
+footer .left-container {
+    width: 100%!important;
+    float: left;
+}
 
 
