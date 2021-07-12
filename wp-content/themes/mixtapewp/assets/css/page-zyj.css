@@ -547,6 +547,7 @@ header .qodef-main-menu>ul {
     position: fixed;
     top:0;
     left:0;
+    width:100%;
 }
 
 .qodef-drop-down .qodef-menu-second .qodef-menu-inner>ul {
