@@ -618,8 +618,10 @@ footer .qodef-footer-inner {
 }
 
 footer .left-container {
-    width: 100%!important;
-    float: left;
+    width: 1020px!important;
+    /* float: left; */
+    margin: 0 auto!important;
+    float: none!important;
 }
 
 .subscribewrapper {
@@ -640,6 +642,19 @@ footer .left-container {
     width: 400px;
     float: none;
     margin: 0 auto;
+}
+
+.tnp-email {
+    width: calc(100% - 82px)!important;
+}
+
+footer .qodef-footer-bottom-holder {
+    width: 1020px!important;
+    vertical-align: middle;
+    text-align: center;
+    padding: 33px 0;
+    color: #cdcdcd;
+    margin: 0 auto!important;
 }
 
 
