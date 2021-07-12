@@ -611,6 +611,9 @@ header .qodef-main-menu>ul {
     padding-left: 10px;
 }
 
+footer .qodef-footer-inner {
+    width:1200px!important;
+}
 
 
 
