@@ -612,7 +612,9 @@ header .qodef-main-menu>ul {
 }
 
 footer .qodef-footer-inner {
-    width:1200px!important;
+    width: 100%;
+    max-width: none;
+    padding-top: 0;
 }
 
 footer .left-container {
@@ -621,9 +623,14 @@ footer .left-container {
 }
 
 .subscribewrapper {
-    width: 500px;
+    width: 100%;
     margin: auto;
     margin-bottom: 30px;
+}
+
+.subscribe {
+    width: 700px;
+    margin: auto;
 }
 
 
