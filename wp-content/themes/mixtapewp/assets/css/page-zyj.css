@@ -41,7 +41,7 @@ footer .qodef-footer-top:not(.qodef-footer-top-full) .qodef-container-inner {
 
 footer .qodef-footer-top.qodef-footer-top-aligment-center {
     text-align: center;
-    padding: 10px;
+    padding: 0px;
 }
 
 .contactFormWrapper {
