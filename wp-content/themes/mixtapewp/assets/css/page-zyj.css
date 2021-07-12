@@ -545,7 +545,7 @@ header .qodef-main-menu>ul {
 .qodef-drop-down .qodef-menu-second .qodef-menu-inner>ul {
     display: inline-block;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.9)!important;
+    background-color: rgba(255, 255, 255, 0.87);
     width: 100%;
 }
 
