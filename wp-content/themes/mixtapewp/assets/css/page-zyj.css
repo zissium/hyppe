@@ -626,6 +626,9 @@ footer .left-container {
     width: 100%;
     margin: auto;
     margin-bottom: 30px;
+    padding-top: 20px;
+    background-color: #3e3e3e;
+    padding-bottom: 30px;
 }
 
 .subscribe {
