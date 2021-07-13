@@ -662,6 +662,10 @@ footer .qodef-footer-bottom-holder {
     margin: 0 auto!important;
 }
 
+#sb_instagram .sb_instagram_header {
+    display: none!important;
+}
+
 
 
 
