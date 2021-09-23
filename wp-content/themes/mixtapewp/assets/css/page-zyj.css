@@ -615,7 +615,6 @@ footer .qodef-footer-inner {
 }
 
 footer .left-container {
-    width: 1020px!important;
     /* float: left; */
     margin: 0 auto!important;
     float: none!important;
@@ -651,7 +650,6 @@ footer .left-container {
 }
 
 footer .qodef-footer-bottom-holder {
-    width: 1020px!important;
     vertical-align: middle;
     text-align: center;
     padding: 33px 0;
