@@ -516,23 +516,7 @@ header .qodef-main-menu>ul {
 
 }
 
-.qodef-drop-down .qodef-menu-second {
-    left: -24px;
-    top: 100%;
-    width: 100%;
-    position: fixed;
-    display: block;
-    top: 70px;
-    left: 0!important;
-    background: #ccc;
-    visibility: hidden;
-    overflow: hidden;
-    opacity: 0;
-    z-index: 10;
-    -webkit-transition: top .15s ease-out;
-    -moz-transition: top .15s ease-out;
-    transition: top .15s ease-out;
-}
+
 
 .headerfixed .qodef-menu-area {
     background-color: #fff!important;
@@ -554,7 +538,10 @@ header .qodef-main-menu>ul {
     display: inline-block;
     position: relative;
     background-color: rgba(255, 255, 255, 0.9)!important;
-    width: 100%;
+}
+
+.qodef-drop-down .qodef-menu-narrow .qodef-menu-second .qodef-menu-inner ul li {
+    width:auto!important;
 }
 
 
