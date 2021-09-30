@@ -5,62 +5,49 @@
 <h4 class="title">FAQ</h4>
 <div class="faqwrapper">
     <div class="wholesale">
-        <h2>Wholesale Inquiry</h2>
         <ul class="items">
             <li>
-                1. Q: How can I become your wholesaler?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
-                <p>A: Please fill out our <a class="contact" href="https://vaptiobeco.co.uk/contact">contact form</a> or email <a class="email" href="mailto:uk@vaptio.com">uk@vaptio.com</a>. </p>
+                1. Q: Where is your HQ office and factory?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
+                <p>A: Our HQ office and factory are both in city of Shenzhen, China.</p>
             </li>
             <li>
-                2. Q: What’s your wholesale pricing.<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
-                <p>A: Please <a class="contact" href="https://vaptiobeco.co.uk/contact">contact us</a>, we will reply you ASAP.  </p>
+                2. Q: Do you have any social media account?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
+                <p>A: Of course! Until now we only have Instagram and the ID is hyppe_eu. We also will have Facebook and Twitter very soon.</p>
             </li>
             <li>
-                3. Q: How can I purchase your products?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
-                <p>A: Please fill out our <a class="contact" href="https://vaptiobeco.co.uk/contact">contact form</a>, our staff will get back to you and help you ASAP.</p>
+                3. Q: If coming across after-sales service problem, how to contact you?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
+                <p>A: You are welcome to send email to us directly, and the email address is <a class="email" href="mailto:sales@hyppebrand.com">sales@hyppebrand.com</a></p>
             </li>
             <li>
-                4. Q: Can I get more information to promote your products?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
-                <p>A: Sure! Please email <a class="email" href="mailto:uk@vaptio.com">uk@vaptio.com</a>, and we will offer a wide variety of marketing materials to help you.</p>
+                4. Q: How could I become your wholesaler?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
+                <p>A: Please contact us by email <a class="email" href="mailto:sales@hyppebrand.com">sales@hyppebrand.com</a></p>
+            </li>
+            <li>
+                5. Q: What are the Hyppe warranty and return policy?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
+                <p>A: Please contact the retailer where your device was purchased, and provide your original purchase receipt.</p>
+            </li>
+            <li>
+                6. Q:How could I get some promotion support?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
+                <p>A:You could contact us by email marketing@hyppebrand.com</p>
+            </li>
+            <li>
+                7. Q:Besides disposable device, do you have other kinds of e-cigarettes?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
+                <p>A:Yes, later we will launch rechangeable e-cigarette.</p>
+            </li>
+            <li>
+                8. Q: What is the minimum age to purchase Hyppe products?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
+                <p>A:You must be of legal smoking age in your state / country to purchase e-cigarette.</p>
+            </li>
+            <li>
+                9. Q: How to know when Hyppe product Is empty?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
+                <p>A:YWhen you cannot puff out anything, it is empty. But the last draw will not taste burnt at all, as our Hyppe product is consistent from beginning to end.</p>
+            </li>
+            <li>
+                10. Q: Is there anything special about Hyppe product's flavor?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
+                <p>A:With simply 1 draw, Hyppe product would be right up in your alley. Hyppe product has uncomparable flavor among other disposables e-cigarette sticks in the market. Every puff would give you a solid throat hit, deep satisfaction, which is as awesome as your morning sip.</p>
             </li>
         </ul>
     </div>
-    
-    <div class="general">
-        <h2>General Inquiry</h2>
-        <ul class="items">
-            <li>
-                1. Q: What is BECO BAR?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
-                <p>A: BECO BAR is one of the disposable vape devices from VAPTIO brand, and it is easy to use with exceptional flavours.</p>
-            </li>
-            <li>
-                2. Q: What’s the minimum age to purchase BECO products.<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
-                <p>A: You must be the legal age 18+ to purchase BECO products. </p>
-            </li>
-            <li>
-                3. Q: How to use BECO products?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
-                <p>A: Simply open the package, and then take a hit.</p>
-            </li>
-            <li>
-                4. Q: How long can a BECO device last? <i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
-                <p>A: It depends on how heavily and how often you use it. But according to the TPD, the max capacity is 2ml with about 400 puffs.</p>
-            </li>
-            <li>
-                5. Q: How to know when a BECO device is empty?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
-                <p>A: When you cannot puff out anything, it is empty. But the last draw will not taste burnt at all, as our BECO device is consistent from beginning to end.</p>
-            </li>
-            <li>
-                6. Q: What Are the BECO Warranty and Return Policy?<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
-                <p>A: It depends on where and when you purchased it. Please contact the retailer where your device was purchased, and provide your original purchase receipt.</p>
-            </li>
-            <li>
-                7. Q: You should improve your quality control.<i class="iconfont open-submenu" style="display: block;"></i><i class="iconfont close-submenu" style="display: none;"></i>
-                <p>A: We love hearing how we can make our product better, and we aim to make high quality product. It will be very appreciated you can figure out where we should improve.Thanks for your support! </p>
-            </li>
-        </ul>
-
-    </div>
-
 </div>
 
 <script>
