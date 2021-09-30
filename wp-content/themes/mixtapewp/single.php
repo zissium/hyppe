@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
-<?php mixtape_qodef_get_title(); ?>
+<div  class="banner">
+	 <h1>NEWS</h1>
+</div>
 <?php get_template_part('slider'); ?>
 	<div class="qodef-container">
 		<?php do_action('mixtape_qodef_after_container_open'); ?>
