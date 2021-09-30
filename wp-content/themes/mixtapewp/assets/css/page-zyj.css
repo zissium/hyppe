@@ -664,8 +664,7 @@ footer .qodef-footer-bottom-holder {
 
 .single-post .banner {
     min-height: 400px;
-
-    background-image: url(https://vozoltech.com/wp-content/uploads/2021/02/news-hero.jpg);
+    background-image: url(http://yabaro.com/wp-content/uploads/2021/09/news-hero.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -681,4 +680,8 @@ footer .qodef-footer-bottom-holder {
     top:40%;
     text-align: center;
     width: 100%;
+}
+
+.has-post-thumbnail .qodef-post-image {
+    display: none;
 }
