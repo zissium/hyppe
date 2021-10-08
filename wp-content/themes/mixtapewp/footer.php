@@ -43,7 +43,7 @@
                 </li>
 
                 <li>
-                    <div><a href="http://hyppeuk.com/contact"><b>Contact us</b></a></div>
+                    <div><a href="http://hyppeuk.com/contact">Contact us</a></div>
                 </li>
             </ul>
         </div>
