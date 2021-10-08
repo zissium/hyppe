@@ -17,7 +17,7 @@
                 </li>
 
                 <li>
-                    <div><b><a href="http://hyppeuk.com/about-us">Our Brand</a></b></div>
+                    <div><a href="http://hyppeuk.com/about-us">Our Brand</a></div>
                 </li>
 
                 <li class="">
@@ -43,7 +43,7 @@
                 </li>
 
                 <li>
-                    <div><b><<a href="http://hyppeuk.com/contact"><b>Contact us</b></a></b></div>
+                    <div><a href="http://hyppeuk.com/contact"><b>Contact us</b></a></div>
                 </li>
             </ul>
         </div>
