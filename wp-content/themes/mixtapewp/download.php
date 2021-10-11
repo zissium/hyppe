@@ -1,4 +1,4 @@
-<?php /* Template Name: faq */ ?>
+<?php /* Template Name: download */ ?>
 
 <?php get_header(); ?>
 
