@@ -2,6 +2,14 @@
 
 <?php get_header(); ?>
 
+<!--banner 开始-->
+<div class="return-refund_banner">
+    <div class="my-container" style="text-align:center;">
+        Hyppe Community
+    </div>
+</div>
+<!--banner 结束-->
+
 <h4 class="title">FAQ</h4>
 <div class="faqwrapper">
     <div class="wholesale">
