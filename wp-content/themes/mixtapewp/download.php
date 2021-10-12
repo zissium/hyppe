@@ -123,9 +123,10 @@
          <h3>Product Materials</h3>
          <div class="files">
              <ul>
-                <li> 
-                    <img src="http://hyppeuk.com/wp-content/uploads/2021/09/HYPPE-homepage-ver.1.4_10.png"/>
-                    <h4 class="title">HYPPE MAXX</h4>
+                <li>
+                    <a download="pdf" href="http://hyppeuk.com/wp-content/uploads/2021/10/Hyppe-EU-Catalog-20210830-2.pdf"> 
+                    <img src="http://hyppeuk.com/wp-content/uploads/2021/10/1200px-PDF_file_icon.svg_.png"/>
+                   </a>
                 </li>
             </ul>
             
