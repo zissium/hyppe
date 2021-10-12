@@ -124,10 +124,12 @@
          <div class="files">
              <ul>
                 <li>
-                    <a download="pdf" href="http://hyppeuk.com/wp-content/uploads/2021/10/Hyppe-EU-Catalog-20210830-2.pdf"> 
+                    <a download="Hyppe EU Catalog-20210830" href="http://hyppeuk.com/wp-content/uploads/2021/10/Hyppe-EU-Catalog-20210830-2.pdf"> 
                     <img src="http://hyppeuk.com/wp-content/uploads/2021/10/1200px-PDF_file_icon.svg_.png"/>
                    </a>
+                   <h3>Hyppe EU Catalog-20210830</h3>
                 </li>
+
             </ul>
             
          </div>
