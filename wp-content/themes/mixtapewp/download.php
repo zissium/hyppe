@@ -127,7 +127,7 @@
                     <a download="Hyppe EU Catalog-20210830" href="http://hyppeuk.com/wp-content/uploads/2021/10/Hyppe-EU-Catalog-20210830-2.pdf"> 
                     <img src="http://hyppeuk.com/wp-content/uploads/2021/10/1200px-PDF_file_icon.svg_.png"/>
                    </a>
-                   <h3>Hyppe EU Catalog-20210830</h3>
+                   <h4>Hyppe EU Catalog-20210830</h4>
                 </li>
 
             </ul>
