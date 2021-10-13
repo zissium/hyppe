@@ -111,7 +111,7 @@
          </li>
          <li onclick="location='http://hyppeuk.com/faq'" class="faqs">
             <h3>FAQS</h3>
-            <p>Any questions about our products and Vozol, see if there are any answers you want.</p>								
+            <p>Any questions about our products and HYPPE, see if there are any answers you want.</p>								
          </li>
          <li  onclick="location='http://hyppeuk.com/contact'" class="contactus">
             <h3>CONTACT US</h3>
