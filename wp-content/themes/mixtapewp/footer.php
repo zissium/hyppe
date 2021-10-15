@@ -10,14 +10,14 @@
                         <i class="iconfont close-submenu" style="display: none;"></i>
                     </div>
                     <div class="sub-menu" style="display: none;">
-                        <a href="http://hyppeuk.com/maxx">Maxx</a>
-                        <a href="http://hyppeuk.com/hyppe-q/">Q</a>
-                        <a href="http://hyppeuk.com/plus">Plus</a>
+                        <a href="https://hyppebrand.com/maxx">Maxx</a>
+                        <a href="https://hyppebrand.com/hyppe-q/">Q</a>
+                        <a href="https://hyppebrand.com/plus">Plus</a>
                     </div>
                 </li>
 
                 <li>
-                    <div><a href="http://hyppeuk.com/about-us">Our Brand</a></div>
+                    <div><a href="https://hyppebrand.com/about-us">Our Brand</a></div>
                 </li>
 
                 <li class="">
@@ -26,8 +26,8 @@
                         <i class="iconfont close-submenu" style="display: none;"></i>
                     </div>
                     <div class="sub-menu" style="display: none;">
-                        <a href="http://hyppeuk.com/media">Media</a>
-                        <a href="http://hyppeuk.com/news">News</a>
+                        <a href="https://hyppebrand.com/media">Media</a>
+                        <a href="https://hyppebrand.com/news">News</a>
                     </div>
                 </li>
 
@@ -37,20 +37,20 @@
                         <i class="iconfont close-submenu" style="display: none;"></i>
                     </div>
                     <div class="sub-menu" style="display: none;">
-                        <a href="http://hyppeuk.com/media">Download</a>
-                        <a href="http://hyppeuk.com/news">Faq</a>
+                        <a href="https://hyppebrand.com/media">Download</a>
+                        <a href="https://hyppebrand.com/news">Faq</a>
                     </div>
                 </li>
 
                 <li>
-                    <div><a href="http://hyppeuk.com/contact">Contact us</a></div>
+                    <div><a href="https://hyppebrand.com/contact">Contact us</a></div>
                 </li>
             </ul>
         </div>
 
 
 
-        <form class="tnp-form newsletter" action="http://hyppeuk.com/?na=s" method="post" _lpchecked="1"><input type="hidden" name="nr" value="widget-minimal"><input class="tnp-email" type="email" required="" name="ne" value="" placeholder="Email"><input style="display:none;" class="tnp-submit" type="submit" value="Subscribe"><button id="subscribe" data-can="1">Submit</button></form>
+        <form class="tnp-form newsletter" action="https://hyppebrand.com/?na=s" method="post" _lpchecked="1"><input type="hidden" name="nr" value="widget-minimal"><input class="tnp-email" type="email" required="" name="ne" value="" placeholder="Email"><input style="display:none;" class="tnp-submit" type="submit" value="Subscribe"><button id="subscribe" data-can="1">Submit</button></form>
 
         
         <div class="tips">

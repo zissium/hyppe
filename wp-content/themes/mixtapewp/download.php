@@ -109,11 +109,11 @@
             <h3>DOWNLOADS</h3>
             <p>View online product manuals/posters, free downloads and periodic updates!</p>								
          </li>
-         <li onclick="location='http://hyppeuk.com/faq'" class="faqs">
+         <li onclick="location='https://hyppebrand.com/faq'" class="faqs">
             <h3>FAQS</h3>
             <p>Any questions about our products and HYPPE, see if there are any answers you want.</p>								
          </li>
-         <li  onclick="location='http://hyppeuk.com/contact'" class="contactus">
+         <li  onclick="location='https://hyppebrand.com/contact'" class="contactus">
             <h3>CONTACT US</h3>
             <p>If you need any help or would like to collaborate, please feel free to contact us!</p>								
          </li>
@@ -124,8 +124,8 @@
          <div class="files">
              <ul>
                 <li>
-                    <a download="Hyppe EU Catalog-20210830" href="http://hyppeuk.com/wp-content/uploads/2021/10/Hyppe-EU-Catalog-20210830-2.pdf"> 
-                    <img src="http://hyppeuk.com/wp-content/uploads/2021/10/1200px-PDF_file_icon.svg_.png"/>
+                    <a download="Hyppe EU Catalog-20210830" href="https://hyppebrand.com/wp-content/uploads/2021/10/Hyppe-EU-Catalog-20210830-2.pdf"> 
+                    <img src="https://hyppebrand.com/wp-content/uploads/2021/10/1200px-PDF_file_icon.svg_.png"/>
                    </a>
                    <h4>Hyppe EU Catalog-20210830</h4>
                 </li>
