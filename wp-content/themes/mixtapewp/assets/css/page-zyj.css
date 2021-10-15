@@ -685,3 +685,7 @@ footer .qodef-footer-bottom-holder {
 .has-post-thumbnail .qodef-post-image {
     display: none;
 }
+
+.qodef-search-opener {
+    display: none;
+}

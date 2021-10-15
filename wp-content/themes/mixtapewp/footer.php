@@ -54,7 +54,7 @@
 
         
         <div class="tips">
-        Copyright Notice © 2021 HYPPE Holding Limited and/or its affiliates and licensors. All rights reserved
+        Hyppe Copyright 2021 Romeo Group Co.,Ltd. E-mail: sales@hyppebrand.com
         </div>
     </div>
 
