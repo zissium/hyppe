@@ -37,8 +37,8 @@
                         <i class="iconfont close-submenu" style="display: none;"></i>
                     </div>
                     <div class="sub-menu" style="display: none;">
-                        <a href="https://hyppebrand.com/media">Download</a>
-                        <a href="https://hyppebrand.com/news">Faq</a>
+                        <a href="https://hyppebrand.com/download">Download</a>
+                        <a href="https://hyppebrand.com/faq">Faq</a>
                     </div>
                 </li>
 
