@@ -123,11 +123,11 @@
          <h3>Product Materials</h3>
          <div class="files">
              <ul>
-                <li>
-                    <a download="Hyppe EU Catalog-20210830" href="https://hyppebrand.com/wp-content/uploads/2021/10/Hyppe-EU-Catalog-20210830-2.pdf"> 
-                    <img src="https://hyppebrand.com/wp-content/uploads/2021/10/1200px-PDF_file_icon.svg_.png"/>
+                   <li>
+                    <a download="Hyppe Catalog(EU Version)" href="https://hyppebrand.com/wp-content/uploads/2021/11/HyppeCatalogEUVersion.pdf"> 
+                    <img src="https://ru.hyppebrand.com/wp-content/uploads/2021/10/1200px-PDF_file_icon.svg_.png"/>
                    </a>
-                   <h4>Hyppe EU Catalog-20210830</h4>
+                   <h4>Hyppe Catalog(EU Version)</h4>
                 </li>
 
             </ul>
