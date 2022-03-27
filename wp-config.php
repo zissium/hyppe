@@ -28,7 +28,7 @@ define( 'DB_NAME', 'hyppe' );
 define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'EoVYLAfntyncBLFJ' );
+define( 'DB_PASSWORD', '@!asdf695580@' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );

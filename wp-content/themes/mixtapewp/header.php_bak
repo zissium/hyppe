@@ -38,7 +38,6 @@ if(mixtape_qodef_options()->getOptionValue('smooth_page_transitions') == "yes") 
 	</div>
 <?php } ?>
 
-
 <div class="qodef-wrapper">
     <div class="qodef-wrapper-inner">
       
